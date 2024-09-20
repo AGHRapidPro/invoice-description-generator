@@ -1,2 +1,1 @@
-# auto-invoice-description
-Automated Invoice Descri[tion Generartor
+# Automated Invoice Description Generartor

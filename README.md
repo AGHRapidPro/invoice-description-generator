@@ -1,1 +1,3 @@
-# Automated Invoice Description Generartor
+# Automated Invoice Description Generator
+
+Automated Invoice Description Generator

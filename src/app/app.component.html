@@ -1,0 +1,126 @@
+<div class="content">
+
+  <h1 class="main-header">Generator Zamówień Publicznych</h1>
+
+  <mat-tab-group>
+
+    <mat-tab label="Rodzaj dokumentu">
+      <div style="display: grid">
+        <h5 class="section-header">Wybierz rodzaj dokumentu</h5>
+
+        <mat-radio-group class="example-radio-group" [formControl]="documentTypeFC">
+          <mat-radio-button class="example-radio-button" value="1">Faktura VAT</mat-radio-button>
+          <mat-radio-button class="example-radio-button" value="2">Proforma</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field *ngIf="documentTypeFC.value === '1'" appearance="outline">
+          <mat-label>Wpisz numer faktury VAT</mat-label>
+          <input matInput [formControl]="vatNumberFC" required>
+        </mat-form-field>
+
+        <mat-form-field *ngIf="documentTypeFC.value === '1'" appearance="outline">
+          <mat-label>Wpisz cel</mat-label>
+          <input matInput [formControl]="purposeFC" required>
+        </mat-form-field>
+
+        <mat-form-field *ngIf="documentTypeFC.value === '2'" appearance="outline">
+          <mat-label>Wpisz numer proformy</mat-label>
+          <input matInput [formControl]="proformaNumberFC" required>
+        </mat-form-field>
+
+        <mat-divider></mat-divider>
+
+        <h5 class="section-header">Podstawa udzielenia zamównienia</h5>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Wybierz podstawę udzielenia zamówienia</mat-label>
+          <mat-select [formControl]="basisFC" required>
+            <mat-option value="1">zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-divider></mat-divider>
+
+        <h5 class="section-header">Grant zamównienia</h5>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Wybierz grant</mat-label>
+          <mat-select [formControl]="grantFC" required>
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+    </mat-tab>
+
+    <mat-tab label="Pozycje z preliminarza">
+      <div style="display: grid">
+
+        <h5 class="section-header">Wybierz kategorię produktu</h5>
+
+        <mat-form-field appearance="outline" style="width: 100%">
+
+          <mat-label>Wybierz kategorię</mat-label>
+
+          <mat-select [formControl]="categoryFC">
+            <mat-option *ngFor="let c of prelimList" [value]="c">
+              {{c.category}}
+            </mat-option>
+          </mat-select>
+
+        </mat-form-field>
+
+        <div *ngIf="categoryFC.value">
+
+          <mat-divider></mat-divider>
+          <h5 class="section-header">Wybierz kategorię produktu</h5>
+
+          <mat-form-field appearance="outline" style="width: 100%">
+
+            <mat-label>Wybierz podkategorię</mat-label>
+
+            <mat-select [formControl]="subcategoryFC">
+              <mat-option *ngFor="let i of categoryFC.value.list" [value]="i">
+                {{i.name}}
+              </mat-option>
+            </mat-select>
+
+          </mat-form-field>
+        </div>
+
+        <button mat-button class="add-button" (click)="addItem()" [disabled]="!subcategoryFC.value">
+          DODAJ
+        </button>
+
+        <mat-divider style="margin: 10px 0"></mat-divider>
+
+        <div style="display: grid; width: 80%; grid-template-columns: 90% 10%; justify-self: center; align-items: center">
+          <ng-container *ngFor="let item of selectedItems">
+            <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.12); height: 100%; align-content: center;">
+              {{item.name}}
+            </div>
+            <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.12); height: 100%; align-content: center;">
+              <button mat-icon-button (click)="deleteItem(item)" style="color: red">
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </div>
+          </ng-container>
+        </div>
+
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+
+  <div class="footer">
+    <button mat-button class="download-button">
+      POBIERZ PLIK
+    </button>
+  </div>
+
+</div>

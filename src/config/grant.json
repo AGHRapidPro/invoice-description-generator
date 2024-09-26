@@ -42,15 +42,15 @@
       "position": {
         "1": {
           "alias": "Podzespoły elektroniczne",
-          "budget": 9667
+          "budget": 9659
         },
         "2": {
           "alias": "Materiały eksploatacyjne do druku 3D",
-          "budget": 1000
+          "budget": 2508
         },
         "3": {
           "alias": "Materiały warsztatowe",
-          "budget": 2500
+          "budget": 2000
         },
         "4": {
           "alias": "Tekstylia",
@@ -66,7 +66,7 @@
         },
         "7": {
           "alias": "Wyjazdy na konferencje",
-          "budget": 3000
+          "budget": 2000
         }
       }
     }

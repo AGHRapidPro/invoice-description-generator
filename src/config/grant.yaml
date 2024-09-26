@@ -1,0 +1,54 @@
+---
+# Convert to json with: yq -o=json grant.yaml > grant.json
+grants:
+  7/GRANT/2024:
+    alias: Grant Czekolada
+    position:
+      1:
+        alias: Mikrokomputery
+        budget: 637.00
+      2:
+        alias: Materiały eksploatacyjne
+        budget: 860.00
+      3:
+        alias: Materiały konstrukcyjne
+        budget: 5192.10
+      4:
+        alias: Sensory
+        budget: 140.40
+      5:
+        alias: Lodówka
+        budget: 700.00
+      6:
+        alias: Części elektroniczne
+        budget: 770.50
+      7:
+        alias: Marketing
+        budget: 1 000.00
+      8:
+        alias: Filament
+        budget: 700.00
+  8/GRANT/2024:
+    alias: Grant Haptyka
+    position:
+      1:
+        alias: Podzespoły elektroniczne
+        budget: 9667.00
+      2:
+        alias: Materiały eksploatacyjne do druku 3D
+        budget: 1000.00
+      3:
+        alias: Materiały warsztatowe
+        budget: 2500.00
+      4:
+        alias: Tekstylia
+        budget: 500.00
+      5:
+        alias: Materiały marketingowe
+        budget: 500.00
+      6:
+        alias: Materiały biurowe
+        budget: 500.00
+      7:
+        alias: Wyjazdy na konferencje
+        budget: 3000.00

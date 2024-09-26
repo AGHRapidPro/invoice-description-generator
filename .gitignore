@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+bin
+include
+lib
+*.pdf
+pyvenv.cfg
+.DS_Store

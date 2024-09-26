@@ -24,7 +24,7 @@ grants:
         budget: 770.50
       7:
         alias: Marketing
-        budget: 1 000.00
+        budget: 1000.00
       8:
         alias: Filament
         budget: 700.00

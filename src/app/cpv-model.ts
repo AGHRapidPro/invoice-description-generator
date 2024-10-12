@@ -27,4 +27,8 @@ export class CPVCategory {
       });
     }
   }
+
+  public toString() {
+    return this.name;
+  }
 }

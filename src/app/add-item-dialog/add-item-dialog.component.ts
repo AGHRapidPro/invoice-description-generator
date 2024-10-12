@@ -1,4 +1,4 @@
-import {Component, Inject, inject} from '@angular/core';
+import {Component, Inject, inject, OnInit} from '@angular/core';
 import {
   MAT_DIALOG_DATA,
   MatDialogActions,
@@ -21,6 +21,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatIconModule} from "@angular/material/icon";
 import {GrantPosition, InvoiceItem} from "../invoice-model";
 import {CPVCategory} from "../cpv-model";
+import {MatAutocomplete, MatAutocompleteTrigger} from "@angular/material/autocomplete";
+import {map, Observable, startWith} from "rxjs";
 
 @Component({
   selector: 'app-add-item-dialog',
@@ -45,24 +47,48 @@ import {CPVCategory} from "../cpv-model";
     MatIconModule,
     MatDialogActions,
     MatDialogModule,
+    MatAutocompleteTrigger,
+    MatAutocomplete,
+    MatAutocomplete,
+    MatAutocompleteTrigger,
   ],
   templateUrl: './add-item-dialog.component.html',
   styleUrl: './add-item-dialog.component.css'
 })
 
-export class AddItemDialogComponent {
+export class AddItemDialogComponent implements OnInit {
   public invoiceItem: InvoiceItem = new InvoiceItem({});
   public cpvList: CPVCategory[] = [];
+  public cpvListFiltered: Observable<CPVCategory[]>;
   public grantPositions: GrantPosition[] = [];
+  public myControl = new FormControl();
 
   public cpvCategorySelected: any = null;
 
   constructor(public dialogRef: MatDialogRef<AddItemDialogComponent>,  @Inject(MAT_DIALOG_DATA) public data: any) {
     this.cpvList = data.cpvList;
+    this.cpvListFiltered = data.cpvList;
     this.grantPositions = data.grantPositions;
   }
 
-  onNoClick(): void {
+  ngOnInit() {
+    this.cpvListFiltered = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || ''))
+    );
+  }
+
+  public displayFn(category: CPVCategory): string {
+    return category ? category.name : '';
+  }
+
+  private _filter(value: string): { name: string; items: any[] }[] {
+    const filterValue = value.toString().toLowerCase();
+    return this.cpvList.filter(option => option.name.toLowerCase().includes(filterValue));
+  }
+
+  public onOptionSelected(event: any) {
+    this.cpvCategorySelected = event.option.value;
   }
 
 }

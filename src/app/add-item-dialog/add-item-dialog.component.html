@@ -5,14 +5,14 @@
 
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wpisz nazwę przedmiotu</mat-label>
-    <input [(ngModel)]="invoiceItem.name" matInput>
+    <input [(ngModel)]="invoiceItem.name" matInput required>
   </mat-form-field>
 
   <h5 class="section-header">Numer pozycji z faktury</h5>
 
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wpisz numer pozycji z fakruty</mat-label>
-    <input [(ngModel)]="invoiceItem.invoicePosition" matInput>
+    <input [(ngModel)]="invoiceItem.invoicePosition" matInput required>
   </mat-form-field>
 
   <h5 class="section-header">Pozycja według preliminarza</h5>
@@ -20,7 +20,7 @@
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wybierz pozycję według preliminarza</mat-label>
 
-    <mat-select [(ngModel)]="invoiceItem.preliminaryId">
+    <mat-select [(ngModel)]="invoiceItem.preliminaryId" required>
       <mat-option *ngFor="let item of grantPositions" [value]="item.id">
         {{item.alias}}
       </mat-option>
@@ -32,11 +32,19 @@
 
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wybierz kategorię CPV</mat-label>
-    <mat-select [(ngModel)]="cpvCategorySelected">
-      <mat-option *ngFor="let cpvCategory of cpvList" [value]="cpvCategory">
-        {{cpvCategory.name}}
+    <input
+      type="text"
+      placeholder="Pick an option"
+      aria-label="Number"
+      matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onOptionSelected($event)">
+      <mat-option *ngFor="let option of cpvListFiltered | async" [value]="option">
+        {{ option.name }}
       </mat-option>
-    </mat-select>
+    </mat-autocomplete>
   </mat-form-field>
 
   <mat-form-field *ngIf="cpvCategorySelected" appearance="outline" style="width: 100%">

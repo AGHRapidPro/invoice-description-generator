@@ -7,14 +7,14 @@
 
       <mat-form-field appearance="outline">
         <mat-label>Wpisz numer faktury VAT</mat-label>
-        <input [(ngModel)]="invoiceDocument.invoiceNumber" matInput>
+        <input [(ngModel)]="invoiceDocument.invoiceNumber" matInput required>
       </mat-form-field>
 
       <h5 class="section-header">Podstawa udzielenia zamównienia</h5>
 
       <mat-form-field appearance="outline">
         <mat-label>Wybierz podstawę udzielenia zamówienia</mat-label>
-        <mat-select [(ngModel)]="invoiceDocument.contractBasis">
+        <mat-select [(ngModel)]="invoiceDocument.contractBasis" required>
           <mat-option *ngFor="let basis of contractBasis" [value]="basis">{{basis}}</mat-option>
         </mat-select>
       </mat-form-field>
@@ -23,7 +23,7 @@
 
       <mat-form-field appearance="outline">
         <mat-label>Wybierz grant</mat-label>
-        <mat-select [(ngModel)]="invoiceDocument.financeGrant">
+        <mat-select [(ngModel)]="invoiceDocument.financeGrant" required>
           <mat-option *ngFor="let grant of grantList" [value]="grant">
             {{grant.alias}}
           </mat-option>
@@ -34,7 +34,7 @@
 
       <mat-form-field appearance="outline">
         <mat-label>Wybierz odbiorcę przelewu</mat-label>
-        <mat-select [(ngModel)]="invoiceDocument.recipient">
+        <mat-select [(ngModel)]="invoiceDocument.recipient" required>
           <mat-option *ngFor="let recipient of recipientsList" [value]="recipient">
             {{recipient.name}} {{recipient.lastname}}, {{recipient.index}}
           </mat-option>

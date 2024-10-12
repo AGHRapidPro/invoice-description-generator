@@ -116,8 +116,15 @@ export class AppComponent implements OnInit{
 
     dialogRef.afterClosed().subscribe((item: InvoiceItem) => {
       if (item) {
-        this.invoiceDocument.items.push(item);
-        this.dataSource.data = this.invoiceDocument.items;
+        const groupWithItem = this.invoiceDocument.items.find(i => i.cpv === item.cpv);
+        if (groupWithItem) {
+          groupWithItem.invoicePosition += ', ' + item.invoicePosition;
+          groupWithItem.name += ', ' + item.name;
+          this.dataSource.data = this.invoiceDocument.items;
+        } else {
+          this.invoiceDocument.items.push(item);
+          this.dataSource.data = this.invoiceDocument.items;
+        }
       }
     });
   }

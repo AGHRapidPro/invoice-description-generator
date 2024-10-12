@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, Inject, inject} from '@angular/core';
 import {
   MAT_DIALOG_DATA,
   MatDialogActions,
@@ -19,6 +19,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatIconModule} from "@angular/material/icon";
+import {GrantPosition, InvoiceItem} from "../invoice-model";
+import {CPVCategory} from "../cpv-model";
 
 @Component({
   selector: 'app-add-item-dialog',
@@ -49,11 +51,17 @@ import {MatIconModule} from "@angular/material/icon";
 })
 
 export class AddItemDialogComponent {
-  public cpvControl = new FormControl();
-  public invoicePositionControl = new FormControl();
-  public preliminaryNumberControl = new FormControl();
+  public invoiceItem: InvoiceItem = new InvoiceItem({});
+  public cpvList: CPVCategory[] = [];
+  public grantPositions: GrantPosition[] = [];
 
-  constructor(public dialogRef: MatDialogRef<AddItemDialogComponent>) { }
+  public cpvCategorySelected: any = null;
+
+  constructor(public dialogRef: MatDialogRef<AddItemDialogComponent>,  @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.cpvList = data.cpvList;
+    this.grantPositions = data.grantPositions;
+  }
+
   onNoClick(): void {
   }
 

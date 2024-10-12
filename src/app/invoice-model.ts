@@ -1,6 +1,6 @@
 import {CPV} from "./cpv-model";
 
-export class InvoiceModel {
+export class InvoiceItem {
   public name: string;
   public cpv: CPV;
   public invoicePosition: string;
@@ -58,7 +58,7 @@ export class Recipient {
 export class InvoiceDocVAT {
   public invoiceNumber: string;
   public contractBasis: string;
-  public items: InvoiceModel[] = [];
+  public items: InvoiceItem[] = [];
   public financeGrant: Grant;
   public preliminaryPosition: GrantPosition;
   public recipient: Recipient;

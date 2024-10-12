@@ -19,9 +19,21 @@ import * as grants from '../config/grant.json';
 import * as receivers from '../config/receivers.json';
 import {MatDialog} from "@angular/material/dialog";
 import {AddItemDialogComponent} from "./add-item-dialog/add-item-dialog.component";
-import {Grant, InvoiceDocVAT, Recipient} from "./invoice-model";
+import {Grant, InvoiceDocVAT, InvoiceItem, Recipient} from "./invoice-model";
 import {CPVCategory} from "./cpv-model";
-
+import {
+  MatCell, MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow, MatHeaderRowDef,
+  MatRow, MatRowDef,
+  MatTable, MatTableDataSource
+} from "@angular/material/table";
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts';
+import {Alignment, Margins, Table, TableCell} from "pdfmake/interfaces";
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: 'app-root',
@@ -43,7 +55,17 @@ import {CPVCategory} from "./cpv-model";
     MatButtonModule,
     MatToolbarModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    MatHeaderCell,
+    MatColumnDef,
+    MatCell,
+    MatHeaderRow,
+    MatRow,
+    MatTable,
+    MatHeaderCellDef,
+    MatCellDef,
+    MatHeaderRowDef,
+    MatRowDef
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',
@@ -58,11 +80,13 @@ export class AppComponent implements OnInit{
   public prelimList: CPVCategory[] = [];
   public grantList: Grant[] = [];
   public recipientsList: Recipient[] = [];
+  public contractBasis = ['zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP', 'umowa przetargowa', 'umowa ogólnouczelniana']
 
-  public selectedItems: any = [];
   public invoiceDocument: InvoiceDocVAT = new InvoiceDocVAT({});
-
+  displayedColumns: string[] = ['name', 'cpvRow', 'cpvId', 'cpvName', 'invoicePosition', 'preliminaryId'];
   readonly dialog = inject(MatDialog);
+
+  dataSource = new MatTableDataSource<InvoiceItem>();
 
   ngOnInit() {
     const preliminaryData = this.data.default;
@@ -82,12 +106,121 @@ export class AppComponent implements OnInit{
   }
 
   public addItem() {
-    const dialogRef = this.dialog.open(AddItemDialogComponent);
+    const dialogRef = this.dialog.open(AddItemDialogComponent, {
+      data: {
+        cpvList: this.prelimList,
+        grantPositions: this.invoiceDocument.financeGrant.positions
+      },
+      minWidth: '800px',
+    });
+
+    dialogRef.afterClosed().subscribe((item: InvoiceItem) => {
+      if (item) {
+        this.invoiceDocument.items.push(item);
+        this.dataSource.data = this.invoiceDocument.items;
+      }
+    });
   }
 
-  public deleteItem(item: any) {
-    this.selectedItems = this.selectedItems.filter((i: any) => i != item);
+  public getInvoiceNumberText() {
+    const itemsText = this.invoiceDocument.items.map(item => item.name).join(', ');
+    return "Faktura VAT nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
   }
 
-  protected readonly console = console;
+  public generateItemsTable(): any {
+    const headers = [
+      { text: 'Wiersz', style: 'tableHeader'},
+      { text: 'Kod CPV', style: 'tableHeader' },
+      { text: 'Nazwa CPV', style: 'tableHeader' },
+      { text: 'Pozycje z faktury', style: 'tableHeader' },
+      { text: 'Numer pozycji wg preliminarza', style: 'tableHeader' }
+    ];
+
+    const items =  this.invoiceDocument.items.map((item: InvoiceItem) =>
+      [item.cpv.row, item.cpv.id, item.cpv.name, item.invoicePosition, item.preliminaryId]
+    );
+    return [headers, ...items];
+  }
+
+  public generatePdf() {
+    var dd = {
+      content: [
+        {
+          text: 'Załącznik nr 4 do Regulaminu konkursu Grant Rektora',
+          style: 'header',
+          margin: [0, 20, 20, 0] as Margins
+        },
+        {
+          text: this.getInvoiceNumberText(),
+          style: 'subheader',
+          margin: [0, 20, 20, 20] as Margins
+        },
+        {
+          text: 'Podstawa udzielenia zamówienia',
+          style: 'subheader',
+          margin: [0, 0] as Margins
+        },
+        {
+          text: this.invoiceDocument.contractBasis,
+        },
+        {
+          text: 'Kody CPV:',
+          style: 'subheader',
+          margin: [0, 10] as Margins,
+        },
+        {
+          table: {
+            body: this.generateItemsTable() as TableCell[][]
+          }
+        },
+        {
+          text: 'Finansowanie: 500-613-818 Granty FNKS',
+          style: 'subheader',
+          margin: [0, 10, 0, 0] as Margins,
+        },
+        {
+          text: 'Dotyczy preliminarza nr: ' + this.invoiceDocument.financeGrant.id,
+          margin: [0, 0, 0, 20] as Margins,
+        },
+        'W przypadku płatności gotówkowych proszę podać:',
+        {
+          text: '1. Imię i nazwisko: ' + this.invoiceDocument.recipient.name + ' ' + this.invoiceDocument.recipient.lastname
+        },
+        {
+          text: '2. Numer indeksu: ' + this.invoiceDocument.recipient.index
+        },
+        {
+          text: '2. Nr konta studenta do zwrotu należności: ' + this.invoiceDocument.recipient.account
+        },
+        {
+          text: 'Pieczątka i podpis\nopiekuna Koła Naukowego',
+          style: 'footer'
+        }
+      ],
+      styles: {
+        header: {
+          fontSize: 12,
+          bold: false,
+          margin: [0, 0, 0, 10] as Margins,
+          alignment: "right" as Alignment
+        },
+        subheader: {
+          fontSize: 12,
+          bold: true,
+        },
+        footer: {
+          fontSize: 12,
+          alignment: "right" as Alignment,
+          margin: [0, 50, 50, 0] as Margins
+        },
+        tableHeader: {
+          bold: true,
+          alignment: "center" as Alignment
+        }
+      }
+    }
+
+    pdfMake.createPdf(dd).download("invoiceVAT.pdf");
+
+  }
 }

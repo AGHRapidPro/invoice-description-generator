@@ -1,12 +1,56 @@
-<h2 mat-dialog-title></h2>
+<h2 mat-dialog-title>Uzupełnij dane na temat przedmiotu</h2>
 <mat-dialog-content>
-  <p>What's your favorite animal?</p>
-  <mat-form-field appearance="outline">
-    <mat-label>Wpisz numer faktury VAT</mat-label>
-    <input matInput [formControl]="invoicePositionControl" required>
+
+  <h5 class="section-header">Nazwa przedmiotu</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz nazwę przedmiotu</mat-label>
+    <input [(ngModel)]="invoiceItem.name" matInput>
   </mat-form-field>
+
+  <h5 class="section-header">Numer pozycji z faktury</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz numer pozycji z fakruty</mat-label>
+    <input [(ngModel)]="invoiceItem.invoicePosition" matInput>
+  </mat-form-field>
+
+  <h5 class="section-header">Pozycja według preliminarza</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wybierz pozycję według preliminarza</mat-label>
+
+    <mat-select [(ngModel)]="invoiceItem.preliminaryId">
+      <mat-option *ngFor="let item of grantPositions" [value]="item.id">
+        {{item.alias}}
+      </mat-option>
+    </mat-select>
+
+  </mat-form-field>
+
+  <h5 class="section-header">CPV</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wybierz kategorię CPV</mat-label>
+    <mat-select [(ngModel)]="cpvCategorySelected">
+      <mat-option *ngFor="let cpvCategory of cpvList" [value]="cpvCategory">
+        {{cpvCategory.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field *ngIf="cpvCategorySelected" appearance="outline" style="width: 100%">
+    <mat-label>Wybierz produkt CPV</mat-label>
+    <mat-select [(ngModel)]="invoiceItem.cpv">
+      <mat-option *ngFor="let item of cpvCategorySelected.items" [value]="item">
+        {{item.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button>Ok</button>
+
+<mat-dialog-actions align="center">
+  <button mat-stroked-button [mat-dialog-close]="invoiceItem">Dodaj przedmiot do faktury</button>
 </mat-dialog-actions>

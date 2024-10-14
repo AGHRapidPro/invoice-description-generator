@@ -197,7 +197,7 @@ export class AppComponent implements OnInit{
           text: '2. Numer indeksu: ' + this.invoiceDocument.recipient.index
         },
         {
-          text: '2. Nr konta studenta do zwrotu należności: ' + this.invoiceDocument.recipient.account
+          text: '3. Nr konta studenta do zwrotu należności: ' + this.invoiceDocument.recipient.account
         },
         {
           text: 'Pieczątka i podpis\nopiekuna Koła Naukowego',

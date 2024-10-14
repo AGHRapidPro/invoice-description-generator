@@ -218,7 +218,7 @@ export class AppComponent implements OnInit{
         footer: {
           fontSize: 12,
           alignment: "right" as Alignment,
-          margin: [0, 50, 50, 0] as Margins
+          margin: [0, 100, 50, 0] as Margins
         },
         tableHeader: {
           bold: true,

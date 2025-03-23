@@ -1,4 +1,4 @@
-import {CPV} from "./cpv-model";
+import { CPV } from "./cpv-model";
 
 export class InvoiceItem {
   public name: string;

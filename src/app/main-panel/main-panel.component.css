@@ -52,9 +52,16 @@
 }
 
 .footer {
-  display: flex;
+  margin-top: 20px;
+  width: 300px;
+  justify-self: center;
+}
+
+.footer-button {
   width: 100%;
-  margin: 30px 0;
+  height: 50px;
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
 .grid__item::after {

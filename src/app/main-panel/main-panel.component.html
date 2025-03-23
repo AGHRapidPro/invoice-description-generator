@@ -85,14 +85,23 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
-    <div style="margin-top: 20px; display: contents">
-      <button mat-stroked-button (click)="addItem()" color="primary" [disabled]="!invoiceDocument.financeGrant" style="margin-top: 20px">
+    <div class="footer">
+      <button
+        class="footer-button"
+        color="primary"
+        (click)="addItem()"
+        [disabled]="!invoiceDocument.financeGrant"
+        mat-stroked-button
+        >
         Dodaj pozycję do faktury
       </button>
-    </div>
-
-    <div class="footer">
-      <button mat-raised-button style="width: 100%" (click)="generatePdf()" color="primary">
+      <button
+        color="accent"
+        class="footer-button"
+        (click)="generatePdf()"
+        [disabled]="!invoiceDocument.financeGrant"
+        mat-raised-button
+      >
         Pobierz plik PDF z fakturą
       </button>
     </div>

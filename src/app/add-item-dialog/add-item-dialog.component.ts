@@ -19,8 +19,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatIconModule} from "@angular/material/icon";
-import {GrantPosition, InvoiceItem} from "../invoice-model";
-import {CPVCategory} from "../cpv-model";
+import {GrantPosition, InvoiceItem} from "../models/invoice-model";
+import {CPVCategory} from "../models/cpv-model";
 import {MatAutocomplete, MatAutocompleteTrigger} from "@angular/material/autocomplete";
 import {map, Observable, startWith} from "rxjs";
 

@@ -1,0 +1,104 @@
+<div class="content">
+
+  <h3 class="main-header">Generator Zamówień Publicznych</h3>
+  <div style="display: grid">
+
+    <h5 class="section-header">Numer faktury VAT</h5>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Wpisz numer faktury VAT</mat-label>
+      <input [(ngModel)]="invoiceDocument.invoiceNumber" matInput required>
+    </mat-form-field>
+
+    <h5 class="section-header">Podstawa udzielenia zamównienia</h5>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Wybierz podstawę udzielenia zamówienia</mat-label>
+      <mat-select [(ngModel)]="invoiceDocument.contractBasis" required>
+        <mat-option *ngFor="let basis of contractBasis" [value]="basis">{{basis}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h5 class="section-header">Grant zamównienia</h5>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Wybierz grant</mat-label>
+      <mat-select [(ngModel)]="invoiceDocument.financeGrant" required>
+        <mat-option *ngFor="let grant of grantList" [value]="grant">
+          {{grant.alias}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h5 class="section-header">Odbiorca przelewu</h5>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Wybierz odbiorcę przelewu</mat-label>
+      <mat-select [(ngModel)]="invoiceDocument.recipient" required>
+        <mat-option *ngFor="let recipient of recipientsList" [value]="recipient">
+          {{recipient.name}} {{recipient.lastname}}, {{recipient.index}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <h5 class="section-header">Pozycje z faktury</h5>
+
+    <div *ngIf="dataSource.data.length == 0" style="text-align: center; padding: 15px">
+      Brak pozycji do wyświetlenia
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" *ngIf="dataSource.data.length > 0">
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nazwa</th>
+        <td mat-cell *matCellDef="let element">{{element.name}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="cpvRow">
+        <th mat-header-cell *matHeaderCellDef>Wiersz</th>
+        <td mat-cell *matCellDef="let element">{{element.cpv.row}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="cpvId">
+        <th mat-header-cell *matHeaderCellDef>Kod CPV</th>
+        <td mat-cell *matCellDef="let element">{{element.cpv.id}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="cpvName">
+        <th mat-header-cell *matHeaderCellDef>Nazwa CPV</th>
+        <td mat-cell *matCellDef="let element">{{element.cpv.name}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="invoicePosition">
+        <th mat-header-cell *matHeaderCellDef>Pozycje z faktury</th>
+        <td mat-cell *matCellDef="let element">{{element.invoicePosition}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="preliminaryId">
+        <th mat-header-cell *matHeaderCellDef>Nr pozycji wg preliminarza</th>
+        <td mat-cell *matCellDef="let element">{{element.preliminaryId}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div style="margin-top: 20px; display: contents">
+      <button mat-stroked-button (click)="addItem()" color="primary" [disabled]="!invoiceDocument.financeGrant" style="margin-top: 20px">
+        Dodaj pozycję do faktury
+      </button>
+    </div>
+
+    <div class="footer">
+      <button mat-raised-button style="width: 100%" (click)="generatePdf()" color="primary">
+        Pobierz plik PDF z fakturą
+      </button>
+    </div>
+
+  </div>
+
+  <a [routerLink]="[{ outlets: { primary: '', userPanel: 'user-dashboard' } }]">Go to User Dashboard</a>
+
+</div>

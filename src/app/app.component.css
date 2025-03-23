@@ -1,0 +1,12 @@
+.rapid-logo-icon {
+  width: 177px;
+  height: 43px;
+  background-image: url('../../public/logo_czarno_czerwone.png');
+  background-size: cover;
+}
+
+.rapid-toolbar {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto min-content;
+}

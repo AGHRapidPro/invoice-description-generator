@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
-import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatDividerModule } from "@angular/material/divider";
@@ -91,12 +91,6 @@ export class MainPanelComponent {
   readonly dialog = inject(MatDialog);
 
   dataSource = new MatTableDataSource<InvoiceItem>();
-
-  constructor(private router: Router) {}
-
-  navigateToUserDashboard() {
-    this.router.navigate([{ outlets: { userPanel: 'user-dashboard' } }]);
-  }
 
   ngOnInit() {
     const preliminaryData = this.data.default;

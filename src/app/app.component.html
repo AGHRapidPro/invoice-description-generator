@@ -1,1 +1,26 @@
+<mat-toolbar class="rapid-toolbar">
+  <div class="rapid-logo-icon"></div>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Menu icon"
+    [matMenuTriggerFor]="menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="navigateToHome()">
+      <mat-icon>group</mat-icon>
+      Generator faktur
+    </button>
+    <button mat-menu-item (click)="navigateToUserDashboard()">
+      <mat-icon>group</mat-icon>
+      Zarządzaj użytkownikami
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings_applications</mat-icon>
+      Zarządzaj grantami
+    </button>
+  </mat-menu>
+</mat-toolbar>
 <router-outlet />

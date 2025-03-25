@@ -70,3 +70,8 @@
   inset-inline-start: 0;
   inset-block-start: calc(1px * -1);
 }
+
+.data-table {
+  width: 800px;
+  min-width: unset;
+}

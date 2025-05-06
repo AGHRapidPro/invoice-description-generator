@@ -44,9 +44,9 @@ export class UserManagementComponent {
     });
   }
 
-  public deleteUser(id: number) {
-    this.userService.deleteUser(id).subscribe(() =>
-      console.log('user with id:', id, 'was deleted')
+  public deleteUser(user: Recipient) {
+    this.userService.deleteUser(Number(user.id)).subscribe(() =>
+      console.log('user with id:', user, 'was deleted')
     );
   }
 

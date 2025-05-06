@@ -1,7 +1,7 @@
 .rapid-logo-icon {
   width: 177px;
   height: 43px;
-  background-image: url('../../public/logo_czarno_czerwone.png');
+  background-image: url('../assets/logo_czarno_czerwone.png');
   background-size: cover;
 }
 

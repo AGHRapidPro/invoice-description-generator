@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatTableModule } from "@angular/material/table";
 import { Recipient } from "../models/invoice-model";
-import * as receivers from '../../config/receivers.json';
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
+import { MatDialog } from "@angular/material/dialog";
+import { AddEditUserDialogComponent } from "../add-edit-user-dialog/add-edit-user-dialog.component";
+import { UsersService } from "../services/users.service";
 
 @Component({
   selector: 'app-user-management',
@@ -11,22 +13,52 @@ import { MatButtonModule } from "@angular/material/button";
   imports: [
     MatTableModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   templateUrl: './user-management.component.html',
   styleUrl: './user-management.component.css'
 })
 export class UserManagementComponent {
-  private receivers: any = receivers;
   displayedColumns: string[] = ['name', 'lastname', 'index', 'account', 'edit', 'delete'];
   dataSource: Recipient[] = [];
+  readonly dialog = inject(MatDialog);
 
-  constructor() {
-    this.receivers.default.forEach((user: any) => {
-      this.dataSource.push(new Recipient(user));
+  constructor(private userService: UsersService) {
+    this.userService.users$.subscribe(users => {
+      this.dataSource = users;
     });
   }
 
+  public editUser(user: Recipient) {
+    const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
+      data: {
+        user: user,
+      },
+      minWidth: '800px',
+    });
 
+    dialogRef.afterClosed().subscribe((user) => {
+      this.userService.updateUser(user.id, user).subscribe((res) =>
+        console.log('user updated with result:', res)
+      );
+    });
+  }
 
+  public deleteUser(id: number) {
+    this.userService.deleteUser(id).subscribe(() =>
+      console.log('user with id:', id, 'was deleted')
+    );
+  }
+
+  public addNewUser() {
+    const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
+      minWidth: '800px',
+    });
+
+    dialogRef.afterClosed().subscribe((user) => {
+      this.userService.addUser(user).subscribe((res) =>
+        console.log('user added:', res)
+      );
+    });
+  }
 }

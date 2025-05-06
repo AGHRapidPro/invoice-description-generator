@@ -3,7 +3,7 @@ import {Router, RouterModule} from '@angular/router';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
-import {NgOptimizedImage} from "@angular/common";
+import { NgOptimizedImage } from "@angular/common";
 import { MatMenuModule } from "@angular/material/menu";
 
 @Component({
@@ -20,7 +20,7 @@ import { MatMenuModule } from "@angular/material/menu";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'angular-multi-router-outlet';
 
   constructor(private router: Router) {}

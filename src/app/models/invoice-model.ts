@@ -42,12 +42,14 @@ export class Grant {
 }
 
 export class Recipient {
+  public id: string;
   public name: string;
   public lastname: string;
   public index: string;
   public account: string;
 
   constructor(options: any) {
+    this.id = options.id || "";
     this.name = options.name || "";
     this.lastname = options.lastname || "";
     this.index = options.index || "";

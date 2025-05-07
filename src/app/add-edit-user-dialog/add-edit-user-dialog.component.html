@@ -19,19 +19,24 @@
 
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wpisz numer indeksu</mat-label>
-    <input [(ngModel)]="user.index" matInput required>
+    <input [(ngModel)]="user.index" matInput required pattern="[0-9]{6}$">
   </mat-form-field>
 
   <h5 class="section-header">Numer konta</h5>
 
   <mat-form-field appearance="outline" style="width: 100%">
     <mat-label>Wpisz numer konta</mat-label>
-    <input [(ngModel)]="user.account" matInput required>
+    <input [(ngModel)]="user.account" matInput required pattern="[0-9]{32}$" (ngModelChange)="accountChange()">
   </mat-form-field>
 
 
 </mat-dialog-content>
 
 <mat-dialog-actions align="center">
-  <button mat-stroked-button [mat-dialog-close]="user">Zapisz</button>
+  <button
+    mat-stroked-button
+    [disabled]="!isUserValid()"
+    [mat-dialog-close]="user">
+    Zapisz
+  </button>
 </mat-dialog-actions>

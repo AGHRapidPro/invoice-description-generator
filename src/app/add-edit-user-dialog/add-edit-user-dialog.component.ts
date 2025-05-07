@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import {
   MAT_DIALOG_DATA,
   MatDialogActions, MatDialogClose,
@@ -6,14 +6,14 @@ import {
   MatDialogRef,
   MatDialogTitle
 } from "@angular/material/dialog";
-import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
-import {MatAutocomplete, MatAutocompleteTrigger, MatOption} from "@angular/material/autocomplete";
-import {MatButton} from "@angular/material/button";
-import {MatFormField, MatLabel} from "@angular/material/form-field";
-import {MatInput} from "@angular/material/input";
-import {MatSelect} from "@angular/material/select";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {Recipient} from "../models/invoice-model";
+import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
+import { MatAutocomplete, MatAutocompleteTrigger, MatOption } from "@angular/material/autocomplete";
+import { MatButton } from "@angular/material/button";
+import { MatFormField, MatLabel } from "@angular/material/form-field";
+import { MatInput } from "@angular/material/input";
+import { MatSelect } from "@angular/material/select";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { Recipient } from "../models/invoice-model";
 
 @Component({
   selector: 'app-add-edit-user-dialog',
@@ -49,4 +49,27 @@ export class AddEditUserDialogComponent {
     }
   }
 
+  public isUserValid(): boolean {
+    if (!this.user.name) {
+      return false;
+    }
+    if (!this.user.lastname) {
+      return false;
+    }
+    if (this.user.index.length !== 6) {
+      return false;
+    }
+    if (this.user.account.length !== 32) {
+      console.log('account invalid')
+      return false;
+    }
+
+    return true;
+  }
+
+  public accountChange() {
+    if ([2, 7, 12, 17, 22, 27].includes(this.user.account.length)) {
+      this.user.account += ' ';
+    }
+  }
 }

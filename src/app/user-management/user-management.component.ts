@@ -39,9 +39,9 @@ export class UserManagementComponent {
     });
 
     dialogRef.afterClosed().subscribe((user) => {
-      this.userService.updateUser(user.id, user).subscribe((res) =>
-        console.log('user updated with result:', res)
-      );
+      if (user) {
+        this.userService.updateUser(user.id, user).subscribe();
+      }
     });
   }
 
@@ -50,9 +50,7 @@ export class UserManagementComponent {
     });
     dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
-        this.userService.deleteUser(Number(user.id)).subscribe(() =>
-          console.log('user with id:', user, 'was deleted')
-        );
+        this.userService.deleteUser(Number(user.id)).subscribe();
       }
     });
   }
@@ -63,9 +61,9 @@ export class UserManagementComponent {
     });
 
     dialogRef.afterClosed().subscribe((user) => {
-      this.userService.addUser(user).subscribe((res) =>
-        console.log('user added:', res)
-      );
+      if (user) {
+        this.userService.addUser(user).subscribe();
+      }
     });
   }
 }

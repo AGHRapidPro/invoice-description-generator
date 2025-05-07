@@ -6,6 +6,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDialog } from "@angular/material/dialog";
 import { AddEditUserDialogComponent } from "../add-edit-user-dialog/add-edit-user-dialog.component";
 import { UsersService } from "../services/users.service";
+import {ConfirmationDialogComponent} from "../confirmation-dialog/confirmation-dialog.component";
 
 @Component({
   selector: 'app-user-management',
@@ -45,9 +46,15 @@ export class UserManagementComponent {
   }
 
   public deleteUser(user: Recipient) {
-    this.userService.deleteUser(Number(user.id)).subscribe(() =>
-      console.log('user with id:', user, 'was deleted')
-    );
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+    });
+    dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+      if (confirmed) {
+        this.userService.deleteUser(Number(user.id)).subscribe(() =>
+          console.log('user with id:', user, 'was deleted')
+        );
+      }
+    });
   }
 
   public addNewUser() {

@@ -190,7 +190,7 @@ export class MainPanelComponent {
           margin: [0, 10, 0, 0] as Margins,
         },
         {
-          text: 'Dotyczy preliminarza nr: ' + this.invoiceDocument.financeGrant.id,
+          text: 'Dotyczy preliminarza nr: ' + this.invoiceDocument.financeGrant.code,
           margin: [0, 0, 0, 20] as Margins,
         },
         'W przypadku płatności gotówkowych proszę podać:',

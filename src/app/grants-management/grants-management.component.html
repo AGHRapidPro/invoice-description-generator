@@ -1,0 +1,84 @@
+<div class="content">
+  <h2 class="main-header">Lista grantów</h2>
+  <mat-card appearance="outlined" *ngFor="let grant of grantsList" class="grant-card">
+    <mat-card-content>
+      <ng-container *ngIf="!isEditMode(grant)">
+        <button mat-icon-button class="grant-menu-button" (click)="editGrant(grant)">
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <h5 style="margin-bottom: 0">{{grant.alias}}</h5>
+        <p class="subtitle-text">{{grant.code}}</p>
+
+        <table mat-table [dataSource]="grant.positions" class="data-table" >
+
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Pozycja </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="alias">
+            <th mat-header-cell *matHeaderCellDef> Nazwa </th>
+            <td mat-cell *matCellDef="let element"> {{element.alias}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="budget">
+            <th mat-header-cell *matHeaderCellDef> Budżet [PLN]</th>
+            <td mat-cell *matCellDef="let element"> {{element.budget}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </ng-container>
+
+      <ng-container *ngIf="isEditMode(grant)">
+
+        <h5 class="edit-title">Tryb edycji</h5>
+        <p class="subtitle-text">Możesz edytować dane na temat grantu. Przeciągaj i upuszczaj elementy na liście, aby zmieniać ich kolejność.</p>
+
+        <br>
+
+        <button mat-icon-button class="grant-menu-button" (click)="saveGrant(grant)">
+          <mat-icon>save</mat-icon>
+        </button>
+
+        <div style="display: grid; width: 100%">
+          <mat-form-field class="input-form" appearance="outline">
+            <mat-label>Nazwa grantu</mat-label>
+            <input matInput type="text" [(ngModel)]="grant.alias" required>
+          </mat-form-field>
+
+          <mat-form-field class="input-form" appearance="outline">
+            <mat-label>Kod grantu</mat-label>
+            <input matInput type="text" [(ngModel)]="grant.code" required>
+          </mat-form-field>
+        </div>
+
+        <br>
+
+        <div cdkDropList (cdkDropListDropped)="drop($event, grant)" class="drop-list">
+          <div *ngFor="let position of grant.positions" class="drop-box" cdkDrag>
+            <span>{{position.id}}</span>
+            <span>{{position.alias}}</span>
+            <span>{{position.budget}}</span>
+            <button mat-icon-button (click)="editPosition(position)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button (click)="deletePosition(grant, position)">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <button mat-stroked-button class="add-item-button" (click)="addPosition(grant)">
+          <mat-icon>add</mat-icon>
+          <span>Dodaj kolejną pozycję</span>
+        </button>
+
+      </ng-container>
+
+    </mat-card-content>
+  </mat-card>
+  <button mat-raised-button class="add-button" (click)="addGrant()">Dodaj nowy grant</button>
+</div>

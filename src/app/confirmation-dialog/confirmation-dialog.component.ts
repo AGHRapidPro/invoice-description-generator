@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { MatDialogModule } from "@angular/material/dialog";
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogModule } from "@angular/material/dialog";
 import { MatButtonModule } from "@angular/material/button";
 
 @Component({
@@ -13,5 +13,10 @@ import { MatButtonModule } from "@angular/material/button";
   styleUrl: './confirmation-dialog.component.css'
 })
 export class ConfirmationDialogComponent {
+  public deleteLabel: string = '';
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+    this.deleteLabel = data?.deleteLabel;
+  }
 
 }

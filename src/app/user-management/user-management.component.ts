@@ -35,34 +35,50 @@ export class UserManagementComponent {
       data: {
         user: user,
       },
-      minWidth: '800px',
+      minWidth: '600px',
     });
 
     dialogRef.afterClosed().subscribe((user) => {
       if (user) {
-        this.userService.updateUser(user.id, user).subscribe();
+        this.userService.updateUser(user.id, user).subscribe(x => {
+          this.userService.updateUsers().subscribe(users => {
+            this.dataSource = users;
+          });
+        });
       }
     });
   }
 
   public deleteUser(user: Recipient) {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+      data: {
+        deleteLabel: 'użytkownika' + ' ' + user.name + ' ' + user.lastname,
+      },
+      minWidth: '400px',
     });
     dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
-        this.userService.deleteUser(Number(user.id)).subscribe();
+        this.userService.deleteUser(Number(user.id)).subscribe(x => {
+          this.userService.updateUsers().subscribe(users => {
+            this.dataSource = users;
+          });
+        });
       }
     });
   }
 
   public addNewUser() {
     const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
-      minWidth: '800px',
+      minWidth: '600px',
     });
 
     dialogRef.afterClosed().subscribe((user) => {
       if (user) {
-        this.userService.addUser(user).subscribe();
+        this.userService.addUser(user).subscribe(x => {
+          this.userService.updateUsers().subscribe(users => {
+            this.dataSource = users;
+          });
+        });
       }
     });
   }

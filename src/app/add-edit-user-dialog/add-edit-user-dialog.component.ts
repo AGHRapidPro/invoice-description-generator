@@ -60,7 +60,6 @@ export class AddEditUserDialogComponent {
       return false;
     }
     if (this.user.account.length !== 32) {
-      console.log('account invalid')
       return false;
     }
 

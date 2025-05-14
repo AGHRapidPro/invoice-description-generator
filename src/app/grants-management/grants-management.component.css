@@ -1,0 +1,109 @@
+.main-header {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.add-button {
+  height: 40px;
+  width: 400px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  justify-self: center;
+  margin: 20px;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  justify-self: center;
+}
+
+.grant-card {
+  width: 600px;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.subtitle-text {
+  color: #282828;
+  font-weight: lighter;
+  margin-left: 3px;
+}
+
+.grant-menu-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.drop-list {
+  width: 100%;
+  max-width: 100%;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.drop-box {
+  border-radius: 30px;
+  padding: 3px 0 3px 10px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+  grid-template-columns: 50px 250px 100px 40px 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cdk-drag-preview {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.drop-list:last-child {
+  border: none;
+}
+
+.drop-list.cdk-drop-list-dragging .drop-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+:host ::ng-deep .mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 30px;
+}
+
+.edit-title {
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.add-item-button {
+  border-radius: 30px;
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+}

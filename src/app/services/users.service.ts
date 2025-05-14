@@ -13,8 +13,9 @@ export class UsersService {
   constructor(private http: HttpClient) {
     this.users$ = this.http.get<Recipient[]>(this.apiUrl);
   }
-  getUsers(): Observable<Recipient[]> {
-    return this.http.get<Recipient[]>(this.apiUrl);
+  updateUsers(): Observable<Recipient[]> {
+    this.users$ = this.http.get<Recipient[]>(this.apiUrl);
+    return this.users$;
   }
 
   getUser(id: number): Observable<Recipient> {

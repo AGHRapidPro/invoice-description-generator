@@ -16,9 +16,20 @@ const readUsers = () => {
   return JSON.parse(rawData).users;
 };
 
+const readGrants = () => {
+  const rawData = fs.readFileSync(SETTINGS_PATH);
+  return JSON.parse(rawData).grants;
+};
+
 const writeUsers = (users) => {
   const currentData = JSON.parse(fs.readFileSync(SETTINGS_PATH));
   currentData.users = users;
+  fs.writeFileSync(SETTINGS_PATH, JSON.stringify(currentData, null, 2));
+};
+
+const writeGrants = (grants) => {
+  const currentData = JSON.parse(fs.readFileSync(SETTINGS_PATH));
+  currentData.grants = grants;
   fs.writeFileSync(SETTINGS_PATH, JSON.stringify(currentData, null, 2));
 };
 
@@ -106,6 +117,15 @@ app.delete('/api/users/:id', (req, res) => {
     res.status(204).send();
   } catch (error) {
     res.status(500).json({ error: 'Failed to delete user' });
+  }
+});
+
+app.get('/api/grants', (req, res) => {
+  try {
+    const grants = readGrants();
+    res.json(grants);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to read users data' });
   }
 });
 

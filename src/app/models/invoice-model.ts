@@ -20,7 +20,7 @@ export class GrantPosition {
   public budget: number;
 
   constructor(options: any) {
-    this.id = options.position_id || "";
+    this.id = options.id || "";
     this.alias = options.alias || "";
     this.budget = options.budget || 0;
   }
@@ -28,14 +28,16 @@ export class GrantPosition {
 
 export class Grant {
   public id: string;
+  public code: string;
   public alias: string;
   public positions: GrantPosition[] = [];
 
   constructor(options: any) {
-    this.id = options.grant_id || "";
+    this.id = options.id || "";
+    this.code = options.code || "";
     this.alias = options.alias || "";
 
-    options?.positions.forEach((p: any) => {
+    options?.positions?.forEach((p: any) => {
       this.positions.push(new GrantPosition(p));
     });
   }

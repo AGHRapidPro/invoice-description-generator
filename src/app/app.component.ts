@@ -29,6 +29,10 @@ export class AppComponent{
     this.router.navigate(['user-dashboard']);
   }
 
+  navigateToGrantDashboard() {
+    this.router.navigate(['grant-dashboard']);
+  }
+
   navigateToHome() {
     this.router.navigate(['']);
   }

@@ -33,9 +33,15 @@
   margin-left: 3px;
 }
 
-.grant-menu-button {
+.edit-grant-menu-button {
   position: absolute;
   right: 20px;
+  top: 20px;
+}
+
+.delete-grant-menu-button {
+  position: absolute;
+  right: 60px;
   top: 20px;
 }
 

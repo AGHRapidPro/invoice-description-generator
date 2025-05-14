@@ -1,5 +1,5 @@
-<h2 mat-dialog-title>Uzupełnij dane użytkownika</h2>
-<mat-dialog-content>
+<h2 mat-dialog-title class="dialog-header" style="text-align: center">UZUPEŁNIJ DANIE UŻYTKOWNIKA</h2>
+<mat-dialog-content class="no-padding-div">
 
   <h5 class="section-header">Imię</h5>
 
@@ -34,7 +34,9 @@
 
 <mat-dialog-actions align="center">
   <button
-    mat-stroked-button
+    class="action-button"
+    mat-flat-button
+    color="accent"
     [disabled]="!isUserValid()"
     [mat-dialog-close]="user">
     Zapisz

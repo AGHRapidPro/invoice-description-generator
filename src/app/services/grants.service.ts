@@ -22,12 +22,12 @@ export class GrantsService {
     return this.http.get<Grant>(`${this.apiUrl}/${id}`);
   }
 
-  addGrant(user: Omit<Grant, 'id'>): Observable<Grant> {
-    return this.http.post<Grant>(this.apiUrl, user);
+  addGrant(grant: Omit<Grant, 'id'>): Observable<Grant> {
+    return this.http.post<Grant>(this.apiUrl, grant);
   }
 
-  updateGrant(id: number, user: Partial<Grant>): Observable<Grant> {
-    return this.http.put<Grant>(`${this.apiUrl}/${id}`, user);
+  updateGrant(id: number, grant: Partial<Grant>): Observable<Grant> {
+    return this.http.put<Grant>(`${this.apiUrl}/${id}`, grant);
   }
 
   deleteGrant(id: number): Observable<void> {

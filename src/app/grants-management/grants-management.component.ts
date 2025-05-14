@@ -60,6 +60,7 @@ export class GrantsManagementComponent {
 
   public saveGrant(grant: Grant) {
     this.editModeGrantIds = this.editModeGrantIds.filter(id => id != grant.id);
+    this.editGrantInfo(grant);
   }
 
   public deleteGrant(grant: Grant) {
@@ -82,11 +83,7 @@ export class GrantsManagementComponent {
 
   drop(event: CdkDragDrop<string[]>, grant: Grant) {
     moveItemInArray(grant.positions, event.previousIndex, event.currentIndex);
-    let i = 1;
-    grant.positions.forEach(position => {
-      position.id = i.toString();
-      i += 1;
-    })
+    this.fixIndexing(grant);
   }
 
   public addGrant() {
@@ -104,7 +101,14 @@ export class GrantsManagementComponent {
     });
   }
 
-  public editGrantInfo() {}
+  public editGrantInfo(grant: Grant) {
+    this.grantsService.updateGrant(Number(grant.id), grant).subscribe( () => {
+      this.grantsService.updateGrants().subscribe(grants => {
+        this.grantsList = grants;
+      });
+    });
+  }
+
   public deletePosition(grant: Grant, position: GrantPosition) {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
       data: {
@@ -115,6 +119,8 @@ export class GrantsManagementComponent {
     dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
         grant.positions = grant.positions.filter(pos => pos != position);
+        this.fixIndexing(grant);
+        this.editGrantInfo(grant);
       }
     });
   }
@@ -125,10 +131,12 @@ export class GrantsManagementComponent {
     dialogRef.afterClosed().subscribe((grantPosition: GrantPosition) => {
       if (grantPosition) {
         grant.positions.push(grantPosition);
+        this.fixIndexing(grant);
+        this.editGrantInfo(grant);
       }
     });
   }
-  public editPosition(position: GrantPosition) {
+  public editPosition(position: GrantPosition, grant: Grant) {
     const dialogRef = this.dialog.open(AddEditGrantPositionDialogComponent, {
       data: {
         position: position
@@ -139,7 +147,16 @@ export class GrantsManagementComponent {
       if (newPosition) {
         position.alias = newPosition.alias;
         position.budget = newPosition.budget;
+        this.editGrantInfo(grant);
       }
+    });
+  }
+
+  private fixIndexing(grant: Grant) {
+    let i = 1;
+    grant.positions.forEach(position => {
+      position.id = i.toString();
+      i += 1;
     });
   }
 }

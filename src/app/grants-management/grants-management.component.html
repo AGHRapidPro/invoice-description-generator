@@ -3,9 +3,14 @@
   <mat-card appearance="outlined" *ngFor="let grant of grantsList" class="grant-card">
     <mat-card-content>
       <ng-container *ngIf="!isEditMode(grant)">
-        <button mat-icon-button class="grant-menu-button" (click)="editGrant(grant)">
+        <button mat-icon-button class="edit-grant-menu-button" (click)="editGrant(grant)">
           <mat-icon>edit</mat-icon>
         </button>
+
+        <button mat-icon-button class="delete-grant-menu-button" (click)="deleteGrant(grant)">
+          <mat-icon>delete</mat-icon>
+        </button>
+
 
         <h5 style="margin-bottom: 0">{{grant.alias}}</h5>
         <p class="subtitle-text">{{grant.code}}</p>
@@ -39,7 +44,7 @@
 
         <br>
 
-        <button mat-icon-button class="grant-menu-button" (click)="saveGrant(grant)">
+        <button mat-icon-button class="edit-grant-menu-button" (click)="saveGrant(grant)">
           <mat-icon>save</mat-icon>
         </button>
 
@@ -62,7 +67,7 @@
             <span>{{position.id}}</span>
             <span>{{position.alias}}</span>
             <span>{{position.budget}}</span>
-            <button mat-icon-button (click)="editPosition(position)">
+            <button mat-icon-button (click)="editPosition(position, grant)">
               <mat-icon>edit</mat-icon>
             </button>
             <button mat-icon-button (click)="deletePosition(grant, position)">

@@ -2,106 +2,32 @@
   "users": [
     {
       "id": 1,
-      "name": "Mariaa",
-      "lastname": "Gołdasz",
-      "index": "411742",
-      "account": "38 2490 0005 0000 4000 1693 8952"
-    },
-    {
-      "id": 2,
-      "name": "Tosia",
-      "lastname": "Kuś",
+      "name": "John",
+      "lastname": "Doe",
       "index": "123123",
-      "account": "98 3729 8372 9837 2983 7928 7982"
+      "account": "11 2222 3333 4444 5555 6666 7777"
     }
   ],
   "grants": [
     {
       "id": 1,
-      "code": "7/GRANT/2024",
-      "alias": "Grant Czekolada",
+      "code": "1/GRANT/2025",
+      "alias": "Grant Testowy",
       "positions": [
         {
           "id": 1,
-          "alias": "Mikrokomputery",
-          "budget": 637
+          "alias": "Test 1",
+          "budget": 100.00
         },
         {
           "id": 2,
-          "alias": "Materiały eksploatacyjne",
-          "budget": 860
+          "alias": "Test 2",
+          "budget": 123.00
         },
         {
           "id": 3,
-          "alias": "Materiały konstrukcyjne",
-          "budget": 5192.1
-        },
-        {
-          "id": 4,
-          "alias": "Sensory",
-          "budget": 140.4
-        },
-        {
-          "id": 5,
-          "alias": "Lodówka",
-          "budget": 700
-        },
-        {
-          "id": 6,
-          "alias": "Części elektroniczne",
-          "budget": 770.5
-        },
-        {
-          "id": 7,
-          "alias": "Marketing",
-          "budget": 1000
-        },
-        {
-          "id": 8,
-          "alias": "Filament",
-          "budget": 700
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "code": "8/GRANT/2024",
-      "alias": "Grant Haptyka",
-      "positions": [
-        {
-          "id": 1,
-          "alias": "Podzespoły elektroniczne",
-          "budget": 9659
-        },
-        {
-          "id": 2,
-          "alias": "Materiały eksploatacyjne do druku 3D",
-          "budget": 2508
-        },
-        {
-          "id": 3,
-          "alias": "Materiały warsztatowe",
-          "budget": 2000
-        },
-        {
-          "id": 4,
-          "alias": "Tekstylia",
-          "budget": 500
-        },
-        {
-          "id": 5,
-          "alias": "Materiały marketingowe",
-          "budget": 500
-        },
-        {
-          "id": 6,
-          "alias": "Materiały biurowe",
-          "budget": 500
-        },
-        {
-          "id": 7,
-          "alias": "Wyjazdy na konferencje",
-          "budget": 2000
+          "alias": "Test 3",
+          "budget": 2000.11
         }
       ]
     }

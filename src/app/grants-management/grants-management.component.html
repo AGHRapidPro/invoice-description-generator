@@ -15,6 +15,10 @@
         <h5 style="margin-bottom: 0">{{grant.alias}}</h5>
         <p class="subtitle-text">{{grant.code}}</p>
 
+        <p *ngIf="grant.positions.length == 0">
+          Nie ma jeszcze żadnych pozycji w grancie. Kliknij przycisk, aby je dodać!
+        </p>
+
         <table mat-table [dataSource]="grant.positions" class="data-table" >
 
           <ng-container matColumnDef="id">

@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
+import {Component, CUSTOM_ELEMENTS_SCHEMA, inject, OnInit} from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
@@ -34,9 +34,9 @@ import {
 } from "@angular/material/table";
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
-import * as products from '../../config/sample.json';
-import * as grants from '../../config/grant.json';
-import * as receivers from '../../config/receivers.json';
+import * as products from '../../assets/products.json';
+import { GrantsService } from "../services/grants.service";
+import { UsersService } from "../services/users.service";
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
@@ -76,10 +76,8 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
   templateUrl: './main-panel.component.html',
   styleUrl: './main-panel.component.css'
 })
-export class MainPanelComponent {
+export class MainPanelComponent implements OnInit {
   private data: any = products;
-  private grants: any = grants;
-  private receivers: any = receivers;
 
   public prelimList: CPVCategory[] = [];
   public grantList: Grant[] = [];
@@ -92,20 +90,20 @@ export class MainPanelComponent {
 
   dataSource = new MatTableDataSource<InvoiceItem>();
 
+  constructor(private grantSrv: GrantsService, private userSrv: UsersService) {
+    this.grantSrv.grants$.subscribe((grants: Grant[]) => {
+      this.grantList = grants;
+    });
+
+    this.userSrv.users$.subscribe((users: Recipient[]) => {
+      this.recipientsList = users;
+    });
+  }
+
   ngOnInit() {
     const preliminaryData = this.data.default;
     preliminaryData.forEach((c: any) => {
       this.prelimList.push(new CPVCategory(c));
-    });
-
-    const grantData = this.grants.default;
-    grantData.grants.forEach((g: any) => {
-      this.grantList.push(new Grant(g));
-    });
-
-    const receiversData = this.receivers.default;
-    receiversData.forEach((r: any) => {
-      this.recipientsList.push(new Recipient(r));
     });
   }
 

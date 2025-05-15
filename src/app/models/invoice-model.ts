@@ -22,7 +22,7 @@ export class GrantPosition {
   constructor(options: any) {
     this.id = options.id || "";
     this.alias = options.alias || "";
-    this.budget = options.budget || 0;
+    this.budget = options.budget || 0.00;
   }
 }
 

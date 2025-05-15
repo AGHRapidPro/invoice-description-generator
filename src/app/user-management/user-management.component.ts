@@ -7,6 +7,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { AddEditUserDialogComponent } from "../add-edit-user-dialog/add-edit-user-dialog.component";
 import { UsersService } from "../services/users.service";
 import {ConfirmationDialogComponent} from "../confirmation-dialog/confirmation-dialog.component";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-user-management',
@@ -15,6 +16,7 @@ import {ConfirmationDialogComponent} from "../confirmation-dialog/confirmation-d
     MatTableModule,
     MatIconModule,
     MatButtonModule,
+    NgIf,
   ],
   templateUrl: './user-management.component.html',
   styleUrl: './user-management.component.css'

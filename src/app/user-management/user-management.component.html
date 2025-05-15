@@ -1,6 +1,11 @@
 <div class="content">
-  <h1 class="main-header">Lista użytkowników</h1>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 data-table" >
+  <h2 class="main-header">Lista użytkowników</h2>
+
+  <p *ngIf="dataSource.length == 0" class="empty-list-paragraph">
+    Nie ma jeszcze żadnych użytkowników. Kliknij przycisk, aby ich dodać!
+  </p>
+
+  <table *ngIf="dataSource.length > 0" mat-table [dataSource]="dataSource" class="mat-elevation-z8 data-table" >
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Imię </th>

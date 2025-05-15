@@ -24,3 +24,10 @@
   justify-self: center;
   margin: 20px;
 }
+
+.empty-list-paragraph {
+  color: #636363;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+}

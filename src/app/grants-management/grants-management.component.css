@@ -113,3 +113,11 @@
   width: 100%;
   height: 40px;
 }
+
+.empty-list-paragraph {
+  color: #636363;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  margin: 15px;
+}

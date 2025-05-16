@@ -5,8 +5,41 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @include mat.core();
 
-$my-primary: mat.m2-define-palette(mat.$m2-blue-palette, 500);
-$my-accent: mat.m2-define-palette(mat.$m2-blue-palette, A200, A100, A400);
+$rapid-palette: (
+  50: black,
+  100: #dde6f3,
+  200: #b4c9e4,
+  300: #7fa3d1,
+  400: #6992c9,
+  500: #5282c1,
+  600: #4072b4,
+  700: #f53142,
+  800: #305687,
+  900: #284770,
+  A100: #ffffff,
+  A200: #dde6f3,
+  A400: #6992c9,
+  A700: #38649d,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: black,
+    A700: white,
+  )
+);
+
+$my-primary: mat.m2-define-palette($rapid-palette, 50);
+$my-accent: mat.m2-define-palette($rapid-palette, 700);
 
 $my-theme: mat.m2-define-light-theme(
     (

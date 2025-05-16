@@ -1,0 +1,44 @@
+<h2 mat-dialog-title class="dialog-header" style="text-align: center">UZUPEŁNIJ DANIE UŻYTKOWNIKA</h2>
+<mat-dialog-content class="no-padding-div">
+
+  <h5 class="section-header">Imię</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz imię</mat-label>
+    <input [(ngModel)]="user.name" matInput required>
+  </mat-form-field>
+
+  <h5 class="section-header">Nazwisko</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz nazwisko</mat-label>
+    <input [(ngModel)]="user.lastname" matInput required>
+  </mat-form-field>
+
+  <h5 class="section-header">Numer indeksu</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz numer indeksu</mat-label>
+    <input [(ngModel)]="user.index" matInput required pattern="[0-9]{6}$">
+  </mat-form-field>
+
+  <h5 class="section-header">Numer konta</h5>
+
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Wpisz numer konta</mat-label>
+    <input [(ngModel)]="user.account" matInput required pattern="[0-9]{2}([ ][0-9]{4}){6}" (ngModelChange)="accountChange()">
+  </mat-form-field>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+  <button
+    class="action-button"
+    mat-flat-button
+    color="accent"
+    [disabled]="!isUserValid()"
+    [mat-dialog-close]="user">
+    Zapisz
+  </button>
+</mat-dialog-actions>

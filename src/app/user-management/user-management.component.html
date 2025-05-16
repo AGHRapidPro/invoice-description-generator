@@ -1,0 +1,52 @@
+<div class="content">
+  <h2 class="main-header">Lista użytkowników</h2>
+
+  <p *ngIf="dataSource.length == 0" class="empty-list-paragraph">
+    Nie ma jeszcze żadnych użytkowników. Kliknij przycisk, aby ich dodać!
+  </p>
+
+  <table *ngIf="dataSource.length > 0" mat-table [dataSource]="dataSource" class="mat-elevation-z8 data-table" >
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Imię </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastname">
+      <th mat-header-cell *matHeaderCellDef> Nazwisko </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="index">
+      <th mat-header-cell *matHeaderCellDef> Numer indeksu </th>
+      <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="account">
+      <th mat-header-cell *matHeaderCellDef> Numer konta </th>
+      <td mat-cell *matCellDef="let element"> {{element.account}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef> Edytuj </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button (click)="editUser(element)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef> Usuń </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button (click)="deleteUser(element)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <button mat-raised-button (click)="addNewUser()" class="add-button">Dodaj nowego użytkownika</button>
+</div>

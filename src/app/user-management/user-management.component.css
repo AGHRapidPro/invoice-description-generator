@@ -1,0 +1,33 @@
+.data-table {
+  width: 800px;
+  min-width: unset;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  justify-self: center;
+}
+
+.main-header {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.add-button {
+  height: 40px;
+  width: 400px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  justify-self: center;
+  margin: 20px;
+}
+
+.empty-list-paragraph {
+  color: #636363;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+}

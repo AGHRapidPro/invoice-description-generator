@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "lastname": "Doe",
+      "index": "123123",
+      "account": "11 2222 3333 4444 5555 6666 7777"
+    }
+  ],
+  "grants": [
+    {
+      "id": 1,
+      "code": "1/GRANT/2025",
+      "alias": "Grant Testowy",
+      "positions": [
+        {
+          "id": 1,
+          "alias": "Test 1",
+          "budget": 100.00
+        },
+        {
+          "id": 2,
+          "alias": "Test 2",
+          "budget": 123.00
+        },
+        {
+          "id": 3,
+          "alias": "Test 3",
+          "budget": 2000.11
+        }
+      ]
+    }
+  ]
+}

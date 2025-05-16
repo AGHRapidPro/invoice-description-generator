@@ -1,0 +1,15 @@
+.dialog-actions-container {
+  margin: 10px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.action-button {
+  height: 40px;
+  border-radius: 30px;
+}
+
+.no-padding-bottom-text {
+  padding-bottom: 0 !important;
+}

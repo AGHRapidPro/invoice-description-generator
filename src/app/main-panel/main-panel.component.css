@@ -75,3 +75,11 @@
   width: 800px;
   min-width: unset;
 }
+
+.empty-list-paragraph {
+  color: #636363;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  margin: 15px;
+}

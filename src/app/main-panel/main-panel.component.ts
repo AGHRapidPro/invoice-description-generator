@@ -136,6 +136,22 @@ export class MainPanelComponent implements OnInit {
     return "Faktura VAT nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
   }
 
+  public disableButtonGenerate() {
+    if (!this.invoiceDocument.financeGrant) {
+      return true;
+    }
+    if (!this.invoiceDocument.recipient) {
+      return true;
+    }
+    if (!this.invoiceDocument.invoiceNumber) {
+      return true;
+    }
+    if (!this.invoiceDocument.contractBasis) {
+      return true;
+    }
+    return this.invoiceDocument.items.length === 0;
+  }
+
   public generateItemsTable(): any {
     const headers = [
       { text: 'Wiersz', style: 'tableHeader'},

@@ -11,11 +11,11 @@ Use `docker buildx` to create a multi-platform image. This command builds the im
 
 ```bash
 docker buildx build \
-  --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
-  --platform linux/amd64,linux/arm64 \
-  -t aghrapidpro/invoice-description-generator:1.0 \
-  -t aghrapidpro/invoice-description-generator:latest \
-  --push .
+--build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
+--platform linux/amd64,linux/arm64 \
+-t aghrapidpro/invoice-description-generator:1.0 \
+-t aghrapidpro/invoice-description-generator:latest \
+--push .
 ```
 
 > **Note:** Make sure you have Docker Buildx set up. You can verify with `docker buildx ls`.
@@ -26,7 +26,7 @@ To run the container with the necessary volume mounts and port mappings, use the
 
 ```bash
 docker run --name invoice-description-generator --rm \
-  -v ./api/settings.json:/api/settings.json:rw \
-  -itp 8080:80 -p 3000:3000 \
-  aghrapidpro/invoice-description-generator:latest
+-v ./invoice-description-generator-data:/api/data \
+-p 80:80 -p 3000:3000 --pull=always \
+aghrapidpro/invoice-description-generator:latest
 ```

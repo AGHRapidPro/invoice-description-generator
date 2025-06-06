@@ -134,3 +134,5 @@ lib
 *.pdf
 pyvenv.cfg
 .DS_Store
+
+invoice-description-generator-data/

@@ -7,7 +7,7 @@ const port = 3000
 const bodyParser = require('body-parser');
 const {writeFileSync} = require("fs");
 
-const SETTINGS_PATH = path.join(__dirname, 'settings.json');
+const SETTINGS_PATH = path.join(__dirname, 'data/settings.json');
 
 app.use(cors());
 app.use(bodyParser.json());

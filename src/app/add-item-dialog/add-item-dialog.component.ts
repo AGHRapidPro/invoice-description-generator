@@ -64,8 +64,6 @@ export class AddItemDialogComponent implements OnInit {
   public grantPositions: GrantPosition[] = [];
   public myControl = new FormControl();
 
-  public cpvCategorySelected: any = null;
-
   constructor(public dialogRef: MatDialogRef<AddItemDialogComponent>,  @Inject(MAT_DIALOG_DATA) public data: any) {
     this.cpvList = data.cpvList;
     this.cpvListFiltered = data.cpvList;
@@ -89,7 +87,7 @@ export class AddItemDialogComponent implements OnInit {
   }
 
   public onOptionSelected(event: any) {
-    this.cpvCategorySelected = event.option.value;
+    this.invoiceItem.cpv = event.option.value;
   }
 
   protected readonly Number = Number;

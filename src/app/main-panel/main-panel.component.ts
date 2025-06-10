@@ -17,7 +17,7 @@ import { MatOptionModule } from "@angular/material/core";
 import { MatDialog } from "@angular/material/dialog";
 import { AddItemDialogComponent } from "../add-item-dialog/add-item-dialog.component";
 import { Grant, InvoiceDocVAT, InvoiceItem, Recipient } from "../models/invoice-model";
-import { CPVCategory } from "../models/cpv-model";
+import { CPV } from "../models/cpv-model";
 import { Alignment, Margins, TableCell } from "pdfmake/interfaces";
 import {
   MatCell,
@@ -79,7 +79,7 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 export class MainPanelComponent implements OnInit {
   private data: any = products;
 
-  public prelimList: CPVCategory[] = [];
+  public prelimList: CPV[] = [];
   public grantList: Grant[] = [];
   public recipientsList: Recipient[] = [];
   public contractBasis = ['zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP', 'umowa przetargowa', 'umowa ogólnouczelniana']
@@ -103,7 +103,7 @@ export class MainPanelComponent implements OnInit {
   ngOnInit() {
     const preliminaryData = this.data.default;
     preliminaryData.forEach((c: any) => {
-      this.prelimList.push(new CPVCategory(c));
+      this.prelimList.push(new CPV(c));
     });
   }
 

@@ -21,7 +21,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatIconModule } from "@angular/material/icon";
 import { GrantPosition, InvoiceItem } from "../models/invoice-model";
-import { CPVCategory } from "../models/cpv-model";
+import { CPV } from "../models/cpv-model";
 import { MatAutocomplete, MatAutocompleteTrigger } from "@angular/material/autocomplete";
 import { map , Observable, startWith } from "rxjs";
 
@@ -59,8 +59,8 @@ import { map , Observable, startWith } from "rxjs";
 
 export class AddItemDialogComponent implements OnInit {
   public invoiceItem: InvoiceItem = new InvoiceItem({});
-  public cpvList: CPVCategory[] = [];
-  public cpvListFiltered: Observable<CPVCategory[]>;
+  public cpvList: CPV[] = [];
+  public cpvListFiltered: Observable<CPV[]>;
   public grantPositions: GrantPosition[] = [];
   public myControl = new FormControl();
 
@@ -79,11 +79,11 @@ export class AddItemDialogComponent implements OnInit {
     );
   }
 
-  public displayFn(category: CPVCategory): string {
+  public displayFn(category: CPV): string {
     return category ? category.name : '';
   }
 
-  private _filter(value: string): { name: string; items: any[] }[] {
+  private _filter(value: string): CPV[] {
     const filterValue = value.toString().toLowerCase();
     return this.cpvList.filter(option => option.name.toLowerCase().includes(filterValue));
   }
@@ -92,4 +92,5 @@ export class AddItemDialogComponent implements OnInit {
     this.cpvCategorySelected = event.option.value;
   }
 
+  protected readonly Number = Number;
 }

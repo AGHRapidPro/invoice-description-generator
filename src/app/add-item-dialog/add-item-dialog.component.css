@@ -26,6 +26,22 @@
   align-items: flex-start;
 }
 
+.dropdown-category {
+  margin: 3px 0;
+  font-size: small;
+  font-weight: 100;
+}
+
+.dropdown-item {
+  margin: 0;
+  font-size: medium;
+}
+
+.dropdown-item-div {
+  display: grid;
+  grid-template-columns: 600px auto;
+}
+
 .example-radio-button {
   margin: 5px;
 }
@@ -61,4 +77,24 @@
   block-size: 1px;
   inset-inline-start: 0;
   inset-block-start: calc(1px * -1);
+}
+
+.price-div {
+  align-content: center;
+  display: grid;
+  justify-self: center;
+}
+
+.price-green {
+  font-size: smaller;
+  margin: 0;
+  font-style: italic;
+  color: green;
+}
+
+.price-red {
+  font-size: smaller;
+  margin: 0;
+  font-style: italic;
+  color: red;
 }

@@ -45,8 +45,8 @@
 
     <h5 class="section-header">Pozycje z faktury</h5>
 
-    <div *ngIf="dataSource.data.length == 0" style="text-align: center; padding: 15px">
-      Brak pozycji do wyświetlenia
+    <div *ngIf="dataSource.data.length == 0" class="empty-list-paragraph">
+      Brak pozycji do wyświetlenia. Dodaj pozycje do faktury klikając przycisk!
     </div>
 
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 data-table" *ngIf="dataSource.data.length > 0">
@@ -99,7 +99,7 @@
         color="accent"
         class="footer-button"
         (click)="generatePdf()"
-        [disabled]="!invoiceDocument.financeGrant"
+        [disabled]="disableButtonGenerate()"
         mat-raised-button
       >
         Pobierz plik PDF z fakturą

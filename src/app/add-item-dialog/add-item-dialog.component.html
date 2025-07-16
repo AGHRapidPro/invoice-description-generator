@@ -31,7 +31,7 @@
   <h5 class="section-header">CPV</h5>
 
   <mat-form-field appearance="outline" style="width: 100%">
-    <mat-label>Wybierz kategorię CPV</mat-label>
+    <mat-label>Wybierz produkt CPV</mat-label>
     <input
       type="text"
       placeholder="Pick an option"
@@ -41,19 +41,18 @@
       [matAutocomplete]="auto"
     />
     <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onOptionSelected($event)">
-      <mat-option *ngFor="let option of cpvListFiltered | async" [value]="option">
-        {{ option.name }}
+      <mat-option *ngFor="let item of cpvListFiltered | async" [value]="item">
+        <div class="dropdown-item-div">
+          <div>
+            <p class="dropdown-item">{{item.id}} | {{item.name}}</p>
+            <p class="dropdown-category">{{item.category}}</p>
+          </div>
+          <div class="price-div">
+            <p class="{{Number(item.pricePln) < 130000 ? 'price-green' : 'price-red' }}">{{item.pricePln}} PLN</p>
+          </div>
+        </div>
       </mat-option>
     </mat-autocomplete>
-  </mat-form-field>
-
-  <mat-form-field *ngIf="cpvCategorySelected" appearance="outline" style="width: 100%">
-    <mat-label>Wybierz produkt CPV</mat-label>
-    <mat-select [(ngModel)]="invoiceItem.cpv">
-      <mat-option *ngFor="let item of cpvCategorySelected.items" [value]="item">
-        {{item.name}}
-      </mat-option>
-    </mat-select>
   </mat-form-field>
 
 

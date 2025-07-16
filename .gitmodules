@@ -1,0 +1,3 @@
+[submodule "DZP-CPV-scraper"]
+	path = DZP-CPV-scraper
+	url = git@github.com:AGHRapidPro/DZP-CPV-scraper.git

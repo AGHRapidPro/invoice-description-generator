@@ -34,7 +34,7 @@ import {
 } from "@angular/material/table";
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
-import * as products from '../../assets/products.json';
+import * as products from '../../assets/cpv/latest.json';
 import { GrantsService } from "../services/grants.service";
 import { UsersService } from "../services/users.service";
 

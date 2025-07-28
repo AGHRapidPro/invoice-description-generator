@@ -18,6 +18,5 @@ COPY --from=builder /app/dist/invoice-generator/browser/ /usr/local/apache2/htdo
 COPY --from=builder /app/api/app.js /api/
 COPY --from=builder /app/api/node_modules/ /api/node_modules/
 RUN mkdir -p /api/data
-COPY --from=builder /app/DZP-CPV-scraper/ /app/DZP-CPV-scraper/
 CMD ["sh", "-c", "if [ ! -f /api/data/settings.json ]; then echo '{\"users\":[],\"grants\":[]}' > /api/data/settings.json; fi; node /api/app.js & exec httpd-foreground"]
 EXPOSE 80 3000

@@ -1,0 +1,3090 @@
+[
+  {
+    "name": "Materiały wzorcowe produktow roślinnych",
+    "category": "Produkty rolnictwa, hodowli, rybołówstwa, leśnictwa i podobne",
+    "lp": 2.0,
+    "code": "03000000-1",
+    "price_pln": "500.00",
+    "price_eur": "107.83"
+  },
+  {
+    "name": "Produkty ogrodnicze (rośliny uprawne, kwiaty)",
+    "category": "Produkty rolnictwa, hodowli, rybołówstwa, leśnictwa i podobne",
+    "lp": 3.0,
+    "code": "03121000-5",
+    "price_pln": "90360.00",
+    "price_eur": "19486.32"
+  },
+  {
+    "name": "Drewno",
+    "category": "Leśnictwo i pozyskiwanie drewna",
+    "lp": 5.0,
+    "code": "03410000-7",
+    "price_pln": "81697.57",
+    "price_eur": "17618.25"
+  },
+  {
+    "name": "Korek (Wyroby z korka, koszykarskie, wikliniarskie)",
+    "category": "Leśnictwo i pozyskiwanie drewna",
+    "lp": 6.0,
+    "code": "03430000-3",
+    "price_pln": "11500.00",
+    "price_eur": "2480.00"
+  },
+  {
+    "name": "Produkty szkółek leśnych ( rośliny, drzewa)",
+    "category": "Leśnictwo i pozyskiwanie drewna",
+    "lp": 7.0,
+    "code": "03450000-9",
+    "price_pln": "48000.00",
+    "price_eur": "10351.30"
+  },
+  {
+    "name": "Paliwa stałe (węgiel i paliwa na bazie węgla, węgiel i torf, koks), ropa naftowa, produkty naftowe",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 9.0,
+    "code": "09110000-3",
+    "price_pln": "8000.00",
+    "price_eur": "1725.22"
+  },
+  {
+    "name": "Dostawy paliw płynnych (gaz, benzyna, LPG, oleje napędowe, silnikowe)",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 10.0,
+    "code": "09120000-6",
+    "price_pln": "122500.00",
+    "price_eur": "26417.37"
+  },
+  {
+    "name": "Olej opałowy",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 11.0,
+    "code": "09135100-5",
+    "price_pln": "90000.00",
+    "price_eur": "19408.68"
+  },
+  {
+    "name": "Oleje do użytku w układach hydraulicznych i do innych celów",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 12.0,
+    "code": "09211600-7",
+    "price_pln": "17500.00",
+    "price_eur": "3773.91"
+  },
+  {
+    "name": "Materiały promieniotwórcze (w tym izotopy)",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 13.0,
+    "code": "09343000-5",
+    "price_pln": "128000.00",
+    "price_eur": "27603.46"
+  },
+  {
+    "name": "Panele fotowoltaiczne",
+    "category": "Produkty naftowe, paliwo, energia elektryczna i inne źródła energii",
+    "lp": 14.0,
+    "code": "09331200-0",
+    "price_pln": "236900.00",
+    "price_eur": "51087.97"
+  },
+  {
+    "name": "Piasek i glina, żwir, kruszywo, bentonit",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 16.0,
+    "code": "14200000-3",
+    "price_pln": "59600.00",
+    "price_eur": "12852.86"
+  },
+  {
+    "name": "Sole i czysty chlorek sodu, sole i tlenki metali o podwyższonej czystości",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 17.0,
+    "code": "14400000-5",
+    "price_pln": "128700.00",
+    "price_eur": "27754.42"
+  },
+  {
+    "name": "Materiały szlachetne i produkty pochodne (w tym srebro, platyna, złoto, pallad)",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 18.0,
+    "code": "14523000-3",
+    "price_pln": "156616.23",
+    "price_eur": "33774.61"
+  },
+  {
+    "name": "Pierwiastki chemiczne o wysokiej czystości",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 19.0,
+    "code": "14000000-1",
+    "price_pln": "151250.72",
+    "price_eur": "32617.52"
+  },
+  {
+    "name": "Rudy i stopy metali (ołów, cyna, cynk, miedź, żelazostopy, stale), tarcze ze stopów metali",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 20.0,
+    "code": "14600000-7",
+    "price_pln": "80568.48",
+    "price_eur": "17374.76"
+  },
+  {
+    "name": "Aluminium i produkty aluminiowe",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 21.0,
+    "code": "14000000-1",
+    "price_pln": "94696.24",
+    "price_eur": "20421.44"
+  },
+  {
+    "name": "Stopy niklu, tytanu, intermetaliki",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 22.0,
+    "code": "14722000-8",
+    "price_pln": "27890.00",
+    "price_eur": "6014.53"
+  },
+  {
+    "name": "Proszki (w tym: boru, magnezu, MgB2 ex-situ)",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 23.0,
+    "code": "14000000-1",
+    "price_pln": "323400.00",
+    "price_eur": "69741.86"
+  },
+  {
+    "name": "Materiały narzędziowe (pręty, blachy i kostki z materiałów specjalistycznych, stale, stopy specjalne, płyty graifowe, blachy stalowe, profile stalowe, ciągadła diamentowe i węglikowe (narzędzia do ciągnienia rur i drutów), rury z miedzi, stopów miedzi, niobu, stali, zestawy alundowe (rury, tygle, łódeczki), blachy i folie z miedzi, stopów miedzi, niobu, stali",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 24.0,
+    "code": "14000000-1",
+    "price_pln": "232400.00",
+    "price_eur": "50117.53"
+  },
+  {
+    "name": "Obudowy metalowe",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 25.0,
+    "code": "14000000-1",
+    "price_pln": "47520.00",
+    "price_eur": "10247.78"
+  },
+  {
+    "name": "Metale zwykłe, metale przejściowe ( w tym molibden, wolfram, żelazo metaliczne, chrom, mangan, kobalt, itr i cyrkon, niob, ind)",
+    "category": "Górnictwo, metale podstawowe i produkty pokrewne",
+    "lp": 26.0,
+    "code": "14700000-8",
+    "price_pln": "118205.05",
+    "price_eur": "25491.16"
+  },
+  {
+    "name": "Grafit",
+    "category": "Różne niemetalowe produkty mineralne (wyroby ścierne i ściernice, korund sztuczny, szkło , włókno szklane)",
+    "lp": 28.0,
+    "code": "14814000-0",
+    "price_pln": "49872.44",
+    "price_eur": "10755.09"
+  },
+  {
+    "name": "Wyroby ścierne, ściernice",
+    "category": "Różne niemetalowe produkty mineralne (wyroby ścierne i ściernice, korund sztuczny, szkło , włókno szklane)",
+    "lp": 29.0,
+    "code": "14810000-2",
+    "price_pln": "198100.00",
+    "price_eur": "42720.67"
+  },
+  {
+    "name": "Szkło",
+    "category": "Różne niemetalowe produkty mineralne (wyroby ścierne i ściernice, korund sztuczny, szkło , włókno szklane)",
+    "lp": 30.0,
+    "code": "14820000-5",
+    "price_pln": "121900.00",
+    "price_eur": "26287.98"
+  },
+  {
+    "name": "Włókno szklane",
+    "category": "Różne niemetalowe produkty mineralne (wyroby ścierne i ściernice, korund sztuczny, szkło , włókno szklane)",
+    "lp": 31.0,
+    "code": "14830000-8",
+    "price_pln": "10800.00",
+    "price_eur": "2329.04"
+  },
+  {
+    "name": "Materiały ścierne naturalne",
+    "category": "Różne niemetalowe produkty mineralne (wyroby ścierne i ściernice, korund sztuczny, szkło , włókno szklane)",
+    "lp": 32.0,
+    "code": "14522400-0",
+    "price_pln": "38500.00",
+    "price_eur": "8302.60"
+  },
+  {
+    "name": "Produkty spożywcze (mleko, cukier, herbata, soki, napoje, soki owocowe)",
+    "category": "Różne produkty spożywcze",
+    "lp": 35.0,
+    "code": "15810000-9",
+    "price_pln": "171360.00",
+    "price_eur": "36954.13"
+  },
+  {
+    "name": "Lody i produkty podobne",
+    "category": "Różne produkty spożywcze",
+    "lp": 35.1,
+    "code": "15555000-3",
+    "price_pln": "2720.00",
+    "price_eur": "586.57"
+  },
+  {
+    "name": "Produkty cukiernicze (ciastka, pieczywo, świeże wyroby ciastkarskie i piekarskie)",
+    "category": "Różne produkty spożywcze",
+    "lp": 36.0,
+    "code": "15842300-5",
+    "price_pln": "106550.00",
+    "price_eur": "22977.72"
+  },
+  {
+    "name": "Kawa",
+    "category": "Różne produkty spożywcze",
+    "lp": 37.0,
+    "code": "15861000-1",
+    "price_pln": "174970.00",
+    "price_eur": "37732.63"
+  },
+  {
+    "name": "Bibuła filtracyjna",
+    "category": "Różne produkty spożywcze",
+    "lp": 38.0,
+    "code": "15994000-2",
+    "price_pln": "8200.00",
+    "price_eur": "1768.35"
+  },
+  {
+    "name": "Kosiarki, ciągniki",
+    "category": "Maszyny rolnicze",
+    "lp": 40.0,
+    "code": "16310000-1",
+    "price_pln": "13000.00",
+    "price_eur": "2803.48"
+  },
+  {
+    "name": "Części maszyn rolniczych",
+    "category": "Maszyny rolnicze",
+    "lp": 41.0,
+    "code": "16810000-6",
+    "price_pln": "10500.00",
+    "price_eur": "2264.35"
+  },
+  {
+    "name": "Odzież reprezentacyjna (mundury), togi, birety",
+    "category": "Odzież",
+    "lp": 43.0,
+    "code": "18110000-3",
+    "price_pln": "27760.00",
+    "price_eur": "5986.50"
+  },
+  {
+    "name": "Odzież robocza, odzież przemysłowa, odzież ochronna",
+    "category": "Odzież",
+    "lp": 44.0,
+    "code": "18113000-4",
+    "price_pln": "255810.00",
+    "price_eur": "55165.94"
+  },
+  {
+    "name": "Odzież różna",
+    "category": "Odzież",
+    "lp": 45.0,
+    "code": "18230000-0",
+    "price_pln": "93000.00",
+    "price_eur": "20055.64"
+  },
+  {
+    "name": "Buty specjalne, robocze, osłony na obuwie do cleanroom",
+    "category": "Odzież",
+    "lp": 46.0,
+    "code": "18832000-0",
+    "price_pln": "104350.00",
+    "price_eur": "22503.29"
+  },
+  {
+    "name": "Bagaże, wyroby rymarskie,\n worki i torby",
+    "category": "Odzież",
+    "lp": 47.0,
+    "code": "18900000-8",
+    "price_pln": "32602.75",
+    "price_eur": "7030.85"
+  },
+  {
+    "name": "Tkaniny włókiennicze i podobne",
+    "category": "Skóra i tkaniny włókiennicze, tworzywa sztuczne i guma",
+    "lp": 49.0,
+    "code": "19200000-8",
+    "price_pln": "27300.00",
+    "price_eur": "5887.30"
+  },
+  {
+    "name": "Włókna tkane sztuczne, włókna węglowe, nić i przędza syntetyczna",
+    "category": "Skóra i tkaniny włókiennicze, tworzywa sztuczne i guma",
+    "lp": 50.0,
+    "code": "19420000-6",
+    "price_pln": "49000.00",
+    "price_eur": "10566.95"
+  },
+  {
+    "name": "Produkty z gumy, polistyrenu (osłony, sztaby), żywice naturalne, w tym epoksydowe",
+    "category": "Guma i tworzywa sztuczne",
+    "lp": 52.0,
+    "code": "19510000-4",
+    "price_pln": "81165.64",
+    "price_eur": "17503.53"
+  },
+  {
+    "name": "Pojemniki z utwardzanych tworzyw sztucznych",
+    "category": "Produkty z tworzyw sztucznych",
+    "lp": 54.0,
+    "code": "19520000-7",
+    "price_pln": "150250.00",
+    "price_eur": "32401.72"
+  },
+  {
+    "name": "Płyty, arkusze, taśma, folia i paski z tworzyw sztucznych",
+    "category": "Produkty z tworzyw sztucznych",
+    "lp": 55.0,
+    "code": "19520000-7",
+    "price_pln": "88680.00",
+    "price_eur": "19124.02"
+  },
+  {
+    "name": "Rury, przewody rurowe i węże z tworzyw sztucznych",
+    "category": "Produkty z tworzyw sztucznych",
+    "lp": 56.0,
+    "code": "19520000-7",
+    "price_pln": "126813.00",
+    "price_eur": "27347.48"
+  },
+  {
+    "name": "Żywice akrylowe (durakryl)",
+    "category": "Produkty z tworzyw sztucznych",
+    "lp": 57.0,
+    "code": "19520000-7",
+    "price_pln": "31700.00",
+    "price_eur": "6836.17"
+  },
+  {
+    "name": "Książki, broszury, ulotki, słowniki, mapy, itp.",
+    "category": "Drukowane książki, broszury i ulotki",
+    "lp": 59.0,
+    "code": "22111000-1",
+    "price_pln": "407470.00",
+    "price_eur": "87871.73"
+  },
+  {
+    "name": "Czasopisma zagraniczne",
+    "category": "Gazety, dzienniki, czasopisma i magazyny",
+    "lp": 61.0,
+    "code": "22211000-2",
+    "price_pln": "506700.00",
+    "price_eur": "109270.88"
+  },
+  {
+    "name": "Pocztówki, karty okolicznościowe i inne druki (obrazki, przedruki, wzory, fotografie)",
+    "category": "Gazety, dzienniki, czasopisma i magazyny",
+    "lp": 62.0,
+    "code": "22300000-3",
+    "price_pln": "17115.00",
+    "price_eur": "3690.88"
+  },
+  {
+    "name": "Materiały reklamowe i promocyjne",
+    "category": "Gazety, dzienniki, czasopisma i magazyny",
+    "lp": 63.0,
+    "code": "22462000-6",
+    "price_pln": "1483748.37",
+    "price_eur": "319973.34"
+  },
+  {
+    "name": "Rejestry, księgi rachunkowe, filury, formularze, systemy planowania (kalendarze, książki spotkań, wkłady do nich),",
+    "category": "Gazety, dzienniki, czasopisma i magazyny",
+    "lp": 64.0,
+    "code": "22800000-8",
+    "price_pln": "63400.00",
+    "price_eur": "13672.34"
+  },
+  {
+    "name": "Różne druki\npapier gazetowy, papier czerpany, termoczuły światłoczuły, termograficzny",
+    "category": "Gazety, dzienniki, czasopisma i magazyny",
+    "lp": 65.0,
+    "code": "22900000-9",
+    "price_pln": "36250.00",
+    "price_eur": "7817.39"
+  },
+  {
+    "name": "Odczynniki biologiczne specjalne",
+    "category": "Produkty chemiczne",
+    "lp": 67.0,
+    "code": "24000000-4",
+    "price_pln": "119525.41",
+    "price_eur": "25775.90"
+  },
+  {
+    "name": "Wzorce izotopowe",
+    "category": "Produkty chemiczne",
+    "lp": 68.0,
+    "code": "24315100-6",
+    "price_pln": "61130.35",
+    "price_eur": "13182.88"
+  },
+  {
+    "name": "Gotowe spoiwa do form odlewniczych lub rdzeni",
+    "category": "Produkty chemiczne",
+    "lp": 69.0,
+    "code": "24957100-8",
+    "price_pln": "21000.00",
+    "price_eur": "4528.69"
+  },
+  {
+    "name": "Pierwiastki chemiczne, kwasy i związki nieorganiczne, ciężka woda, izotopy i ich związki",
+    "category": "Produkty chemiczne",
+    "lp": 70.0,
+    "code": "24000000-4",
+    "price_pln": "197000.00",
+    "price_eur": "42483.45"
+  },
+  {
+    "name": "Podłoża krzemowe, podłoża STO - tlenki metali",
+    "category": "Produkty chemiczne",
+    "lp": 71.0,
+    "code": "24300000-7",
+    "price_pln": "72811.80",
+    "price_eur": "15702.01"
+  },
+  {
+    "name": "Barwniki i pigmenty",
+    "category": "Produkty chemiczne",
+    "lp": 72.0,
+    "code": "24200000-6",
+    "price_pln": "35937.60",
+    "price_eur": "7750.02"
+  },
+  {
+    "name": "Podłoża i materiały do nanoszenia cienkich warstw",
+    "category": "Produkty chemiczne",
+    "lp": 73.0,
+    "code": "24000000-4",
+    "price_pln": "187000.00",
+    "price_eur": "40326.93"
+  },
+  {
+    "name": "Odczynniki do litografii",
+    "category": "Produkty chemiczne",
+    "lp": 74.0,
+    "code": "33696500-0",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "Ciekły hel",
+    "category": "Produkty chemiczne",
+    "lp": 75.0,
+    "code": "24111300-8",
+    "price_pln": "21000.00",
+    "price_eur": "4528.69"
+  },
+  {
+    "name": "Gazy specjalne, mikstura gazów szlachetnych",
+    "category": "Gazy",
+    "lp": 77.0,
+    "code": "24100000-5",
+    "price_pln": "319400.00",
+    "price_eur": "68879.26"
+  },
+  {
+    "name": "Azot ciekły",
+    "category": "Gazy",
+    "lp": 78.0,
+    "code": "24111800-3",
+    "price_pln": "139500.00",
+    "price_eur": "30083.46"
+  },
+  {
+    "name": "Nawozy azotowe i związki azotu",
+    "category": "Gazy",
+    "lp": 79.0,
+    "code": "24400000-8",
+    "price_pln": "22000.00",
+    "price_eur": "4744.34"
+  },
+  {
+    "name": "Tworzywa sztuczne w formach podstawowych, poliamidy w formach podstawowych",
+    "category": "Gazy",
+    "lp": 80.0,
+    "code": "24500000-9",
+    "price_pln": "52395.70",
+    "price_eur": "11299.24"
+  },
+  {
+    "name": "Kleje, smary",
+    "category": "Produkty chemiczne wysokowartościowe",
+    "lp": 82.0,
+    "code": "24910000-6",
+    "price_pln": "50241.97",
+    "price_eur": "10834.78"
+  },
+  {
+    "name": "Specjalistyczne produkty chemiczne",
+    "category": "Produkty chemiczne wysokowartościowe",
+    "lp": 83.0,
+    "code": "24950000-8",
+    "price_pln": "207457.00",
+    "price_eur": "44738.52"
+  },
+  {
+    "name": "Materiały do przygotowania cienkich folii",
+    "category": "Produkty chemiczne wysokowartościowe",
+    "lp": 84.0,
+    "code": "24900000-3",
+    "price_pln": "134605.99",
+    "price_eur": "29028.05"
+  },
+  {
+    "name": "Chemikalia do uzdatniania wody",
+    "category": "Produkty chemiczne wysokowartościowe",
+    "lp": 85.0,
+    "code": "24962000-5",
+    "price_pln": "140000.00",
+    "price_eur": "30191.28"
+  },
+  {
+    "name": "Maszyny biurowe (gilotyny, bindownice, niszczarki)",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 88.0,
+    "code": "30123000-7",
+    "price_pln": "103632.00",
+    "price_eur": "22348.45"
+  },
+  {
+    "name": "Części i akesoria do maszyn biurowych",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 89.0,
+    "code": "30124000-4",
+    "price_pln": "49100.00",
+    "price_eur": "10588.51"
+  },
+  {
+    "name": "Akcesoria do identyfikacji osób",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 90.0,
+    "code": "30191140-7",
+    "price_pln": "18170.00",
+    "price_eur": "3918.40"
+  },
+  {
+    "name": "Pieczątki z napisami",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 91.0,
+    "code": "30192153-8",
+    "price_pln": "49663.00",
+    "price_eur": "10709.93"
+  },
+  {
+    "name": "TABLICE (do pisania kredą, tablice do flipchartów, do planowania, do elektronicznego kopiowania, tablice korkowe, do wycierania na sucho lub akcesoria), tablica/mapa dotykowa kampusu AGH dla osób z dysfunkcją wzroku",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 92.0,
+    "code": "30195000-2",
+    "price_pln": "52800.00",
+    "price_eur": "11386.43"
+  },
+  {
+    "name": "Tablice informacyjne (budowlane, tablice zewnętrzne)",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 93.0,
+    "code": "30100000-0",
+    "price_pln": "38750.00",
+    "price_eur": "8356.52"
+  },
+  {
+    "name": "Zadrukowane wyroby papiernicze, z wyjątkiem formularzy \n(zadrukowane: koperty, papier firmowy, listowy etykiety- w tym kreskowe, druki okazjonalne)",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 94.0,
+    "code": "30199700-7",
+    "price_pln": "113450.00",
+    "price_eur": "24465.72"
+  },
+  {
+    "name": "Tabliczki na wiadomości (nakładki na poręcze z alfabetem brajla dla osób z problemami wzroku)",
+    "category": "MASZYNY BIUROWE, \nsprzęt i materiały, z wyjątkiem komputerów, drukarek i mebli",
+    "lp": 95.0,
+    "code": "30193800-6",
+    "price_pln": "17600.00",
+    "price_eur": "3795.48"
+  },
+  {
+    "name": "E-booki i czytniki",
+    "category": "URZĄDZENIA KOMPUTEROWE",
+    "lp": 97.0,
+    "code": "30200000-1",
+    "price_pln": "10100.00",
+    "price_eur": "2178.09"
+  },
+  {
+    "name": "Komputery - zestawy komputerowe, all in one, stracje robocze, stacje obliczeniowe, serwery, macierze dyskowe, platformy komputerowe, urządzenia do przetwarzania danych, okulary wirtualnej rzeczywistości, systemy rzeczywstości rozszerzonej, konsole",
+    "category": "URZĄDZENIA KOMPUTEROWE",
+    "lp": 98.0,
+    "code": "30200000-1",
+    "price_pln": "4597195.45",
+    "price_eur": "991394.50"
+  },
+  {
+    "name": "Laptopy - komputery przenośne, notebooki, tablety",
+    "category": "URZĄDZENIA KOMPUTEROWE",
+    "lp": 99.0,
+    "code": "30213100-6",
+    "price_pln": "1820922.54",
+    "price_eur": "392685.63"
+  },
+  {
+    "name": "Drukarki, plotery, kopiarki podręczne, urządzenia wielofunkcyjne, kserokopiarki  wysokowydajne (w tym najem, dzierżawa)",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 101.0,
+    "code": "30232000-4",
+    "price_pln": "577518.79",
+    "price_eur": "124543.10"
+  },
+  {
+    "name": "Drukarki 3D, skanery 3D",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 102.0,
+    "code": "30232100-5",
+    "price_pln": "2017568.62",
+    "price_eur": "435092.76"
+  },
+  {
+    "name": "Materiały eksploatacyjne do drukarki 3D",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 103.0,
+    "code": "30237100-0",
+    "price_pln": "344915.85",
+    "price_eur": "74381.80"
+  },
+  {
+    "name": "Części komputerowe DCK (w tym monitory, ekrany kopmuterowe, nośniki danych)",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 104.0,
+    "code": "30237100-0",
+    "price_pln": "782731.00",
+    "price_eur": "168797.52"
+  },
+  {
+    "name": "Czytniki magnetyczne lub optyczne, czytniki kart inteligentnych",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 105.0,
+    "code": "30233300-4",
+    "price_pln": "26500.00",
+    "price_eur": "5714.78"
+  },
+  {
+    "name": "Zasilacze do laptopów, baterie do laptopów",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 106.0,
+    "code": "30237100-0",
+    "price_pln": "89200.00",
+    "price_eur": "19236.16"
+  },
+  {
+    "name": "UPS, zasilacze laboratoryjne",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 107.0,
+    "code": "30237100-0",
+    "price_pln": "351500.00",
+    "price_eur": "75801.69"
+  },
+  {
+    "name": "Czujniki elektryczne, czujniki laserowe, czujniki piezoelektryczne. Sensory i biosensory",
+    "category": "Części komputerowe (pamięci, dyski, procesory, płyty główne, kable komputerowe, itp.), urządzenia peryferyjne (klawiatury, myszki, )",
+    "lp": 108.0,
+    "code": "30237475-9",
+    "price_pln": "917900.00",
+    "price_eur": "197946.99"
+  },
+  {
+    "name": "Zasilacze nieprogramowalne",
+    "category": "ELEKTRYCZNE - maszyny, aparatura, urządzenia, wyroby, oświetlenie",
+    "lp": 110.0,
+    "code": "31000000-6",
+    "price_pln": "113840.00",
+    "price_eur": "24549.83"
+  },
+  {
+    "name": "Silniki elektryczne, sterowniki silników bezszczotkowych",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 112.0,
+    "code": "31110000-0",
+    "price_pln": "66782.05",
+    "price_eur": "14401.68"
+  },
+  {
+    "name": "Silniki krokowe wraz ze sterownikiem i oprzyrządowaniem",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 113.0,
+    "code": "31100000-7",
+    "price_pln": "32560.00",
+    "price_eur": "7021.63"
+  },
+  {
+    "name": "czujniki ekstensometryczne",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 114.0,
+    "code": "31100000-7",
+    "price_pln": "17100.00",
+    "price_eur": "3687.65"
+  },
+  {
+    "name": "Generatory",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 115.0,
+    "code": "31120000-3",
+    "price_pln": "151042.28",
+    "price_eur": "32572.57"
+  },
+  {
+    "name": "Układy chłodzące, układy chłodzące chłodziarki helowe",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 116.0,
+    "code": "31140000-9",
+    "price_pln": "106000.00",
+    "price_eur": "22859.11"
+  },
+  {
+    "name": "Stateczniki do lamp wyładowczych lub świetlówek, falowniki",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 117.0,
+    "code": "31150000-2",
+    "price_pln": "35500.00",
+    "price_eur": "7655.65"
+  },
+  {
+    "name": "Bezprzestojowe źródła energii",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 118.0,
+    "code": "31154000-0",
+    "price_pln": "6000.00",
+    "price_eur": "1293.91"
+  },
+  {
+    "name": "Części silników elektrycznych, generatorów i transformatorów",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 119.0,
+    "code": "31160000-5",
+    "price_pln": "20500.00",
+    "price_eur": "4420.87"
+  },
+  {
+    "name": "Transformatory",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 120.0,
+    "code": "31170000-8",
+    "price_pln": "23000.00",
+    "price_eur": "4960.00"
+  },
+  {
+    "name": "Aparatura do przesyłu i eksploatacji energii elektrycznej",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 121.0,
+    "code": "31200000-8",
+    "price_pln": "56000.00",
+    "price_eur": "12076.51"
+  },
+  {
+    "name": "Panele kontrolne",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 122.0,
+    "code": "31211110-2",
+    "price_pln": "16200.00",
+    "price_eur": "3493.56"
+  },
+  {
+    "name": "Elektryczna aparatura do wyłączania lub ochrony obwodów elektrycznych",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 123.0,
+    "code": "31210000-1",
+    "price_pln": "15200.00",
+    "price_eur": "3277.91"
+  },
+  {
+    "name": "Elementy składowe obwodów elektrycznych",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 124.0,
+    "code": "31220000-4",
+    "price_pln": "65887.50",
+    "price_eur": "14208.77"
+  },
+  {
+    "name": "Komórki paliwowe (stos ogniw paliwowych, podłoża do ogniw paliwowych)",
+    "category": "Elektryczne silniki, generatory i transformatory",
+    "lp": 125.0,
+    "code": "31122100-8",
+    "price_pln": "56000.00",
+    "price_eur": "12076.51"
+  },
+  {
+    "name": "Drut i kabel izolowany, kable energetyczne, akcesoria do kabli,, zasilacze wysokiego napięcia, sloty, w tym kasety NIM",
+    "category": "Drut i kabel izolowany, akcesoria do kabli",
+    "lp": 127.0,
+    "code": "31300000-9",
+    "price_pln": "115405.00",
+    "price_eur": "24887.32"
+  },
+  {
+    "name": "Przewodniki elektryczne do celów przetwarzania danych i sterowania",
+    "category": "Drut i kabel izolowany, akcesoria do kabli",
+    "lp": 128.0,
+    "code": "31350000-4",
+    "price_pln": "41500.00",
+    "price_eur": "8949.56"
+  },
+  {
+    "name": "Materiały eksploatacyjne do spawarki",
+    "category": "Drut i kabel izolowany, akcesoria do kabli",
+    "lp": 129.0,
+    "code": "31300000-9",
+    "price_pln": "15700.00",
+    "price_eur": "3385.74"
+  },
+  {
+    "name": "Komory galwaniczne, baterie, akumulatory elektryczne, powerbanki",
+    "category": "Akumulatory, komory galwaniczne i baterie galwaniczne",
+    "lp": 131.0,
+    "code": "31410000-3",
+    "price_pln": "129450.00",
+    "price_eur": "27916.15"
+  },
+  {
+    "name": "Lampy i oprawy oświetleniowe",
+    "category": "Urządzenia oświetleniowe i lampy elektryczne",
+    "lp": 133.0,
+    "code": "31500000-1",
+    "price_pln": "76600.00",
+    "price_eur": "16518.95"
+  },
+  {
+    "name": "Żarówki do rzutników multimedialnych",
+    "category": "Urządzenia oświetleniowe i lampy elektryczne",
+    "lp": 134.0,
+    "code": "31500000-1",
+    "price_pln": "56100.00",
+    "price_eur": "12098.08"
+  },
+  {
+    "name": "Lampy rentgenowskie",
+    "category": "Urządzenia oświetleniowe i lampy elektryczne",
+    "lp": 135.0,
+    "code": "31500000-1",
+    "price_pln": "308000.00",
+    "price_eur": "66420.82"
+  },
+  {
+    "name": "Lampy UV",
+    "category": "Urządzenia oświetleniowe i lampy elektryczne",
+    "lp": 136.0,
+    "code": "31500000-1",
+    "price_pln": "28264.00",
+    "price_eur": "6095.19"
+  },
+  {
+    "name": "Promienniki do lamp ultrafioletowych",
+    "category": "Urządzenia oświetleniowe i lampy elektryczne",
+    "lp": 137.0,
+    "code": "31515000-9",
+    "price_pln": "4200.00",
+    "price_eur": "905.74"
+  },
+  {
+    "name": "Sprzęt elektryczny do silników i pojazdów mechanicznych",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 139.0,
+    "code": "31610000-5",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "Dźwiękowa i wizualna aparatura sygnalizacyjna",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 140.0,
+    "code": "31620000-8",
+    "price_pln": "105760.00",
+    "price_eur": "22807.36"
+  },
+  {
+    "name": "Magnesy",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 141.0,
+    "code": "31630000-1",
+    "price_pln": "28300.00",
+    "price_eur": "6102.95"
+  },
+  {
+    "name": "Maszyny i aparatura jednozadaniowa, aparatura badawcza do Spin-coatingu",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 142.0,
+    "code": "31640000-4",
+    "price_pln": "100000.00",
+    "price_eur": "21565.20"
+  },
+  {
+    "name": "Różne rejestratory danych",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 143.0,
+    "code": "31644000-2",
+    "price_pln": "142900.00",
+    "price_eur": "30816.67"
+  },
+  {
+    "name": "Elektrody węglowe",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 144.0,
+    "code": "31660000-0",
+    "price_pln": "107600.00",
+    "price_eur": "23204.16"
+  },
+  {
+    "name": "Elektryczne części maszyn i aparatury",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 145.0,
+    "code": "31670000-3",
+    "price_pln": "234065.04",
+    "price_eur": "50476.60"
+  },
+  {
+    "name": "Obudowy szklane",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 146.0,
+    "code": "31671100-1",
+    "price_pln": "60100.00",
+    "price_eur": "12960.69"
+  },
+  {
+    "name": "Aparatura i sprzęt sterujący, sterowane źródła wysokiego napięcia, źródła mierzące, urządzenia sterujące procesem przemysłowym",
+    "category": "Sprzęt i aparatura elektryczna",
+    "lp": 147.0,
+    "code": "31682210-5",
+    "price_pln": "145300.00",
+    "price_eur": "31334.24"
+  },
+  {
+    "name": "Urządzenie elektroniczne do pomiaru parametrów sygnałów elektrycznych",
+    "category": "Urządzenia elektroniczne, elektromechaniczne i elektrotechniczne",
+    "lp": 148.1,
+    "code": "31700000-3",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "Zestaw uruchomieniowy",
+    "category": "Urządzenia elektroniczne, elektromechaniczne i elektrotechniczne",
+    "lp": 149.0,
+    "code": "31700000-3",
+    "price_pln": "158350.00",
+    "price_eur": "34148.50"
+  },
+  {
+    "name": "Układ elektroniczny z mikrokontrolerem",
+    "category": "Artykuły elektroniczne",
+    "lp": 151.0,
+    "code": "31711000-3",
+    "price_pln": "120455.00",
+    "price_eur": "25976.36"
+  },
+  {
+    "name": "Części podzespołów elektronicznych - zamówienia jednorazowe",
+    "category": "Artykuły elektroniczne",
+    "lp": 152.0,
+    "code": "31711500-8",
+    "price_pln": "331000.00",
+    "price_eur": "71380.82"
+  },
+  {
+    "name": "Podzespoły elektroniczne",
+    "category": "Artykuły elektroniczne",
+    "lp": 153.0,
+    "code": "31711000-3",
+    "price_pln": "276500.00",
+    "price_eur": "59627.78"
+  },
+  {
+    "name": "Podzespoły światłowodowe",
+    "category": "Artykuły elektroniczne",
+    "lp": 154.0,
+    "code": "31712346-7",
+    "price_pln": "144000.00",
+    "price_eur": "31053.89"
+  },
+  {
+    "name": "Mikrofalowy sprzęt radiowy (między innymi złącza, wzmacniacze, przesuwniki fazy, podzielniki częstotliwości, rozdzielacze mocy, trójniki, laminaty mikrofalowe, wzmaczniacze sygnału w formacie NIM)",
+    "category": "Artykuły elektroniczne",
+    "lp": 155.0,
+    "code": "31711423-4",
+    "price_pln": "129500.00",
+    "price_eur": "27926.94"
+  },
+  {
+    "name": "Lampy elektronowe",
+    "category": "Artykuły elektroniczne",
+    "lp": 156.0,
+    "code": "31711430-6",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "Elektroniczne elementy składowe (między innymi złącza, elektrody pomiarowe, diody kalibrowane, pianki przewodzące)",
+    "category": "Artykuły elektroniczne",
+    "lp": 157.0,
+    "code": "31711100-4",
+    "price_pln": "207238.39",
+    "price_eur": "44691.38"
+  },
+  {
+    "name": "Elektroniczne elementy składowe (między innymi złącza, elektrody pomiarowe, diody kalibrowane - zamówienia, sukcesywne, jednorazowe - WFiIS",
+    "category": "Artykuły elektroniczne",
+    "lp": 157.1,
+    "code": "31711000-3",
+    "price_pln": "75000.00",
+    "price_eur": "16173.90"
+  },
+  {
+    "name": "Przetworniki, enkodery liniowe",
+    "category": "Artykuły elektroniczne",
+    "lp": 158.0,
+    "code": "31711120-0",
+    "price_pln": "72386.15",
+    "price_eur": "15610.22"
+  },
+  {
+    "name": "Urządzenia mikrofalowe, generatory sygnałów mikrofalowych",
+    "category": "Artykuły elektroniczne",
+    "lp": 159.0,
+    "code": "31711422-7",
+    "price_pln": "58000.00",
+    "price_eur": "12507.82"
+  },
+  {
+    "name": "Zestawy ewaluacyjne",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 161.0,
+    "code": "31712110-4",
+    "price_pln": "132500.00",
+    "price_eur": "28573.89"
+  },
+  {
+    "name": "Układy scalone zlecane do wykonania",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 162.0,
+    "code": "31712110-4",
+    "price_pln": "169616.26",
+    "price_eur": "36578.09"
+  },
+  {
+    "name": "Analogowe układy scalone",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 163.0,
+    "code": "31712110-4",
+    "price_pln": "45500.00",
+    "price_eur": "9812.17"
+  },
+  {
+    "name": "Cyfrowe układy scalone",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 164.0,
+    "code": "31712110-4",
+    "price_pln": "49000.00",
+    "price_eur": "10566.95"
+  },
+  {
+    "name": "Specjalizowane układy scalone",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 165.0,
+    "code": "31712110-4",
+    "price_pln": "50500.00",
+    "price_eur": "10890.43"
+  },
+  {
+    "name": "Dostawa specjalizowanych układów scalonych w technologii TSMC 40nm CMOS LP MS/RF lub równoważnej wg. wykonanego na AGH projektu",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 166.0,
+    "code": "31712110-4",
+    "price_pln": "325000.00",
+    "price_eur": "70086.91"
+  },
+  {
+    "name": "Dostawa waferów krzemowych, zawierających detektory pikselowe",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 167.0,
+    "code": "31712110-4",
+    "price_pln": "214000.00",
+    "price_eur": "46149.53"
+  },
+  {
+    "name": "Prototypy dedykowanych układów ASIC w technologii TSMC CMOS 130 nm WFiIS",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 168.0,
+    "code": "31712110-4",
+    "price_pln": "49000.00",
+    "price_eur": "10566.95"
+  },
+  {
+    "name": "Prototypy dedykowanych układów ASIC w technologii TSMC CMOS 28 nm",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 169.0,
+    "code": "31712110-4",
+    "price_pln": "82000.00",
+    "price_eur": "17683.47"
+  },
+  {
+    "name": "Prototypy dedykowanych układów ASIC w technologii TSMC CMOS 65 nm",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 170.0,
+    "code": "31712110-4",
+    "price_pln": "66000.00",
+    "price_eur": "14233.03"
+  },
+  {
+    "name": "Dostawa waferów krzemowych",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 171.0,
+    "code": "31712110-4",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "Układy programowalne",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 172.0,
+    "code": "31712110-4",
+    "price_pln": "34500.00",
+    "price_eur": "7439.99"
+  },
+  {
+    "name": "Karty telefoniczne",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 173.0,
+    "code": "31712111-1",
+    "price_pln": "1180.00",
+    "price_eur": "254.47"
+  },
+  {
+    "name": "Karty zawierające obwody scalone",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 174.0,
+    "code": "31712113-5",
+    "price_pln": "22000.00",
+    "price_eur": "4744.34"
+  },
+  {
+    "name": "Karty pomiarowe (w tym karty NI)",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 175.0,
+    "code": "31712110-4",
+    "price_pln": "61123.96",
+    "price_eur": "13181.51"
+  },
+  {
+    "name": "Karty do legitymacji",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 176.0,
+    "code": "31712110-4",
+    "price_pln": "100000.00",
+    "price_eur": "21565.20"
+  },
+  {
+    "name": "Karty do kontroli dostępu, karty magnetyczne",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 177.0,
+    "code": "31712110-4",
+    "price_pln": "18000.00",
+    "price_eur": "3881.74"
+  },
+  {
+    "name": "Karty zbliżeniowe",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 178.0,
+    "code": "31712110-4",
+    "price_pln": "7200.00",
+    "price_eur": "1552.69"
+  },
+  {
+    "name": "Mikropodzespoły, mikroukłady elektroniczne na bazie memrystorów",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 179.0,
+    "code": "31712115-9",
+    "price_pln": "56096.00",
+    "price_eur": "12097.22"
+  },
+  {
+    "name": "Mikroprocesory",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 180.0,
+    "code": "31712116-6",
+    "price_pln": "62000.00",
+    "price_eur": "13370.43"
+  },
+  {
+    "name": "Pakiety układów scalonych",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 181.0,
+    "code": "31712117-3",
+    "price_pln": "22500.00",
+    "price_eur": "4852.17"
+  },
+  {
+    "name": "Maszyny i aparatura mikroelektroniczna",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 182.0,
+    "code": "31712100-1",
+    "price_pln": "436400.00",
+    "price_eur": "94110.54"
+  },
+  {
+    "name": "Mikrosystemy",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 183.0,
+    "code": "31712200-2",
+    "price_pln": "41939.02",
+    "price_eur": "9044.23"
+  },
+  {
+    "name": "Oscylatory oparte na kryształach",
+    "category": "Elektroniczne układy scalone i mikromoduły",
+    "lp": 184.0,
+    "code": "31712336-4",
+    "price_pln": "2000.00",
+    "price_eur": "431.30"
+  },
+  {
+    "name": "Obwody drukowane (obwody, zbiorcze, indywidualne, półprzewodniki, diody, tranzystory), indywidualne obwody drukowane, zestawy do wytarzania przelotek, preparaty do wytwarzania obwodów drukowanych, mikrofalowe ukscalone, obsadzone kryształy piezoelektryczne",
+    "category": "Obwody drukowane",
+    "lp": 186.0,
+    "code": "31712310-6",
+    "price_pln": "182209.00",
+    "price_eur": "39293.74"
+  },
+  {
+    "name": "Urządzenia elektromechaniczne",
+    "category": "Obwody drukowane",
+    "lp": 187.0,
+    "code": "31720000-9",
+    "price_pln": "54752.03",
+    "price_eur": "11807.39"
+  },
+  {
+    "name": "Sprzęt elektrotechniczny",
+    "category": "Obwody drukowane",
+    "lp": 188.0,
+    "code": "31730000-2",
+    "price_pln": "91200.00",
+    "price_eur": "19667.46"
+  },
+  {
+    "name": "Moduły",
+    "category": "Obwody drukowane",
+    "lp": 189.0,
+    "code": "31731100-0",
+    "price_pln": "129000.00",
+    "price_eur": "27819.11"
+  },
+  {
+    "name": "Urządzenia multimedialne, wideokonferencyjne, projektory multimedialne, ekrany projekcyjne, tablice multimedialne",
+    "category": "Sprzęt radiowy, telewizyjny, komunikacyjny, telekomunikacyjny i podobny",
+    "lp": 191.0,
+    "code": "32322000-6",
+    "price_pln": "384170.00",
+    "price_eur": "82847.04"
+  },
+  {
+    "name": "Kamery do pracy w warunkach podwodnych, oświetlenie do kamery podwodnej",
+    "category": "Sprzęt radiowy, telewizyjny, komunikacyjny, telekomunikacyjny i podobny",
+    "lp": 192.0,
+    "code": "32330000-5",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "System Telewizji Przemysłowej",
+    "category": "Sprzęt radiowy, telewizyjny, komunikacyjny, telekomunikacyjny i podobny",
+    "lp": 193.0,
+    "code": "32000000-3",
+    "price_pln": "65000.00",
+    "price_eur": "14017.38"
+  },
+  {
+    "name": "Urządzenia telewizyjne i radiowe",
+    "category": "Sprzęt radiowy, telewizyjny, komunikacyjny, telekomunikacyjny i podobny",
+    "lp": 194.0,
+    "code": "32324300-3",
+    "price_pln": "29000.00",
+    "price_eur": "6253.91"
+  },
+  {
+    "name": "Urządzenia telekomunikacyjne",
+    "category": "Sprzęt radiowy, telewizyjny, komunikacyjny, telekomunikacyjny i podobny",
+    "lp": 195.0,
+    "code": "32523000-5",
+    "price_pln": "19200.00",
+    "price_eur": "4140.52"
+  },
+  {
+    "name": "Sprzęt muzyczny (np.mikrofony, głośniki i inne akcesoria do sprzętu dźwiękowego, rejestratory głosu, aparatura do nagrywania i powielania dźwięku i obrazu itp.), części sprzętu dźwiękowego i video, okablowanie audio, statywy, macierze mikrofonowe itp.",
+    "category": "Centrale telefoniczne",
+    "lp": 197.0,
+    "code": "32340000-8",
+    "price_pln": "259189.00",
+    "price_eur": "55894.63"
+  },
+  {
+    "name": "Urządzenia do przesyłu danych",
+    "category": "Centrale telefoniczne",
+    "lp": 198.0,
+    "code": "32260000-3",
+    "price_pln": "62260.16",
+    "price_eur": "13426.53"
+  },
+  {
+    "name": "Urządzenia sieciowe (w tym koncentratory sieci, klastry, elementy składowe sieci)",
+    "category": "Sieci",
+    "lp": 201.0,
+    "code": "32424000-1",
+    "price_pln": "824500.00",
+    "price_eur": "177805.09"
+  },
+  {
+    "name": "System telemetryczny",
+    "category": "Sieci",
+    "lp": 202.0,
+    "code": "32441300-9",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "Telefony bezprzewodowe, telefony komórkowe, smartphony",
+    "category": "Urządzenia i artykuły telekomunikacyjne",
+    "lp": 204.0,
+    "code": "32552110-1",
+    "price_pln": "143100.00",
+    "price_eur": "30859.80"
+  },
+  {
+    "name": "Kable światłowodowe",
+    "category": "Urządzenia i artykuły telekomunikacyjne",
+    "lp": 205.0,
+    "code": "32562000-0",
+    "price_pln": "62700.00",
+    "price_eur": "13521.38"
+  },
+  {
+    "name": "Różne urządzenia medyczne (w tym do spektroskopii), sprzęt obrazujący pogłosowy, ultradźwiękowy i dopplerowski, autoklawy, myjki ultradźwiękowe, inkubator, elektrody EKG",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 207.0,
+    "code": "33100000-1",
+    "price_pln": "837992.76",
+    "price_eur": "180714.83"
+  },
+  {
+    "name": "Dedykowany system ultrasonograficzny wraz z oprogramowaniem",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 207.1,
+    "code": "33000000-0",
+    "price_pln": "56017.00",
+    "price_eur": "12080.18"
+  },
+  {
+    "name": "Systemy rejestrujące i urządzenia badawcze, Elektroencefalografy",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 208.0,
+    "code": "33120000-7",
+    "price_pln": "168500.00",
+    "price_eur": "36337.37"
+  },
+  {
+    "name": "Materiały medyczne w tym materiały kriogeniczne",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 209.0,
+    "code": "33140000-3",
+    "price_pln": "137013.89",
+    "price_eur": "29547.32"
+  },
+  {
+    "name": "Materiały daktyloskopijne i kryminalistyczne na użytek zajęć kierunku Nowoczesne technologie w kryminalistyce (wyroby diagnostyczne)",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 210.0,
+    "code": "33124130-5",
+    "price_pln": "2000.00",
+    "price_eur": "431.30"
+  },
+  {
+    "name": "Sondy",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 211.0,
+    "code": "33141641-5",
+    "price_pln": "129687.56",
+    "price_eur": "27967.38"
+  },
+  {
+    "name": "Stoły medyczne",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 211.1,
+    "code": "33192200-4",
+    "price_pln": "19710.00",
+    "price_eur": "4250.50"
+  },
+  {
+    "name": "Sprzęt dla osób niepełnosprawnych",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 211.2,
+    "code": "33196200-2",
+    "price_pln": "62000.00",
+    "price_eur": "13370.43"
+  },
+  {
+    "name": "Produkty farmaceutyczne",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 212.0,
+    "code": "33600000-6",
+    "price_pln": "47400.00",
+    "price_eur": "10221.91"
+  },
+  {
+    "name": "Okulary, gogle ochronne",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 213.0,
+    "code": "33734000-4",
+    "price_pln": "38940.93",
+    "price_eur": "8397.69"
+  },
+  {
+    "name": "Zestawy pierwszej pomocy",
+    "category": "Urządzenia medyczne, farmaceutyki i produkty do pielęgnacji ciała",
+    "lp": 214.0,
+    "code": "33141623-3",
+    "price_pln": "114550.00",
+    "price_eur": "24702.94"
+  },
+  {
+    "name": "Części i akcesoria do pojazdów, części i akcesoria do rowerów",
+    "category": "Sprzęt transportowy i produkty pomocnicze",
+    "lp": 216.0,
+    "code": "34300000-0",
+    "price_pln": "36000.00",
+    "price_eur": "7763.47"
+  },
+  {
+    "name": "Silniki, części do silników i prądnic, części zapasowe do silników, części mechaniczne, elementy samochodowe, uszczelki miedziane",
+    "category": "Sprzęt transportowy i produkty pomocnicze",
+    "lp": 217.0,
+    "code": "34310000-3",
+    "price_pln": "12464.33",
+    "price_eur": "2687.96"
+  },
+  {
+    "name": "Części statków powietrznych, kosmicznych i śmigłowców",
+    "category": "Sprzęt transportowy i produkty pomocnicze",
+    "lp": 218.0,
+    "code": "34730000-3",
+    "price_pln": "28500.00",
+    "price_eur": "6146.08"
+  },
+  {
+    "name": "Znaki i znaki podświetlone, pachołki drogowe",
+    "category": "Balony, sterowce i pozostałe statki powietrzne nienapędzane paliwem",
+    "lp": 220.0,
+    "code": "34992000-7",
+    "price_pln": "29500.00",
+    "price_eur": "6361.73"
+  },
+  {
+    "name": "Wyposażenie do organizowania imprez",
+    "category": "Balony, sterowce i pozostałe statki powietrzne nienapędzane paliwem",
+    "lp": 221.0,
+    "code": "34992000-7",
+    "price_pln": "17000.00",
+    "price_eur": "3666.08"
+  },
+  {
+    "name": "Samochody osobowe",
+    "category": "Balony, sterowce i pozostałe statki powietrzne nienapędzane paliwem",
+    "lp": 222.0,
+    "code": "34144900-7",
+    "price_pln": "935000.00",
+    "price_eur": "201634.64"
+  },
+  {
+    "name": "Układy pomiarowe natężenia ruchu",
+    "category": "Balony, sterowce i pozostałe statki powietrzne nienapędzane paliwem",
+    "lp": 223.0,
+    "code": "34972000-1",
+    "price_pln": "5000.00",
+    "price_eur": "1078.26"
+  },
+  {
+    "name": "Sprzęt transportowy i produkty pomocnicze dla transportu, podwozie gąsienicowe, skutery elektryczne",
+    "category": "Balony, sterowce i pozostałe statki powietrzne nienapędzane paliwem",
+    "lp": 224.0,
+    "code": "34000000-7 34139000-0",
+    "price_pln": "31000.00",
+    "price_eur": "6685.21"
+  },
+  {
+    "name": "Sprzęt gaśniczy, ratunkowy i awaryjny, bezpieczeństwa",
+    "category": "Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny",
+    "lp": 226.0,
+    "code": "35111000-5",
+    "price_pln": "56350.00",
+    "price_eur": "12151.99"
+  },
+  {
+    "name": "Systemy i urządzenia nadzoru bezpieczeństwa, czujniki, cele strzelnicze",
+    "category": "Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny",
+    "lp": 227.0,
+    "code": "35120000-1",
+    "price_pln": "59800.00",
+    "price_eur": "12895.99"
+  },
+  {
+    "name": "Czujniki biometryczne",
+    "category": "Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny",
+    "lp": 228.0,
+    "code": "35125110-0",
+    "price_pln": "37000.00",
+    "price_eur": "7979.12"
+  },
+  {
+    "name": "Urządzenia do skanowania kodów kreskowych",
+    "category": "Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny",
+    "lp": 229.0,
+    "code": "35126000-3",
+    "price_pln": "8000.00",
+    "price_eur": "1725.22"
+  },
+  {
+    "name": "Artykuły i sprzęt sportowy, rowery, rowery elektryczne, butle do nurkowania",
+    "category": "Instrumenty muzyczne, artykuły sportowe, gry, zabawki, wyroby rzemieślnicze",
+    "lp": 231.0,
+    "code": "37400000-2",
+    "price_pln": "65500.00",
+    "price_eur": "14125.21"
+  },
+  {
+    "name": "Rożny sprzęt sportowy- halowy i gimnastyczny",
+    "category": "Instrumenty muzyczne, artykuły sportowe, gry, zabawki, wyroby rzemieślnicze",
+    "lp": 232.0,
+    "code": "37000000-8",
+    "price_pln": "151000.00",
+    "price_eur": "32563.46"
+  },
+  {
+    "name": "Tenis stołowy (stół, rakietki, piłeczki, siatka, płotki do tenisa)",
+    "category": "Instrumenty muzyczne, artykuły sportowe, gry, zabawki, wyroby rzemieślnicze",
+    "lp": 233.0,
+    "code": "37461500-2",
+    "price_pln": "1000.00",
+    "price_eur": "215.65"
+  },
+  {
+    "name": "Gry i zabawki, wyposażenie parków zabaw, gry wideo, gry symulacyjne, łamigłówki",
+    "category": "Instrumenty muzyczne, artykuły sportowe, gry, zabawki, wyroby rzemieślnicze",
+    "lp": 234.0,
+    "code": "37500000-3",
+    "price_pln": "178405.69",
+    "price_eur": "38473.55"
+  },
+  {
+    "name": "Urządzenia laboratoryjne (suszarki, wirówki i akcesoria, mieszadła, cieplarki, twardościomierze moździerze, eksykatory szafkowe, suszarki próżniowe, kule do mielenia, komory rękawicowe, sonikatory, streylizatory parowe,chromatografiy cieczowe, wagi laboratoryjne, termowagi, komory klimatyczne, precyzyjne płyty grzewcze, myłnki kulowe z akcesoriami, moździerze laboratoryjne, ucieraki, palniki laboratoryjne, powlekarki zanurzeniowe, urządzenia do badania właściwości fizycznych), system sterowania wiązką laserową, kriostaty, wnęka optyczna z systemem próżniowym, zestaw do wyznaczania gęstości ciał stałych, Stanowisko do pracy w atmosferze inertnej z wagą analityczną, wnęka optyczna z systemem próżniowym, łaźnie ultradźwiękowe",
+    "category": "SPRZĘT LABORATORYJNY, \noptyczny i precyzyjny (z wyjątkiem szklanego)",
+    "lp": 236.0,
+    "code": "38000000-5",
+    "price_pln": "4059700.80",
+    "price_eur": "875482.69"
+  },
+  {
+    "name": "Impaktory w tym kaskadowe z pompą próżniową",
+    "category": "SPRZĘT LABORATORYJNY, \noptyczny i precyzyjny (z wyjątkiem szklanego)",
+    "lp": 237.0,
+    "code": "38000000-5",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "Części zamienne do urządzeń laboratoryjnych",
+    "category": "SPRZĘT LABORATORYJNY, \noptyczny i precyzyjny (z wyjątkiem szklanego)",
+    "lp": 238.0,
+    "code": "38000000-5",
+    "price_pln": "181000.00",
+    "price_eur": "39033.02"
+  },
+  {
+    "name": "Precyzyjne przecinarki",
+    "category": "SPRZĘT LABORATORYJNY, \noptyczny i precyzyjny (z wyjątkiem szklanego)",
+    "lp": 239.0,
+    "code": "38000000-5",
+    "price_pln": "66200.00",
+    "price_eur": "14276.16"
+  },
+  {
+    "name": "Przyrządy nawigacyjne",
+    "category": "Przyrządy nawigacyjne i meteorologiczne",
+    "lp": 241.0,
+    "code": "38110000-9",
+    "price_pln": "270000.00",
+    "price_eur": "58226.05"
+  },
+  {
+    "name": "Przyrządy meteorologiczne z akcesoriami (w tym anemometry)",
+    "category": "Przyrządy nawigacyjne i meteorologiczne",
+    "lp": 242.0,
+    "code": "38120000-2",
+    "price_pln": "20550.00",
+    "price_eur": "4431.65"
+  },
+  {
+    "name": "Przyrządy i urządzenia badawcze, hydrograficzne, oceanograficzne i hydrologiczne (teodolity), elektromagnetyczne przyrządy geofizyczne",
+    "category": "Przyrządy geologiczne i geofizyczne",
+    "lp": 244.0,
+    "code": "38290000-4",
+    "price_pln": "17694.22",
+    "price_eur": "3815.79"
+  },
+  {
+    "name": "Sprzęt topograficzny",
+    "category": "Przyrządy geologiczne i geofizyczne",
+    "lp": 245.0,
+    "code": "38295000-9",
+    "price_pln": "51100.00",
+    "price_eur": "11019.82"
+  },
+  {
+    "name": "Szkło kwarcowe (kuwety, rury, inne)",
+    "category": "Przyrządy geologiczne i geofizyczne",
+    "lp": 246.0,
+    "code": "38200000-7",
+    "price_pln": "148979.00",
+    "price_eur": "32127.62"
+  },
+  {
+    "name": "Dalmierze, ręczne przyrządy do mierzenia długości, mikrometry",
+    "category": "Przyrządy pomiarowe ( stoły kreślarskie,  przyrządy do mierzenia promieniowania, wielkości elektrycznych -amperomierze, woltomierze)",
+    "lp": 248.0,
+    "code": "38330000-7",
+    "price_pln": "152550.00",
+    "price_eur": "32897.72"
+  },
+  {
+    "name": "Amperomierze, woltomierze, mikropozycjonery",
+    "category": "Przyrządy pomiarowe ( stoły kreślarskie,  przyrządy do mierzenia promieniowania, wielkości elektrycznych -amperomierze, woltomierze)",
+    "lp": 249.0,
+    "code": "38341310-3",
+    "price_pln": "154350.00",
+    "price_eur": "33285.89"
+  },
+  {
+    "name": "Oscyloskopy",
+    "category": "Przyrządy do mierzenia ilości",
+    "lp": 251.0,
+    "code": "38342000-4",
+    "price_pln": "550405.60",
+    "price_eur": "118696.08"
+  },
+  {
+    "name": "Przyrządy do pomiaru siły",
+    "category": "Przyrządy do badania właściwości fizycznych",
+    "lp": 253.0,
+    "code": "38400000-9",
+    "price_pln": "14000.00",
+    "price_eur": "3019.13"
+  },
+  {
+    "name": "Tensometry",
+    "category": "Przyrządy do badania właściwości fizycznych",
+    "lp": 254.0,
+    "code": "38400000-9",
+    "price_pln": "10900.00",
+    "price_eur": "2350.61"
+  },
+  {
+    "name": "Momentomierze",
+    "category": "Przyrządy do badania właściwości fizycznych",
+    "lp": 255.0,
+    "code": "38400000-9",
+    "price_pln": "54000.00",
+    "price_eur": "11645.21"
+  },
+  {
+    "name": "Wyparki próżniowe",
+    "category": "Przyrządy do badania właściwości fizycznych",
+    "lp": 256.0,
+    "code": "38436200-2",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "Maszyna wytrzymałościowa",
+    "category": "Przyrządy do badania właściwości fizycznych",
+    "lp": 257.0,
+    "code": "38425500-5",
+    "price_pln": "567000.00",
+    "price_eur": "122274.70"
+  },
+  {
+    "name": "Przyrządy pomiarowe (kalorymetry, pirometry, higrometry, termopary, ph metry, potencjostaty, moduł ECD do potencjostatu, multimetry, konduktometry, radiometry, sondy i czujniki temperatury ezezystencyjne i inne, przyrządy do mierzenia wielkości elektrycznych, aparatura do mierzenia promieniowania, liczniki Geigera-Mullera z sondą i odczytem, części zamienne do urządzeń laboratoryjnych i pomiarowych), fluorymetry",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 259.0,
+    "code": "38410000-2",
+    "price_pln": "1142504.90",
+    "price_eur": "246383.49"
+  },
+  {
+    "name": "Sondy pomiarowe pola magnetycznego, sondy do oscyloskopów, sondy Halla",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 260.0,
+    "code": "38410000-2",
+    "price_pln": "118000.00",
+    "price_eur": "25446.94"
+  },
+  {
+    "name": "Moduły symulacji baterii HIL niezbędnych do rozbudowy zintegrowanej platformy pomiarów, analizy i projektowania RTS",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 260.1,
+    "code": "38410000-2",
+    "price_pln": "255090.00",
+    "price_eur": "55010.67"
+  },
+  {
+    "name": "Druty termoparowe",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 261.0,
+    "code": "38410000-2",
+    "price_pln": "15320.00",
+    "price_eur": "3303.79"
+  },
+  {
+    "name": "Kamery termowizyjne, cyfrowe do badań inspekcyjnych",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 262.0,
+    "code": "38651600-9",
+    "price_pln": "129426.83",
+    "price_eur": "27911.16"
+  },
+  {
+    "name": "Doposażenie stanowiska do termowizji aktywnej w odpowiednie przetworniki oraz czujniki, środki eksploatacyjne",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 263.0,
+    "code": "38410000-2",
+    "price_pln": "16350.00",
+    "price_eur": "3525.91"
+  },
+  {
+    "name": "Oprzyrządowanie do stanowisk przeznaczonych do badań właściwości mechanicznych materiałów",
+    "category": "Przyrządy pomiarowe\nAerometry, Termometry, Pirometry, Higrometry, Psychometry, pH-metry, Termopary, Kalorymetry",
+    "lp": 264.0,
+    "code": "38410000-2",
+    "price_pln": "55930.00",
+    "price_eur": "12061.42"
+  },
+  {
+    "name": "Urządzenia do pomiaru przepływu, przepływomierze",
+    "category": "Przyrządy do mierzenia przepływu, poziomu i ciśnienia cieczy i gazów",
+    "lp": 266.0,
+    "code": "38421000-2",
+    "price_pln": "172500.00",
+    "price_eur": "37199.97"
+  },
+  {
+    "name": "Urządzenia do pomiaru ciśnienia",
+    "category": "Przyrządy do mierzenia przepływu, poziomu i ciśnienia cieczy i gazów",
+    "lp": 267.0,
+    "code": "38423000-6",
+    "price_pln": "147500.00",
+    "price_eur": "31808.67"
+  },
+  {
+    "name": "Czujniki i inne materiały eksploatacyjne do analizatorów gazów i kolektorów próbek gazowych",
+    "category": "Przyrządy do mierzenia przepływu, poziomu i ciśnienia cieczy i gazów",
+    "lp": 268.0,
+    "code": "38420000-5",
+    "price_pln": "125481.00",
+    "price_eur": "27060.23"
+  },
+  {
+    "name": "Urządzenia pomiarowe i sterujące (w tym wielokanałowe systemy awizycji danych szybkich, dwukanałowe programowalne obciążenie elektroniczne)",
+    "category": "Przyrządy do mierzenia przepływu, poziomu i ciśnienia cieczy i gazów",
+    "lp": 269.0,
+    "code": "38424000-3",
+    "price_pln": "524600.00",
+    "price_eur": "113131.05"
+  },
+  {
+    "name": "Urządzenia mechaniki płynów (lepkościomierze, wiskozymetry, aparaty do oceny wytrzymałości, reometry, rotametry), homogenizatory ultradźwiękowe",
+    "category": "Przyrządy do mierzenia przepływu, poziomu i ciśnienia cieczy i gazów",
+    "lp": 270.0,
+    "code": "38425000-0",
+    "price_pln": "567690.24",
+    "price_eur": "122423.55"
+  },
+  {
+    "name": "Aparatura do wykrywania, w tym do wykrywania gazu, dymu, awarii",
+    "category": "Aparatura do wykrywania i analizy",
+    "lp": 272.0,
+    "code": "38431100-6",
+    "price_pln": "25890.00",
+    "price_eur": "5583.23"
+  },
+  {
+    "name": "Aparatura do analizowania gazów, chromatografy gazowe,",
+    "category": "Aparatura do wykrywania i analizy",
+    "lp": 273.0,
+    "code": "38432100-3",
+    "price_pln": "127326.48",
+    "price_eur": "27458.21"
+  },
+  {
+    "name": "Części i akcesoria do chromatografów, kolumny chromatograficzne",
+    "category": "Aparatura do wykrywania i analizy",
+    "lp": 274.0,
+    "code": "38430000-8",
+    "price_pln": "182150.00",
+    "price_eur": "39281.02"
+  },
+  {
+    "name": "Spektrometry, spektrometry masowe, promieniowania X, spektrofotometry, części i akcesoria do spektrometrów",
+    "category": "Aparatura do wykrywania i analizy",
+    "lp": 275.0,
+    "code": "38433100-0",
+    "price_pln": "9517140.44",
+    "price_eur": "2052390.60"
+  },
+  {
+    "name": "Urządzenia do monitorowania i pomiaru zanieczyszczeń",
+    "category": "Aparatura do wykrywania i analizy",
+    "lp": 276.0,
+    "code": "38341500-2",
+    "price_pln": "101800.00",
+    "price_eur": "21953.38"
+  },
+  {
+    "name": "Analizatory, analizatory chemiczne , analizatory biochemiczne, analizatory drgań, aparatura do analizy, analizatory przepływu ciepła, analizatory wilgotności, spektroskopy do analiz chemicznych i termicznych, chemiluminisencyjne analizatory tlenków, analizatory impedencji, wektorowe analizatory sieci i obwodów, analizatory gazów resztkowych, wielokanałowe analizatory amplitudy, analizatory widma, wibrometry laserowe, przystawki do badań spekstroskopowych w podczerwieni w warunkach bardzo niskch temperatur)",
+    "category": "Analizatory",
+    "lp": 278.0,
+    "code": "38434000-6",
+    "price_pln": "9720535.17",
+    "price_eur": "2096253.08"
+  },
+  {
+    "name": "Urządzenia do pomiaru natężenia dźwięku",
+    "category": "Analizatory",
+    "lp": 279.0,
+    "code": "38434200-8",
+    "price_pln": "10200.00",
+    "price_eur": "2199.65"
+  },
+  {
+    "name": "Wytrząsarki",
+    "category": "Wstrząsarki i akcesoria",
+    "lp": 281.0,
+    "code": "38436000-0",
+    "price_pln": "111022.76",
+    "price_eur": "23942.28"
+  },
+  {
+    "name": "Urządzenia do obróbki termicznej, mechanicznej i elektromechanicznej, z doposażeniem, elektroprzędzarki",
+    "category": "Aparatura kontrolna i badawcza",
+    "lp": 283.0,
+    "code": "38500000-0",
+    "price_pln": "484040.00",
+    "price_eur": "104384.21"
+  },
+  {
+    "name": "Mikroskopy metalograficzne, mikroskopy elektronowe, mikroskopy optyczne, stereo lub rozcinające, mikroskopy polaryzacyjne",
+    "category": "Mikroskopy",
+    "lp": 285.0,
+    "code": "38510000-3",
+    "price_pln": "2005351.02",
+    "price_eur": "432458.01"
+  },
+  {
+    "name": "Różne kompozycje do mikroskopów, przystawki fotograficzne lub wideo do mikroskopów, filtry optyczne",
+    "category": "Mikroskopy",
+    "lp": 286.0,
+    "code": "38519000-6",
+    "price_pln": "839853.06",
+    "price_eur": "181116.01"
+  },
+  {
+    "name": "Materiały eksploatacyjne do mikroskopii SEM/TEM, AFM",
+    "category": "Mikroskopy",
+    "lp": 287.0,
+    "code": "38510000-3",
+    "price_pln": "192350.00",
+    "price_eur": "41480.67"
+  },
+  {
+    "name": "Dyfraktometry rentgenowskie, lampy do dyfraktometrów, specjalistyczne siatki dyfrekcyjne do spektrofluorymetru",
+    "category": "Skanery",
+    "lp": 289.0,
+    "code": "38520000-6",
+    "price_pln": "2864152.35",
+    "price_eur": "617660.25"
+  },
+  {
+    "name": "Dozymetry",
+    "category": "Skanery",
+    "lp": 290.0,
+    "code": "38527200-7",
+    "price_pln": "2000.00",
+    "price_eur": "431.30"
+  },
+  {
+    "name": "Liczniki, komparatory fazy",
+    "category": "Maszyny i aparatura badawcza i pomiarowa",
+    "lp": 292.0,
+    "code": "38550000-5",
+    "price_pln": "64000.00",
+    "price_eur": "13801.73"
+  },
+  {
+    "name": "Przyrządy i aparatura nastawcza i kontrolna, testery przyczepności",
+    "category": "Maszyny i aparatura badawcza i pomiarowa",
+    "lp": 293.0,
+    "code": "38570000-1",
+    "price_pln": "15240.00",
+    "price_eur": "3286.54"
+  },
+  {
+    "name": "Mierniki elektroniczne, mierniki do pomiaru przewodnictwa, tensjometry, mierniki tlenu",
+    "category": "Maszyny i aparatura badawcza i pomiarowa",
+    "lp": 294.0,
+    "code": "38552000-9",
+    "price_pln": "469711.79",
+    "price_eur": "101294.30"
+  },
+  {
+    "name": "Wyroby ze szkła obrobione, lustra",
+    "category": "Przyrządy optyczne",
+    "lp": 296.0,
+    "code": "38622000-1",
+    "price_pln": "76339.61",
+    "price_eur": "16462.79"
+  },
+  {
+    "name": "Specjalistyczne przyrządy optyczne",
+    "category": "Przyrządy optyczne",
+    "lp": 297.0,
+    "code": "38636000-2",
+    "price_pln": "248000.00",
+    "price_eur": "53481.70"
+  },
+  {
+    "name": "Moduły optoelektroniczne",
+    "category": "Przyrządy optyczne",
+    "lp": 298.0,
+    "code": "38600000-1",
+    "price_pln": "100600.00",
+    "price_eur": "21694.59"
+  },
+  {
+    "name": "Przyrządy otpyczne do badań lub testowania, lasery",
+    "category": "Przyrządy optyczne",
+    "lp": 299.0,
+    "code": "38900000-4",
+    "price_pln": "190418.41",
+    "price_eur": "41064.12"
+  },
+  {
+    "name": "Aparaty fotograficzne, elementy do aparatów, kamery cyfrowe i odtwarzacze video, akcesoria foto i video, drony, bezzałogowe statki powietrzne z kamerą multispektralną, akcesoria do dronów, kamery sportowe",
+    "category": "Sprzęt fotograficzny, video, drony",
+    "lp": 301.0,
+    "code": "38651000-3",
+    "price_pln": "604972.23",
+    "price_eur": "130463.49"
+  },
+  {
+    "name": "Materiały i chemikalia fotograficzne",
+    "category": "Sprzęt fotograficzny, video, drony",
+    "lp": 302.0,
+    "code": "24930000-2",
+    "price_pln": "6000.00",
+    "price_eur": "1293.91"
+  },
+  {
+    "name": "Akcesoria do prezentacji (wskaźniki laserowe, prezentery)",
+    "category": "Sprzęt fotograficzny, video, drony",
+    "lp": 303.0,
+    "code": "38650000-6",
+    "price_pln": "13316.80",
+    "price_eur": "2871.79"
+  },
+  {
+    "name": "Wyposażenie meblowe biurowe, krzesła",
+    "category": "MEBLE, wyposażenie i urządzenia",
+    "lp": 305.0,
+    "code": "39100000-3",
+    "price_pln": "1599255.00",
+    "price_eur": "344882.58"
+  },
+  {
+    "name": "Łóżka i kanapy, meble domowe",
+    "category": "MEBLE, wyposażenie i urządzenia",
+    "lp": 306.0,
+    "code": "39143110-0",
+    "price_pln": "130000.00",
+    "price_eur": "28034.76"
+  },
+  {
+    "name": "Meble laboratoryjne, dygestoria, szafy na gazy",
+    "category": "MEBLE, wyposażenie i urządzenia",
+    "lp": 307.0,
+    "code": "39180000-7",
+    "price_pln": "292000.00",
+    "price_eur": "62970.39"
+  },
+  {
+    "name": "Meble metalowe, regały archiwalne, stoły robocze, wyposażenie szatni",
+    "category": "MEBLE, wyposażenie i urządzenia",
+    "lp": 308.0,
+    "code": "39131100-0",
+    "price_pln": "173000.00",
+    "price_eur": "37307.80"
+  },
+  {
+    "name": "Ozdoby, donice ozdobne i inne",
+    "category": "Wyposażenie domowe",
+    "lp": 310.0,
+    "code": "39200000-4",
+    "price_pln": "104385.00",
+    "price_eur": "22510.84"
+  },
+  {
+    "name": "Wyroby wyposażenia domowego (zestawy kuchenne, wyroby nożownicze, porcelanowe, butelki, wyroby szklane)",
+    "category": "Wyposażenie domowe",
+    "lp": 311.0,
+    "code": "39221000-7",
+    "price_pln": "99900.00",
+    "price_eur": "21543.64"
+  },
+  {
+    "name": "Zegary",
+    "category": "Wyposażenie domowe",
+    "lp": 312.0,
+    "code": "39254100-8",
+    "price_pln": "5000.00",
+    "price_eur": "1078.26"
+  },
+  {
+    "name": "Artykuły łazienkowe",
+    "category": "Wyposażenie domowe",
+    "lp": 313.0,
+    "code": "39200000-4",
+    "price_pln": "57000.00",
+    "price_eur": "12292.17"
+  },
+  {
+    "name": "Artykuły cateringowe jednorazowe",
+    "category": "Wyposażenie domowe",
+    "lp": 314.0,
+    "code": "39222100-5",
+    "price_pln": "25700.00",
+    "price_eur": "5542.26"
+  },
+  {
+    "name": "Wyroby włókiennicze w rodzaju używanych w gospodarstwie domowym (koce, pledy, bielizna pościelowa, materace, zasłony, poduszki)",
+    "category": "Wyroby włókiennicze",
+    "lp": 316.0,
+    "code": "39510000-0",
+    "price_pln": "532000.00",
+    "price_eur": "114726.88"
+  },
+  {
+    "name": "Namioty",
+    "category": "Wyroby włókiennicze",
+    "lp": 317.0,
+    "code": "39522530-1",
+    "price_pln": "126500.00",
+    "price_eur": "27279.98"
+  },
+  {
+    "name": "Rolety, żaluzje",
+    "category": "Wyroby włókiennicze",
+    "lp": 318.0,
+    "code": "39500000-7",
+    "price_pln": "130970.00",
+    "price_eur": "28243.95"
+  },
+  {
+    "name": "Dywany, maty i dywaniki",
+    "category": "Wyroby włókiennicze",
+    "lp": 319.0,
+    "code": "39530000-6",
+    "price_pln": "44700.00",
+    "price_eur": "9639.65"
+  },
+  {
+    "name": "Maszyny do czyszczenia podłóg, odkurzacze przemysłowe",
+    "category": "Sprzęt gospodarstwa domowego",
+    "lp": 321.0,
+    "code": "39713410-0",
+    "price_pln": "58900.00",
+    "price_eur": "12701.90"
+  },
+  {
+    "name": "Urządzenia grzewcze",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 323.0,
+    "code": "39715200-9",
+    "price_pln": "33500.00",
+    "price_eur": "7224.34"
+  },
+  {
+    "name": "Sprzęt hydrauliczny",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 324.0,
+    "code": "39715300-0",
+    "price_pln": "5700.00",
+    "price_eur": "1229.22"
+  },
+  {
+    "name": "Wentylatory i urządzenia klimatyzacyjne",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 325.0,
+    "code": "39717000-1",
+    "price_pln": "136200.00",
+    "price_eur": "29371.81"
+  },
+  {
+    "name": "Osuszacze powietrza",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 326.0,
+    "code": "39721320-1",
+    "price_pln": "4000.00",
+    "price_eur": "862.61"
+  },
+  {
+    "name": "Oczyszczacze powietrza, fitry do oczyszczaczy powietrza",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 327.0,
+    "code": "39714000-0",
+    "price_pln": "18100.00",
+    "price_eur": "3903.30"
+  },
+  {
+    "name": "Elektryczny sprzęt gospodarstwa domowego (w tym chłodziarki i zamrażarki), rozdrabniacze żywności",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 328.0,
+    "code": "39710000-2",
+    "price_pln": "549597.15",
+    "price_eur": "118521.74"
+  },
+  {
+    "name": "Ekspresy do kawy",
+    "category": "Wyciągi wentylacyjne lub recyklingowe",
+    "lp": 329.0,
+    "code": "39714000-0",
+    "price_pln": "134000.00",
+    "price_eur": "28897.37"
+  },
+  {
+    "name": "Części piecyków, kuchenek, podgrzewaczy oraz sprzętu gospodarstwa domowego",
+    "category": "Sprzęt gospodarstwa domowego inny niż elektryczny",
+    "lp": 331.0,
+    "code": "39722000-9",
+    "price_pln": "46100.00",
+    "price_eur": "9941.56"
+  },
+  {
+    "name": "Woda demineralizowana",
+    "category": "Sprzęt gospodarstwa domowego inny niż elektryczny",
+    "lp": 332.0,
+    "code": "39720000-5",
+    "price_pln": "700.00",
+    "price_eur": "150.96"
+  },
+  {
+    "name": "Silniki i generatory mocy hydrauliczne lub pneumatyczne, cylindry hydrauliczne lub pneumatyczne, części pneumatycznych generatorów mocy lub silników",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 334.0,
+    "code": "42121000-3",
+    "price_pln": "30820.00",
+    "price_eur": "6646.40"
+  },
+  {
+    "name": "Anody i katody",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 335.0,
+    "code": "31131200-5",
+    "price_pln": "15110.91",
+    "price_eur": "3258.70"
+  },
+  {
+    "name": "Pompy, pompy perystaltyczne, części pomp",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 336.0,
+    "code": "42122000-0",
+    "price_pln": "347715.45",
+    "price_eur": "74985.54"
+  },
+  {
+    "name": "Układy hydrauliczne, części układów hydraulicznych",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 337.0,
+    "code": "42122210-5",
+    "price_pln": "110306.49",
+    "price_eur": "23787.82"
+  },
+  {
+    "name": "Części elementów napędowych",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 338.0,
+    "code": "42100000-0",
+    "price_pln": "10500.00",
+    "price_eur": "2264.35"
+  },
+  {
+    "name": "Sprężarki  powietrza",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 339.0,
+    "code": "42123400-1",
+    "price_pln": "20450.00",
+    "price_eur": "4410.08"
+  },
+  {
+    "name": "Krany, kurki, zawory (w tym elektryczne siłowniki zaworowe) i podobna armatura, armatura próżniowa, tarcze do rozpylania magnetronowego",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 340.0,
+    "code": "42130000-9",
+    "price_pln": "179300.00",
+    "price_eur": "38666.41"
+  },
+  {
+    "name": "Przekładnie, przekładnie zębate i elementy napędowe",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 341.0,
+    "code": "42140000-2",
+    "price_pln": "12500.00",
+    "price_eur": "2695.65"
+  },
+  {
+    "name": "Układy kotłów grzewczych w tym generatory pary i skraplacze pary",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 341.1,
+    "code": "42163000-9",
+    "price_pln": "2000.00",
+    "price_eur": "431.30"
+  },
+  {
+    "name": "Piece przemysłowe lub laboratoryjne, piece specjalne laboratoryjne, piece muflowe, piece niskoszumowe do prowadzenia pomiarów elektrycznych",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 342.0,
+    "code": "42300000-9",
+    "price_pln": "2434975.29",
+    "price_eur": "525107.35"
+  },
+  {
+    "name": "Palniki, części palników, palenisk lub pieców",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 343.0,
+    "code": "42390000-6",
+    "price_pln": "36573.79",
+    "price_eur": "7887.21"
+  },
+  {
+    "name": "Urządzenia podnośnikowe i przeładunkowe oraz ich części-  wyciągarki , wielokrążki, podnośniki, windy, dźwigi, wózki widłowe",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 344.0,
+    "code": "42400000-0",
+    "price_pln": "50000.00",
+    "price_eur": "10782.60"
+  },
+  {
+    "name": "Aparatura do destylacji, filtrowania lub rektyfikacji, filtry do dejonizatorów, elektrofiltry",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 345.0,
+    "code": "42910000-8",
+    "price_pln": "211000.00",
+    "price_eur": "45502.58"
+  },
+  {
+    "name": "Maszyny i części specjalnego zastosowania (w tym klucze maszynowe, klucze dynamometryczne)",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 346.0,
+    "code": "42990000-2",
+    "price_pln": "31956.10",
+    "price_eur": "6891.40"
+  },
+  {
+    "name": "Zawory wylotowe cylindrów gazowych",
+    "category": "Maszyny do wytwarzania i wykorzystywania mocy mechanicznej",
+    "lp": 347.0,
+    "code": "42100000-0",
+    "price_pln": "39000.00",
+    "price_eur": "8410.43"
+  },
+  {
+    "name": "Tokarki, obrabiarki do wiercenia i frezowania, obrabiarki do obróbki metali, części i akcesoria do obrabiarek",
+    "category": "Obrabiarki",
+    "lp": 349.0,
+    "code": "42620000-8",
+    "price_pln": "26540.65",
+    "price_eur": "5723.54"
+  },
+  {
+    "name": "Prasy, prasy do proszków",
+    "category": "Obrabiarki",
+    "lp": 350.0,
+    "code": "42636000-3",
+    "price_pln": "33500.00",
+    "price_eur": "7224.34"
+  },
+  {
+    "name": "Ręczne narzędzia elektromechaniczne, ręczne narzędzia pneumatyczne, sprzęt do wierceń ręcznych",
+    "category": "Obrabiarki",
+    "lp": 351.0,
+    "code": "42652000-1",
+    "price_pln": "79050.00",
+    "price_eur": "17047.29"
+  },
+  {
+    "name": "Sprzęt spawalniczy i akcesoria",
+    "category": "Obrabiarki",
+    "lp": 352.0,
+    "code": "42662000-4",
+    "price_pln": "20500.00",
+    "price_eur": "4420.87"
+  },
+  {
+    "name": "Narzędzia do lutowania na miękko, lutowania na twardo, obróbki powierzchni",
+    "category": "Obrabiarki",
+    "lp": 353.0,
+    "code": "42660000-0",
+    "price_pln": "132628.46",
+    "price_eur": "28601.59"
+  },
+  {
+    "name": "Tworzywa do lutowania na twardo",
+    "category": "Obrabiarki",
+    "lp": 353.1,
+    "code": "42600000-2",
+    "price_pln": "1000.00",
+    "price_eur": ""
+  },
+  {
+    "name": "Maszyny do obróbki gumy i tworzyw sztucznych",
+    "category": "Obrabiarki",
+    "lp": 354.0,
+    "code": "42994000-0",
+    "price_pln": "4500.00",
+    "price_eur": "970.43"
+  },
+  {
+    "name": "Rozdrabniarki",
+    "category": "Obrabiarki",
+    "lp": 355.0,
+    "code": "42996100-5",
+    "price_pln": "19100.00",
+    "price_eur": "4118.95"
+  },
+  {
+    "name": "Roboty przemysłowe",
+    "category": "Maszyny przemysłowe",
+    "lp": 357.0,
+    "code": "42997300-4",
+    "price_pln": "851500.85",
+    "price_eur": "183627.88"
+  },
+  {
+    "name": "Różne maszyny ogólnego i specjalnego przeznaczenia, maszyny do produkcji wyrobów włókienniczych",
+    "category": "Maszyny przemysłowe",
+    "lp": 358.0,
+    "code": "42993100-4",
+    "price_pln": "70000.00",
+    "price_eur": "15095.64"
+  },
+  {
+    "name": "Chwytak do robota kognitywnego",
+    "category": "Maszyny przemysłowe",
+    "lp": 358.1,
+    "code": "42990000-2",
+    "price_pln": "38242.28",
+    "price_eur": "8247.03"
+  },
+  {
+    "name": "Wentylatory inne niż domowe, wentylatory laboratoryjne, przemysłowe urządzenia chłodzące i wentylacyjne",
+    "category": "Maszyny przemysłowe",
+    "lp": 359.0,
+    "code": "42522000-1",
+    "price_pln": "134300.00",
+    "price_eur": "28962.07"
+  },
+  {
+    "name": "Instalacje hydrauliczne",
+    "category": "Maszyny górnicze, do pracy w kamieniołomach, sprzęt budowlany",
+    "lp": 361.0,
+    "code": "43328000-8",
+    "price_pln": "23000.00",
+    "price_eur": "4960.00"
+  },
+  {
+    "name": "Mieszalniki",
+    "category": "Maszyny górnicze, do pracy w kamieniołomach, sprzęt budowlany",
+    "lp": 362.0,
+    "code": "43412000-4",
+    "price_pln": "10070.00",
+    "price_eur": "2171.62"
+  },
+  {
+    "name": "Części maszyn metalurgicznych oraz podobne części \n(maszyny do walcowania, maszyny odlewnicze",
+    "category": "Maszyny górnicze, do pracy w kamieniołomach, sprzęt budowlany",
+    "lp": 363.0,
+    "code": "43700000-0",
+    "price_pln": "50000.00",
+    "price_eur": "10782.60"
+  },
+  {
+    "name": "Szlifierki, szlifierki do betonu, szlifierko-polerki i akcesoria",
+    "category": "Maszyny górnicze, do pracy w kamieniołomach, sprzęt budowlany",
+    "lp": 364.0,
+    "code": "43414000-8",
+    "price_pln": "59500.00",
+    "price_eur": "12831.30"
+  },
+  {
+    "name": "Urządzenia do obróbki drewna",
+    "category": "Urządzenia warsztatowe",
+    "lp": 366.0,
+    "code": "43810000-4",
+    "price_pln": "37500.00",
+    "price_eur": "8086.95"
+  },
+  {
+    "name": "Materiały budowlane KONSTRUKCYJNE (cegła, cement, kafle ceramiczne, izolatory, kafelki, zaprawa murarska, farby, rury, pędzle, wałki, narzędzia warsztatowe, elementy ślusarskie, tygle, art. malarskie, rurki stalowe)",
+    "category": "Urządzenia warsztatowe",
+    "lp": 367.0,
+    "code": "44111000-1",
+    "price_pln": "141100.00",
+    "price_eur": "30428.50"
+  },
+  {
+    "name": "Ceramika specjalna- techniczna (rurki alundowe, tygle, kuwet, łódki, kule mielące)",
+    "category": "Urządzenia warsztatowe",
+    "lp": 368.0,
+    "code": "44111300-4",
+    "price_pln": "89541.93",
+    "price_eur": "19309.90"
+  },
+  {
+    "name": "Różne materiały budowlane (pianka, gwoździe, śruby, płyty wiórowe, płyty wiórowe)",
+    "category": "Urządzenia warsztatowe",
+    "lp": 369.0,
+    "code": "44192000-2",
+    "price_pln": "105900.00",
+    "price_eur": "22837.55"
+  },
+  {
+    "name": "Narzędzia ręczne, noże specjalistyczne, wózki warsztatowe z narzędziami, uchwyty do narzedzi, narzędzia ogrodnicze",
+    "category": "Urządzenia warsztatowe",
+    "lp": 370.0,
+    "code": "44511000-5",
+    "price_pln": "131263.89",
+    "price_eur": "28307.32"
+  },
+  {
+    "name": "Wyroby konstrukcyjne i części, z wyjątkiem budynków z gotowych elementów (mosty, wieże, konstrukcje, części konstrukcji, kątowniki i profile, słupy stalowe), stemple metalowe, pastylkarki,",
+    "category": "Wyroby konstrukcyjne",
+    "lp": 372.0,
+    "code": "44212000-9",
+    "price_pln": "127108.99",
+    "price_eur": "27411.31"
+  },
+  {
+    "name": "Stolarka budowlana\n(OKNA, DRZWI, okiennice, progi)",
+    "category": "Wyroby konstrukcyjne",
+    "lp": 373.0,
+    "code": "44220000-8",
+    "price_pln": "76000.00",
+    "price_eur": "16389.55"
+  },
+  {
+    "name": "Drobne artykuły metalowe,  krócicze stali nierdzewnej, reduktory, zaślepki",
+    "category": "Wyroby konstrukcyjne",
+    "lp": 374.0,
+    "code": "44316400-2",
+    "price_pln": "127160.00",
+    "price_eur": "27422.31"
+  },
+  {
+    "name": "Drabiny, wózki platformowe",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 376.0,
+    "code": "44423200-3",
+    "price_pln": "36000.00",
+    "price_eur": "7763.47"
+  },
+  {
+    "name": "Uszczelnienia gumowe",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 377.0,
+    "code": "44425200-7",
+    "price_pln": "21170.00",
+    "price_eur": "4565.35"
+  },
+  {
+    "name": "Stalowe elementy zbrojarskie",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 378.0,
+    "code": "44430000-3",
+    "price_pln": "9000.00",
+    "price_eur": "1940.87"
+  },
+  {
+    "name": "Łożyska",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 379.0,
+    "code": "44440000-6",
+    "price_pln": "10367.23",
+    "price_eur": "2235.71"
+  },
+  {
+    "name": "Zamki klucze zawiasy (duplikaty kluczy), sejfy",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 380.0,
+    "code": "44520000-1",
+    "price_pln": "63200.00",
+    "price_eur": "13629.21"
+  },
+  {
+    "name": "ZBIORNIKI I POJEMNIKI \n(pudła kartonowe i plastikowe, pokrywy, pudła do przechowywania, pojemniki); \nGRZEJNIKI C.O. i kotły;, dewary, stalowe zbiorniki ciśnieniowe, pojemniki na gaz skroplony (ciekły azot)",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 381.0,
+    "code": "44600000-6",
+    "price_pln": "138287.08",
+    "price_eur": "29821.89"
+  },
+  {
+    "name": "Pojemniki do transportu aparatury, pojemniki transportowe",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 382.0,
+    "code": "44613300-3",
+    "price_pln": "69000.00",
+    "price_eur": "14879.99"
+  },
+  {
+    "name": "Kamień budowlany, wapień, gips i łupek",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 383.0,
+    "code": "44900000-9",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "Tabliczki adresowe",
+    "category": "Różne produkty gotowe i elementy z nimi związane",
+    "lp": 383.1,
+    "code": "44423460-3",
+    "price_pln": "54000.00",
+    "price_eur": "11645.21"
+  },
+  {
+    "name": "Licencje oprogramowań specjalistycznych",
+    "category": "OPROGRAMOWANIE-pakiety\ni systemy informatyczne",
+    "lp": 385.0,
+    "code": "48000000-8",
+    "price_pln": "2934236.80",
+    "price_eur": "632774.10"
+  },
+  {
+    "name": "Oprogramowanie antywirusowe (licencja ogólnouczelniana)",
+    "category": "OPROGRAMOWANIE-pakiety\ni systemy informatyczne",
+    "lp": 386.0,
+    "code": "48000000-8",
+    "price_pln": "11200.00",
+    "price_eur": "2415.30"
+  },
+  {
+    "name": "pakiet oprogramowania edukacyjnego",
+    "category": "OPROGRAMOWANIE-pakiety\ni systemy informatyczne",
+    "lp": 387.0,
+    "code": "48190000-6",
+    "price_pln": "1182500.00",
+    "price_eur": "255008.52"
+  },
+  {
+    "name": "Pakiety oprogramowania dla baz danych i operacyjne",
+    "category": "OPROGRAMOWANIE-pakiety\ni systemy informatyczne",
+    "lp": 388.0,
+    "code": "48600000-4",
+    "price_pln": "99000.00",
+    "price_eur": "21349.55"
+  },
+  {
+    "name": "Subskrypcja pakietu bezpieczeństwa",
+    "category": "OPROGRAMOWANIE-pakiety\ni systemy informatyczne",
+    "lp": 389.0,
+    "code": "48732000-8",
+    "price_pln": "201500.00",
+    "price_eur": "43453.88"
+  },
+  {
+    "name": "WEAIiIB Różne maszyny ogólnego i specjalnego przeznaczenia",
+    "category": "INNE",
+    "lp": 404.0,
+    "code": "42900000-5",
+    "price_pln": "120000.00",
+    "price_eur": "25878.24"
+  },
+  {
+    "name": "WFiIS Pozamedyczne urządzenia wykorzystujące promieniowanie",
+    "category": "INNE",
+    "lp": 411.0,
+    "code": "38580000-4",
+    "price_pln": "110000.00",
+    "price_eur": "23721.72"
+  },
+  {
+    "name": "WFiIS, WIMiC, CR Pomoce dydaktyczne",
+    "category": "INNE",
+    "lp": 412.0,
+    "code": "39162100-6",
+    "price_pln": "72554.99",
+    "price_eur": "15646.63"
+  },
+  {
+    "name": "WFiIS Zestaw do pomiarów magneto-transportowych lub Układ do badania własności magneto-transportowych",
+    "category": "INNE",
+    "lp": 413.0,
+    "code": "38540000-2",
+    "price_pln": "90000.00",
+    "price_eur": "19408.68"
+  },
+  {
+    "name": "WFiIS, WIMiiP Linie komórkowe biologiczne",
+    "category": "INNE",
+    "lp": 414.0,
+    "code": "33698100-0",
+    "price_pln": "42500.00",
+    "price_eur": "9165.21"
+  },
+  {
+    "name": "WFiIS, WIMIC Materiały rentgenowskie do urządzeń rentgenowskich",
+    "category": "INNE",
+    "lp": 417.0,
+    "code": "38582000-8",
+    "price_pln": "127000.00",
+    "price_eur": "27387.81"
+  },
+  {
+    "name": "WFiIS Badawcze, testowe i naukowe symulatory techniczne",
+    "category": "INNE",
+    "lp": 420.0,
+    "code": "38970000-5",
+    "price_pln": "25000.00",
+    "price_eur": "5391.30"
+  },
+  {
+    "name": "WFiIS Nieobudowane specjalizowane układy scalone typu mini@asic w technologii XFAB CMOS SOI 180 nm produkowane jednorazowo na zlecenie WFiIS",
+    "category": "INNE",
+    "lp": 421.0,
+    "code": "31712110-4",
+    "price_pln": "23000.00",
+    "price_eur": "4960.00"
+  },
+  {
+    "name": "WFiIS Stanowisko do budowy, prototypowania, testowania i walidacji modułów odczytu detektorów FT0, FV0 i FDD dedykowane pod rozbudowę eksperymentu ALICE w CERN WFiIS",
+    "category": "INNE",
+    "lp": 422.0,
+    "code": "42995000-7",
+    "price_pln": "49000.00",
+    "price_eur": "10566.95"
+  },
+  {
+    "name": "WFiIS Szkło laboratoryjne - Specjalistyczne pojemniki szklane-kuwety na próbki powietrza do autosamplera/ Szklane pojemniki na próbki, specjalistyczne szkiełka do pomiarów laboratoryjnych oraz inne specjalistyczne wyroby szkalne dedykowane do określonych urządzeń laboratoryjnych",
+    "category": "INNE",
+    "lp": 425.0,
+    "code": "33793000-5",
+    "price_pln": "117685.00",
+    "price_eur": "25379.01"
+  },
+  {
+    "name": "WIEiT zestaw do dezynfekcji googli wirtualnej rzeczywistości",
+    "category": "INNE",
+    "lp": 434.0,
+    "code": "33191000-5",
+    "price_pln": "28000.00",
+    "price_eur": "6038.26"
+  },
+  {
+    "name": "WIMIiP Enzymy",
+    "category": "INNE",
+    "lp": 448.0,
+    "code": "24965000-6",
+    "price_pln": "22500.00",
+    "price_eur": "4852.17"
+  },
+  {
+    "name": "WIMIiP Peptony i substancje białkowe",
+    "category": "INNE",
+    "lp": 449.0,
+    "code": "24956000-0",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "WIMIiP Nowy węgiel aktywny",
+    "category": "INNE",
+    "lp": 450.0,
+    "code": "24954100-7",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP Żelatyny",
+    "category": "INNE",
+    "lp": 451.0,
+    "code": "24911000-3",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP Tworzywa sztuczne w formach podstawowych w tym poliestry, polimetry",
+    "category": "INNE",
+    "lp": 452.0,
+    "code": "24500000-9",
+    "price_pln": "95000.00",
+    "price_eur": "20486.94"
+  },
+  {
+    "name": "WIMIiP Alkohole monowodorotlenowe",
+    "category": "INNE",
+    "lp": 453.0,
+    "code": "24322200-9",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP, CTK Sprężone powietrze",
+    "category": "INNE",
+    "lp": 454.0,
+    "code": "24113200-1",
+    "price_pln": "10500.00",
+    "price_eur": "2264.35"
+  },
+  {
+    "name": "WIMIiP Substancje peptydowe",
+    "category": "INNE",
+    "lp": 455.0,
+    "code": "33698300-2",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP Ogólnoustrojowe preparaty hormonalne, z wyłączeniem hormonów płciowych",
+    "category": "INNE",
+    "lp": 456.0,
+    "code": "33642000-2",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP Produkty lecznicze do terapii tarczycy",
+    "category": "INNE",
+    "lp": 457.0,
+    "code": "33642300-5",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMIiP Kortykosterydy do użytku ogólnoustrojowego",
+    "category": "INNE",
+    "lp": 458.0,
+    "code": "33642200-4",
+    "price_pln": "10000.00",
+    "price_eur": "2156.52"
+  },
+  {
+    "name": "WIMiR Fotoogniwa",
+    "category": "INNE",
+    "lp": 464.0,
+    "code": "31712331-9",
+    "price_pln": "30000.00",
+    "price_eur": "6469.56"
+  },
+  {
+    "name": "CDSI stanowisko do logowania danych i wstępnej weryfikacji działania algorytmów w środowisku laboratoryjnym",
+    "category": "INNE",
+    "lp": 467.0,
+    "code": "48612000-1",
+    "price_pln": "50000.00",
+    "price_eur": "10782.60"
+  },
+  {
+    "name": "CDSI skaner światła strukturalnego",
+    "category": "INNE",
+    "lp": 468.0,
+    "code": "30216110-0",
+    "price_pln": "230000.00",
+    "price_eur": "49599.97"
+  },
+  {
+    "name": "Toalety publiczne",
+    "category": "INNE",
+    "lp": 469.0,
+    "code": "45215500-2",
+    "price_pln": "9444.00",
+    "price_eur": "2036.62"
+  },
+  {
+    "name": "CTK Łańcuchowa reakcja polimeryzacji katalizowana przez polimerazę (PCR)",
+    "category": "INNE",
+    "lp": 471.0,
+    "code": "38950000-9",
+    "price_pln": "21544.72",
+    "price_eur": "4646.16"
+  },
+  {
+    "name": "CTK Urządzenia do zgrzewania tworzyw sztucznych",
+    "category": "INNE",
+    "lp": 472.0,
+    "code": "42664100-9",
+    "price_pln": "20325.20",
+    "price_eur": "4383.17"
+  },
+  {
+    "name": "CTK Projektor gwiazd",
+    "category": "INNE",
+    "lp": 473.0,
+    "code": "38652120-7",
+    "price_pln": "650.41",
+    "price_eur": "140.26"
+  },
+  {
+    "name": "CTK Satelity",
+    "category": "INNE",
+    "lp": 474.0,
+    "code": "34712200-3",
+    "price_pln": "500000.00",
+    "price_eur": "107826.01"
+  },
+  {
+    "name": "MS Materiały hydrauliczne",
+    "category": "INNE",
+    "lp": 475.0,
+    "code": "42130000-9",
+    "price_pln": "200000.00",
+    "price_eur": "43130.40"
+  },
+  {
+    "name": "MS Materiały budowlane i remontowe",
+    "category": "INNE",
+    "lp": 476.0,
+    "code": "44190000-8",
+    "price_pln": "150000.00",
+    "price_eur": "32347.80"
+  },
+  {
+    "name": "CKE Hologramy",
+    "category": "INNE",
+    "lp": 477.0,
+    "code": "35123400-6",
+    "price_pln": "5000.00",
+    "price_eur": "1078.26"
+  },
+  {
+    "name": "CKE Taśmy barwiące i transferowe dla personalizacji kart",
+    "category": "INNE",
+    "lp": 478.0,
+    "code": "30192300-4",
+    "price_pln": "40000.00",
+    "price_eur": "8626.08"
+  },
+  {
+    "name": "CKE, WI Maszyny produkujące etykiety",
+    "category": "INNE",
+    "lp": 479.0,
+    "code": "30174000-9",
+    "price_pln": "5800.00",
+    "price_eur": "1250.78"
+  },
+  {
+    "name": "CKE Etykiety",
+    "category": "INNE",
+    "lp": 480.0,
+    "code": "30199760-5",
+    "price_pln": "500.00",
+    "price_eur": "107.83"
+  },
+  {
+    "name": "CDSI Urządzenia do pomiarów fizjologicznych, sensory EEG",
+    "category": "INNE",
+    "lp": 481.0,
+    "code": "33120000-7",
+    "price_pln": "70000.00",
+    "price_eur": "15095.64"
+  },
+  {
+    "name": "Urządzenia do diagnostyki sercowo-naczyniowej",
+    "category": "INNE",
+    "lp": 497.0,
+    "code": "33123000-8",
+    "price_pln": "15000.00",
+    "price_eur": "3234.78"
+  },
+  {
+    "name": "Susceptometr wysokiej czułości do pomiarów stężenia nanocząstek w zawiesinach",
+    "category": "INNE",
+    "lp": 503.0,
+    "code": "33141641-5",
+    "price_pln": "60000.00",
+    "price_eur": "12939.12"
+  },
+  {
+    "name": "Podłoża krystaliczne (izolatory elektryczne)",
+    "category": "INNE",
+    "lp": 504.0,
+    "code": "44111511-6",
+    "price_pln": "19333.88",
+    "price_eur": "4169.39"
+  },
+  {
+    "name": "Filtry gazu",
+    "category": "INNE",
+    "lp": 505.0,
+    "code": "42514320-1",
+    "price_pln": "700.00",
+    "price_eur": "150.96"
+  },
+  {
+    "name": "Uszczelniacze",
+    "category": "INNE",
+    "lp": 506.0,
+    "code": "39360000-0",
+    "price_pln": "5000.00",
+    "price_eur": "1078.26"
+  },
+  {
+    "name": "Przewody rurowe niskiego ciśnienia",
+    "category": "INNE",
+    "lp": 507.0,
+    "code": "44163150-6",
+    "price_pln": "1600.00",
+    "price_eur": "345.04"
+  },
+  {
+    "name": "Filtry powietrza",
+    "category": "INNE",
+    "lp": 508.0,
+    "code": "42514310-8",
+    "price_pln": "25000.00",
+    "price_eur": "5391.30"
+  },
+  {
+    "name": "Układy pomiarowe natężenia ruchu",
+    "category": "INNE",
+    "lp": 510.0,
+    "code": "34972000-1",
+    "price_pln": "11000.00",
+    "price_eur": "2372.17"
+  },
+  {
+    "name": "Urządzenia do przygotowania żywności",
+    "category": "INNE",
+    "lp": 512.0,
+    "code": "39312000-2",
+    "price_pln": "45000.00",
+    "price_eur": "9704.34"
+  },
+  {
+    "name": "Akademia Dostępności - Symulatory szkoleniowe",
+    "category": "INNE",
+    "lp": 513.0,
+    "code": "34152000-7",
+    "price_pln": "50000.00",
+    "price_eur": "10782.60"
+  },
+  {
+    "name": "Akademia Dostępności -Platformy wejściowe",
+    "category": "INNE",
+    "lp": 514.0,
+    "code": "34951000-8",
+    "price_pln": "8000.00",
+    "price_eur": "1725.22"
+  },
+  {
+    "name": "Wzmacniacz tensometryczny, zamówienie jednorazowe",
+    "category": "INNE",
+    "lp": 518.0,
+    "code": "31711100-4",
+    "price_pln": "20000.00",
+    "price_eur": "4313.04"
+  },
+  {
+    "name": "Sterownik programowalny",
+    "category": "INNE",
+    "lp": 525.0,
+    "code": "31682210-5",
+    "price_pln": "3170.00",
+    "price_eur": "683.62"
+  },
+  {
+    "name": "Układ Lauego do badań monokryształów oraz cienkich warstw pod jenoosiowym ciśnieniem",
+    "category": "INNE",
+    "lp": 529.0,
+    "code": "38530000-9",
+    "price_pln": "752032.52",
+    "price_eur": "162177.33"
+  },
+  {
+    "name": "Bezzałogowe pojazdy powietrzne dla Wydziału Technologii Kosmicznych",
+    "category": "INNE",
+    "lp": 530.0,
+    "code": "35613000-4",
+    "price_pln": "38000.00",
+    "price_eur": "8194.78"
+  },
+  {
+    "name": "Rozpuszczalniki",
+    "category": "INNE",
+    "lp": 538.0,
+    "code": "44832000-1",
+    "price_pln": "970.00",
+    "price_eur": "209.18"
+  },
+  {
+    "name": "Tutorial (instrukcje) do oprogramowania numerycznego MES",
+    "category": "INNE",
+    "lp": 540.0,
+    "code": "22471000-2",
+    "price_pln": "2000.00",
+    "price_eur": "431.30"
+  },
+  {
+    "name": "Szkło laboratoryjne - PN",
+    "category": "INNE",
+    "lp": 542.0,
+    "code": "38437000-7",
+    "price_pln": "3731.69",
+    "price_eur": "804.75"
+  },
+  {
+    "name": "Tomograf",
+    "category": "INNE",
+    "lp": 543.0,
+    "code": "33115000-9",
+    "price_pln": "850000.00",
+    "price_eur": "183304.22"
+  },
+  {
+    "name": "Mikroskopy metalurgiczne",
+    "category": "INNE",
+    "lp": 544.0,
+    "code": "38513200-6",
+    "price_pln": "200000.00",
+    "price_eur": "43130.40"
+  },
+  {
+    "name": "System Quarcum: Cristal Microbalance  z przepływem (f-QCM)",
+    "category": "INNE",
+    "lp": 545.0,
+    "code": "38540000-2",
+    "price_pln": "265000.00",
+    "price_eur": "57147.79"
+  }
+]

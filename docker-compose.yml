@@ -3,7 +3,7 @@ services:
   invoice-description-generator:
     image: aghrapidpro/invoice-description-generator:latest
     container_name: invoice-description-generator
-    network_mode: host
+#    network_mode: host # Use only if the default bridge network driver doesn't work. The service will be available at http://localhost:80 then.
     ports:
       - 3000:3000
       - 4200:80

@@ -2,7 +2,8 @@
 
 
 ## 🧾 Project overview
-TODO!
+*Warning!* Currently it works only on localhost due to the static api endpoint in the html code.
+TODO: write this section
 
 ## 🐳 Building and Running with Docker
 

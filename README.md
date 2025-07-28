@@ -1,7 +1,7 @@
 # Automated Invoice Description Generator
 
 
-## 🧾 Project purpuse&overview
+## 🧾 Project overview
 TODO!
 
 ## 🐳 Building and Running with Docker
@@ -35,7 +35,6 @@ docker run --name invoice-description-generator --rm \
   aghrapidpro/invoice-description-generator:latest
 ```
 or...
----
 
 ### 🔧 Run with Docker Compose (recommended)
 

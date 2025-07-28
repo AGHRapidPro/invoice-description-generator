@@ -1,0 +1,23 @@
+---
+services:
+  invoice-description-generator:
+    image: aghrapidpro/invoice-description-generator:latest
+    container_name: invoice-description-generator
+    network_mode: host
+    ports:
+      - 3000:3000
+      - 4200:80
+    volumes:
+      - ./invoice-description-generator-data/:/api/data/
+      - ./agh-cpv-scraper-data/:/usr/local/apache2/htdocs/assets/cpv/
+    depends_on:
+      - agh-cpv-scraper
+    restart: unless-stopped
+
+  agh-cpv-scraper:
+    image: aghrapidpro/agh-cpv-scraper:latest
+    container_name: agh-cpv-scraper
+    volumes:
+      - ./agh-cpv-scraper-data/:/app/cpv/
+    restart: unless-stopped
+

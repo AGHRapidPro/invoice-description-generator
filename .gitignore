@@ -136,3 +136,4 @@ pyvenv.cfg
 .DS_Store
 
 invoice-description-generator-data/
+agh-cpv-scraper-data/

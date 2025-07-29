@@ -4,6 +4,9 @@ services:
     image: aghrapidpro/invoice-description-generator:latest
     container_name: invoice-description-generator
 #    network_mode: host # Use only if the default bridge network driver doesn't work. The service will be available at http://localhost:80 then.
+    environment:
+      # Set this variable to the domain or ip address of the hosting server if you wish to use this app from outside of your local machine.
+      - API_URL=http://localhost:3000
     ports:
       - 3000:3000
       - 4200:80

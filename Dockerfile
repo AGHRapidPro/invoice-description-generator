@@ -18,5 +18,6 @@ COPY --from=builder /app/dist/invoice-generator/browser/ /usr/local/apache2/htdo
 COPY --from=builder /app/api/app.js /api/
 COPY --from=builder /app/api/node_modules/ /api/node_modules/
 RUN mkdir -p /api/data
-CMD ["sh", "-c", "if [ ! -f /api/data/settings.json ]; then echo '{\"users\":[],\"grants\":[]}' > /api/data/settings.json; fi; node /api/app.js & exec httpd-foreground"]
+ENV API_URL=http://localhost:3000
+CMD ["sh", "-c", "find /usr/local/apache2/htdocs/ -type f -exec sed -i \"s|http://localhost:3000|${API_URL}|g\" {} + && if [ ! -f /api/data/settings.json ]; then echo '{\"users\":[],\"grants\":[]}' > /api/data/settings.json; fi; node /api/app.js & exec httpd-foreground"]
 EXPOSE 80 3000

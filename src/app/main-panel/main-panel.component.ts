@@ -168,6 +168,7 @@ export class MainPanelComponent implements OnInit {
   }
 
   public generatePdf() {
+    const fileName = this.invoiceDocument.invoiceNumber.replace(/\s/g, "").split('/').join('-');
     var dd = {
       content: [
         {
@@ -245,7 +246,7 @@ export class MainPanelComponent implements OnInit {
       }
     }
 
-    pdfMake.createPdf(dd).download("invoiceVAT.pdf");
+    pdfMake.createPdf(dd).download(fileName + ".pdf");
 
   }
 }

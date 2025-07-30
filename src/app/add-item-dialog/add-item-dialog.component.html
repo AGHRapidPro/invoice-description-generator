@@ -22,7 +22,10 @@
 
     <mat-select [(ngModel)]="invoiceItem.preliminaryId" required>
       <mat-option *ngFor="let item of grantPositions" [value]="item.id">
-        {{item.alias}}
+        <div class="dropdown-item-div">
+          <p style="margin: 0">{{item.alias}}</p>
+          <p class="price-black">{{item.budget}} PLN</p>
+        </div>
       </mat-option>
     </mat-select>
 

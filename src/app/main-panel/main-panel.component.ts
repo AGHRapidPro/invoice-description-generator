@@ -132,8 +132,7 @@ export class MainPanelComponent implements OnInit {
   }
 
   public getInvoiceNumberText() {
-    const itemsText = this.invoiceDocument.items.map(item => item.name).join(', ');
-    return "Faktura VAT nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
+    return "Faktura VAT nr " + this.invoiceDocument.invoiceNumber + " za: " + this.invoiceDocument.invoiceDescription;
   }
 
   public disableButtonGenerate() {
@@ -144,6 +143,9 @@ export class MainPanelComponent implements OnInit {
       return true;
     }
     if (!this.invoiceDocument.invoiceNumber) {
+      return true;
+    }
+    if (!this.invoiceDocument.invoiceDescription) {
       return true;
     }
     if (!this.invoiceDocument.contractBasis) {

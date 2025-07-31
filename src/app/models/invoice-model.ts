@@ -61,6 +61,7 @@ export class Recipient {
 
 export class InvoiceDocVAT {
   public invoiceNumber: string;
+  public invoiceDescription: string;
   public contractBasis: string;
   public items: InvoiceItem[] = [];
   public financeGrant: Grant;
@@ -69,6 +70,7 @@ export class InvoiceDocVAT {
 
   constructor(options: any) {
     this.invoiceNumber = options.invoiceNumber || "";
+    this.invoiceDescription = options.invoiceDescription || "";
     this.contractBasis = options.contractBasis || "";
     this.financeGrant = options.financeGrant || null;
     this.preliminaryPosition = options.preliminaryPosition || null;

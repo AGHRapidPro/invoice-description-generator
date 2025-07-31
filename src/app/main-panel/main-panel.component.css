@@ -83,3 +83,9 @@
   font-style: italic;
   margin: 15px;
 }
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

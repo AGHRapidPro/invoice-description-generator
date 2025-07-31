@@ -76,3 +76,8 @@ export class InvoiceDocVAT {
     this.items = options.items || [];
   }
 }
+
+export enum InvoiceType {
+  VAT = "VAT",
+  Proforma = "Proforma"
+}

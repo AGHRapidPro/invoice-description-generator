@@ -1,16 +1,16 @@
-import {bootstrapApplication, BrowserModule} from '@angular/platform-browser';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideRouter } from "@angular/router";
+import { provideRouter, withHashLocation } from "@angular/router";
 import { routes } from "./app/app.routes";
 import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient } from "@angular/common/http";
-import {importProvidersFrom} from "@angular/core";
+import { importProvidersFrom } from "@angular/core";
 
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
-    provideRouter(routes),
+    provideRouter(routes, withHashLocation()),
     provideAnimations(),
     importProvidersFrom(BrowserModule),
     importProvidersFrom(BrowserAnimationsModule),

@@ -89,6 +89,73 @@ export API_URL=http://your.domain:3000  # or http://your-ip:3000
   - Persistent data storage
   - Automatic Procurement data tracking and parsing delivered by [agh-cpv-scraper](https://github.com/AGHRapidPro/agh-cpv-scraper)
 
+## 🔐 Reverse Proxy Setup with HTTPS
+
+To serve the application securely over HTTPS and resolve mixed content issues;
+> Mixed Content: The page at 'https://faktury.example.domain/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://faktury.example.domain:3000/api/grants'. This request has been blocked; the content must be served over HTTPS.
+
+you should configure a reverse proxy. This setup ensures both frontend and backend communicate exclusively over HTTPS.
+
+### 🌐 Example Configuration with Caddy
+
+
+```caddy
+(cloudflare-dns01) {
+        tls {
+                dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+        }
+}
+faktury.example.domain {
+        import cloudflare-dns01
+        reverse_proxy invoice-description-generator:80
+}
+faktury-api.example.domain {
+        import cloudflare-dns01
+        reverse_proxy invoice-description-generator:3000
+}
+```
+
+### 🐳 Example docker-compose configuration using Caddy as reverse-proxy
+
+```yaml
+---
+services:
+  invoice-description-generator:
+    image: aghrapidpro/invoice-description-generator:latest
+    container_name: invoice-description-generator
+    environment:
+      - API_URL=https://faktury-api.example.domain
+    volumes:
+      - ./invoice-description-generator-data/:/api/data/
+      - ./agh-cpv-scraper-data/:/usr/local/apache2/htdocs/assets/cpv/
+    depends_on:
+      - agh-cpv-scraper
+    restart: unless-stopped
+
+  agh-cpv-scraper:
+    image: aghrapidpro/agh-cpv-scraper:latest
+    container_name: agh-cpv-scraper
+    volumes:
+      - ./agh-cpv-scraper-data/:/app/cpv/
+    restart: unless-stopped
+
+  caddy:
+    # https://github.com/AGHRapidPro/caddy-cloudflare
+    image: aghrapidpro/caddy-cloudflare:latest
+    container_name: caddy
+    restart: always
+    environment:
+      - ACME_AGREE=true
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_KEY}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy/data:/data
+      - ./caddy/config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+```
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.

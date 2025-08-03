@@ -18,6 +18,13 @@
       <input [(ngModel)]="invoiceDocument.invoiceNumber" matInput required>
     </mat-form-field>
 
+    <h5 class="section-header">Krótki opis faktury (Za co jest?)</h5>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Wpisz krótki opis faktury VAT</mat-label>
+      <input [(ngModel)]="invoiceDocument.invoiceDescription" matInput required>
+    </mat-form-field>
+
     <h5 class="section-header">Podstawa udzielenia zamównienia</h5>
 
     <mat-form-field appearance="outline">

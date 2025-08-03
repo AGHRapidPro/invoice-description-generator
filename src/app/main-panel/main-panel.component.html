@@ -8,7 +8,7 @@
     <mat-radio-group class="radio-group" [(ngModel)]="invoiceType">
       <mat-radio-button [value]="InvoiceType.VatReturn">Opis faktury VAT ze zwrotem na konto</mat-radio-button>
       <mat-radio-button [value]="InvoiceType.VatNoReturn">Opis faktury VAT bez zwrotu na konto</mat-radio-button>
-      <mat-radio-button [value]="InvoiceType.Proforma">Opis proformy</mat-radio-button>
+      <mat-radio-button [value]="InvoiceType.Proforma">Opis faktury proforma</mat-radio-button>
     </mat-radio-group>
 
     <h5 class="section-header">Numer faktury {{invoiceType === InvoiceType.Proforma ? "Proforma" : "VAT"}}</h5>

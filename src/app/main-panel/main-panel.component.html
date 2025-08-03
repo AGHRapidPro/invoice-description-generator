@@ -3,10 +3,18 @@
   <h3 class="main-header">Generator Zamówień Publicznych</h3>
   <div style="display: grid">
 
-    <h5 class="section-header">Numer faktury VAT</h5>
+    <h5 class="section-header">Rodzaj dokumentu:</h5>
+
+    <mat-radio-group class="radio-group" [(ngModel)]="invoiceType">
+      <mat-radio-button [value]="InvoiceType.VatReturn">Opis faktury VAT ze zwrotem na konto</mat-radio-button>
+      <mat-radio-button [value]="InvoiceType.VatNoReturn">Opis faktury VAT bez zwrotu na konto</mat-radio-button>
+      <mat-radio-button [value]="InvoiceType.Proforma">Opis faktury proforma</mat-radio-button>
+    </mat-radio-group>
+
+    <h5 class="section-header">Numer faktury {{invoiceType === InvoiceType.Proforma ? "Proforma" : "VAT"}}</h5>
 
     <mat-form-field appearance="outline">
-      <mat-label>Wpisz numer faktury VAT</mat-label>
+      <mat-label>Wpisz numer faktury {{invoiceType === InvoiceType.Proforma ? "Proforma" : "VAT"}} </mat-label>
       <input [(ngModel)]="invoiceDocument.invoiceNumber" matInput required>
     </mat-form-field>
 
@@ -37,16 +45,20 @@
       </mat-select>
     </mat-form-field>
 
-    <h5 class="section-header">Odbiorca przelewu</h5>
+    <ng-container *ngIf="invoiceType === InvoiceType.VatReturn">
 
-    <mat-form-field appearance="outline">
-      <mat-label>Wybierz odbiorcę przelewu</mat-label>
-      <mat-select [(ngModel)]="invoiceDocument.recipient" required>
-        <mat-option *ngFor="let recipient of recipientsList" [value]="recipient">
-          {{recipient.name}} {{recipient.lastname}}, {{recipient.index}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
+      <h5 class="section-header">Odbiorca przelewu</h5>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Wybierz odbiorcę przelewu</mat-label>
+        <mat-select [(ngModel)]="invoiceDocument.recipient" required>
+          <mat-option *ngFor="let recipient of recipientsList" [value]="recipient">
+            {{recipient.name}} {{recipient.lastname}}, {{recipient.index}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </ng-container>
 
     <mat-divider></mat-divider>
 

@@ -16,7 +16,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatOptionModule } from "@angular/material/core";
 import { MatDialog } from "@angular/material/dialog";
 import { AddItemDialogComponent } from "../add-item-dialog/add-item-dialog.component";
-import { Grant, InvoiceDocVAT, InvoiceItem, Recipient } from "../models/invoice-model";
+import { Grant, InvoiceDocVAT, InvoiceItem, Recipient, InvoiceType } from "../models/invoice-model";
 import { CPV } from "../models/cpv-model";
 import { Alignment, Margins, TableCell } from "pdfmake/interfaces";
 import {
@@ -85,6 +85,7 @@ export class MainPanelComponent implements OnInit {
   public contractBasis = ['zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP', 'umowa przetargowa', 'umowa ogólnouczelniana']
 
   public invoiceDocument: InvoiceDocVAT = new InvoiceDocVAT({});
+  public invoiceType = InvoiceType.VatReturn;
   displayedColumns: string[] = ['name', 'cpvRow', 'cpvId', 'cpvName', 'invoicePosition', 'preliminaryId'];
   readonly dialog = inject(MatDialog);
 
@@ -132,14 +133,16 @@ export class MainPanelComponent implements OnInit {
   }
 
   public getInvoiceNumberText() {
-    return "Faktura VAT nr " + this.invoiceDocument.invoiceNumber + " za: " + this.invoiceDocument.invoiceDescription;
+    const itemsText = this.invoiceDocument.items.map(item => item.name).join(', ');
+    const invTypeStr = this.invoiceType === InvoiceType.Proforma ? "Proforma" : "VAT";
+    return "Faktura " + invTypeStr + " nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
   }
 
   public disableButtonGenerate() {
     if (!this.invoiceDocument.financeGrant) {
       return true;
     }
-    if (!this.invoiceDocument.recipient) {
+    if (this.invoiceType === InvoiceType.VatReturn && !this.invoiceDocument.recipient) {
       return true;
     }
     if (!this.invoiceDocument.invoiceNumber) {
@@ -210,16 +213,20 @@ export class MainPanelComponent implements OnInit {
           text: 'Dotyczy preliminarza nr: ' + this.invoiceDocument.financeGrant.code,
           margin: [0, 0, 0, 20] as Margins,
         },
-        'W przypadku płatności gotówkowych proszę podać:',
-        {
-          text: '1. Imię i nazwisko: ' + this.invoiceDocument.recipient.name + ' ' + this.invoiceDocument.recipient.lastname
-        },
-        {
-          text: '2. Numer indeksu: ' + this.invoiceDocument.recipient.index
-        },
-        {
-          text: '3. Nr konta studenta do zwrotu należności: ' + this.invoiceDocument.recipient.account
-        },
+        ...(this.invoiceType === InvoiceType.VatReturn) ? [
+          {
+            text: 'W przypadku płatności gotówkowych proszę podać:'
+          },
+          {
+            text: '1. Imię i nazwisko: ' + this.invoiceDocument.recipient.name + ' ' + this.invoiceDocument.recipient.lastname
+          },
+          {
+            text: '2. Numer indeksu: ' + this.invoiceDocument.recipient.index
+          },
+          {
+            text: '3. Nr konta studenta do zwrotu należności: ' + this.invoiceDocument.recipient.account
+          }
+        ] : [],
         {
           text: 'Pieczątka i podpis\nopiekuna Koła Naukowego',
           style: 'footer'
@@ -251,4 +258,6 @@ export class MainPanelComponent implements OnInit {
     pdfMake.createPdf(dd).download(fileName + ".pdf");
 
   }
+
+  protected readonly InvoiceType = InvoiceType;
 }

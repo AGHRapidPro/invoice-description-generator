@@ -1,26 +1,48 @@
-<mat-toolbar class="rapid-toolbar">
-  <div class="rapid-logo-icon"></div>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Menu icon"
-    [matMenuTriggerFor]="menu"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="navigateToHome()">
-      <mat-icon>home</mat-icon>
-      Generator opisów faktur
+<div class="app-container">
+  <mat-toolbar class="rapid-toolbar">
+    <div class="rapid-logo-icon"></div>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Menu icon"
+      [matMenuTriggerFor]="menu"
+    >
+      <mat-icon>menu</mat-icon>
     </button>
-    <button mat-menu-item (click)="navigateToUserDashboard()">
-      <mat-icon>group</mat-icon>
-      Zarządzaj użytkownikami
-    </button>
-    <button mat-menu-item (click)="navigateToGrantDashboard()">
-      <mat-icon>settings_applications</mat-icon>
-      Zarządzaj grantami
-    </button>
-  </mat-menu>
-</mat-toolbar>
-<router-outlet />
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="navigateToHome()">
+        <mat-icon>home</mat-icon>
+        Generator opisów faktur
+      </button>
+      <button mat-menu-item (click)="navigateToUserDashboard()">
+        <mat-icon>group</mat-icon>
+        Zarządzaj użytkownikami
+      </button>
+      <button mat-menu-item (click)="navigateToGrantDashboard()">
+        <mat-icon>settings_applications</mat-icon>
+        Zarządzaj grantami
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="app-footer">
+    <div style="display: grid; grid-template-columns: 50% 50%">
+      <p style="margin-bottom: 0">
+        Ten projekt jest objęty licencją
+        <a href="https://github.com/AGHRapidPro/invoice-description-generator/blob/main/LICENSE" class="github-link" target="_blank">
+          GNU GPLv3
+        </a>
+      </p>
+      <div class="github-div">
+        <img src="assets/github-logo.png" height="30" style="margin-right: 10px">
+        <a href="https://github.com/AGHRapidPro/invoice-description-generator" class="github-link" target="_blank">
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>

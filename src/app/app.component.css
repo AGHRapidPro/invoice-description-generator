@@ -10,3 +10,32 @@
   grid-auto-flow: column;
   grid-template-columns: auto min-content;
 }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 16px;
+}
+
+.app-footer {
+  background: #f5f5f5;
+  padding: 16px;
+  text-align: center;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.github-div {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}

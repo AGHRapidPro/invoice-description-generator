@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "invoice-generator": {
+    "invoice-description-generator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/invoice-generator",
+            "outputPath": "dist/invoice-description-generator",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "invoice-generator:build:production"
+              "buildTarget": "invoice-description-generator:build:production"
             },
             "development": {
-              "buildTarget": "invoice-generator:build:development"
+              "buildTarget": "invoice-description-generator:build:development"
             }
           },
           "defaultConfiguration": "development"

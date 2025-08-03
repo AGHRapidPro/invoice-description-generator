@@ -1,5 +1,5 @@
 {
-  "name": "invoice-generator",
+  "name": "invoice-description-generator",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

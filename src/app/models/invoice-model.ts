@@ -78,6 +78,7 @@ export class InvoiceDocVAT {
 }
 
 export enum InvoiceType {
-  VAT = "VAT",
+  VatReturn = "VATReturn",
+  VatNoReturn = "VATNoReturn",
   Proforma = "Proforma"
 }

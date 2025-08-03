@@ -85,7 +85,7 @@ export class MainPanelComponent implements OnInit {
   public contractBasis = ['zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP', 'umowa przetargowa', 'umowa ogólnouczelniana']
 
   public invoiceDocument: InvoiceDocVAT = new InvoiceDocVAT({});
-  public documentType = InvoiceType.VAT;
+  public invoiceType = InvoiceType.VatReturn;
   displayedColumns: string[] = ['name', 'cpvRow', 'cpvId', 'cpvName', 'invoicePosition', 'preliminaryId'];
   readonly dialog = inject(MatDialog);
 
@@ -134,14 +134,15 @@ export class MainPanelComponent implements OnInit {
 
   public getInvoiceNumberText() {
     const itemsText = this.invoiceDocument.items.map(item => item.name).join(', ');
-    return "Faktura " + this.documentType + " nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
+    const invTypeStr = this.invoiceType === InvoiceType.Proforma ? "Proforma" : "VAT";
+    return "Faktura " + invTypeStr + " nr " + this.invoiceDocument.invoiceNumber + " za: " + itemsText;
   }
 
   public disableButtonGenerate() {
     if (!this.invoiceDocument.financeGrant) {
       return true;
     }
-    if (this.documentType === InvoiceType.VAT && !this.invoiceDocument.recipient) {
+    if (this.invoiceType === InvoiceType.VatReturn && !this.invoiceDocument.recipient) {
       return true;
     }
     if (!this.invoiceDocument.invoiceNumber) {
@@ -209,7 +210,7 @@ export class MainPanelComponent implements OnInit {
           text: 'Dotyczy preliminarza nr: ' + this.invoiceDocument.financeGrant.code,
           margin: [0, 0, 0, 20] as Margins,
         },
-        ...(this.documentType === InvoiceType.VAT) ? [
+        ...(this.invoiceType === InvoiceType.VatReturn) ? [
           {
             text: 'W przypadku płatności gotówkowych proszę podać:'
           },

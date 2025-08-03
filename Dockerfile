@@ -14,7 +14,7 @@ LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.docker.cmd="docker run --name invoice-description-generator --rm -v ./invoice-description-generator-data:/api/data -p 80:80 -p 3000:3000 aghrapidpro/invoice-description-generator:latest"
 RUN apk add --no-cache nodejs
 RUN rm -rf /usr/local/apache2/htdocs/*
-COPY --from=builder /app/dist/invoice-generator/browser/ /usr/local/apache2/htdocs/
+COPY --from=builder /app/dist/invoice-description-generator/browser/ /usr/local/apache2/htdocs/
 COPY --from=builder /app/api/app.js /api/
 COPY --from=builder /app/api/node_modules/ /api/node_modules/
 RUN mkdir -p /api/data

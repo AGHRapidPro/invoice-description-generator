@@ -5,6 +5,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { NgOptimizedImage } from "@angular/common";
 import { MatMenuModule } from "@angular/material/menu";
+import {MatDivider} from "@angular/material/divider";
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { MatMenuModule } from "@angular/material/menu";
     MatButtonModule,
     NgOptimizedImage,
     MatMenuModule,
+    MatDivider,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

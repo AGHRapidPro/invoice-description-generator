@@ -148,9 +148,6 @@ export class MainPanelComponent implements OnInit {
     if (!this.invoiceDocument.invoiceNumber) {
       return true;
     }
-    if (!this.invoiceDocument.invoiceDescription) {
-      return true;
-    }
     if (!this.invoiceDocument.contractBasis) {
       return true;
     }

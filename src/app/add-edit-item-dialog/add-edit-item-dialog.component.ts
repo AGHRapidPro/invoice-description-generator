@@ -26,7 +26,7 @@ import { MatAutocomplete, MatAutocompleteTrigger } from "@angular/material/autoc
 import { map , Observable, startWith } from "rxjs";
 
 @Component({
-  selector: 'app-add-item-dialog',
+  selector: 'app-add-edit-item-dialog',
   standalone: true,
   imports: [
     RouterModule,
@@ -53,25 +53,29 @@ import { map , Observable, startWith } from "rxjs";
     MatAutocomplete,
     MatAutocompleteTrigger,
   ],
-  templateUrl: './add-item-dialog.component.html',
-  styleUrl: './add-item-dialog.component.css'
+  templateUrl: './add-edit-item-dialog.component.html',
+  styleUrl: './add-edit-item-dialog.component.css'
 })
 
-export class AddItemDialogComponent implements OnInit {
+export class AddEditItemDialogComponent implements OnInit {
   public invoiceItem: InvoiceItem = new InvoiceItem({});
   public cpvList: CPV[] = [];
   public cpvListFiltered: Observable<CPV[]>;
   public grantPositions: GrantPosition[] = [];
-  public myControl = new FormControl();
+  public cpvSelectedFC = new FormControl();
 
-  constructor(public dialogRef: MatDialogRef<AddItemDialogComponent>,  @Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(public dialogRef: MatDialogRef<AddEditItemDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {
     this.cpvList = data.cpvList;
     this.cpvListFiltered = data.cpvList;
     this.grantPositions = data.grantPositions;
+    if (data.invoiceItem) {
+      this.invoiceItem = data.invoiceItem;
+      this.cpvSelectedFC.setValue(this.invoiceItem.cpv);
+    }
   }
 
   ngOnInit() {
-    this.cpvListFiltered = this.myControl.valueChanges.pipe(
+    this.cpvListFiltered = this.cpvSelectedFC.valueChanges.pipe(
       startWith(''),
       map(value => this._filter(value || ''))
     );

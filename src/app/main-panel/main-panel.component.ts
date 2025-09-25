@@ -15,7 +15,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatOptionModule } from "@angular/material/core";
 import { MatDialog } from "@angular/material/dialog";
-import { AddItemDialogComponent } from "../add-item-dialog/add-item-dialog.component";
+import { AddEditItemDialogComponent } from "../add-edit-item-dialog/add-edit-item-dialog.component";
 import { Grant, InvoiceDocVAT, InvoiceItem, Recipient, InvoiceType } from "../models/invoice-model";
 import { CPV } from "../models/cpv-model";
 import { Alignment, Margins, TableCell } from "pdfmake/interfaces";
@@ -86,7 +86,7 @@ export class MainPanelComponent implements OnInit {
 
   public invoiceDocument: InvoiceDocVAT = new InvoiceDocVAT({});
   public invoiceType = InvoiceType.VatReturn;
-  displayedColumns: string[] = ['name', 'cpvRow', 'cpvId', 'cpvName', 'invoicePosition', 'preliminaryId'];
+  displayedColumns: string[] = ['name', 'cpvRow', 'cpvId', 'cpvName', 'invoicePosition', 'preliminaryId', 'edit'];
   readonly dialog = inject(MatDialog);
 
   dataSource = new MatTableDataSource<InvoiceItem>();
@@ -109,7 +109,7 @@ export class MainPanelComponent implements OnInit {
   }
 
   public addItem() {
-    const dialogRef = this.dialog.open(AddItemDialogComponent, {
+    const dialogRef = this.dialog.open(AddEditItemDialogComponent, {
       data: {
         cpvList: this.prelimList,
         grantPositions: this.invoiceDocument.financeGrant.positions
@@ -130,6 +130,37 @@ export class MainPanelComponent implements OnInit {
         }
       }
     });
+  }
+
+  public editItem(item: InvoiceItem) {
+    const dialogRef = this.dialog.open(AddEditItemDialogComponent, {
+      data: {
+        cpvList: this.prelimList,
+        grantPositions: this.invoiceDocument.financeGrant.positions,
+        invoiceItem: item
+      },
+      minWidth: '800px',
+    });
+
+    dialogRef.afterClosed().subscribe((newItem: InvoiceItem) => {
+      if (newItem) {
+        this.deleteItem(item);
+        const groupWithItem = this.invoiceDocument.items.find(i => i.cpv === newItem.cpv);
+        if (groupWithItem) {
+          groupWithItem.invoicePosition += ', ' + newItem.invoicePosition;
+          groupWithItem.name += ', ' + newItem.name;
+          this.dataSource.data = this.invoiceDocument.items;
+        } else {
+          this.invoiceDocument.items.push(newItem);
+          this.dataSource.data = this.invoiceDocument.items;
+        }
+      }
+    });
+  }
+
+  public deleteItem(item: InvoiceItem) {
+    this.invoiceDocument.items = this.invoiceDocument.items.filter(i => i != item);
+    this.dataSource.data = this.invoiceDocument.items;
   }
 
   public getInvoiceNumberText() {

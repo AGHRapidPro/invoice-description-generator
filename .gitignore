@@ -138,3 +138,4 @@ pyvenv.cfg
 invoice-description-generator-data/
 agh-cpv-scraper-data/
 .angular/
+.idea/

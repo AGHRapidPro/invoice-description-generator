@@ -82,7 +82,7 @@ export class MainPanelComponent implements OnInit {
   public prelimList: CPV[] = [];
   public grantList: Grant[] = [];
   public recipientsList: Recipient[] = [];
-  public contractBasis = ['zamówienie poniżej 130 000 zł w zw. z art. 30 ust. 4 PZP', 'umowa przetargowa', 'umowa ogólnouczelniana']
+  public contractBasis = ['zamówienie poniżej 130 000 zł', 'umowa przetargowa', 'umowa ogólnouczelniana']
 
   public invoiceDocument: InvoiceDocVAT = new InvoiceDocVAT({});
   public invoiceType = InvoiceType.VatReturn;

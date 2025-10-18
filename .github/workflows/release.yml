@@ -24,13 +24,13 @@ jobs:
           node-version: "lts/*"
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
-        id: semantic  # Need an `id` for output variables
+        uses: cycjimmy/semantic-release-action@v5
+        id: semantic  # Needs an `id` for output variables
         with:
           semantic_version: 25
           extra_plugins: |
-            @semantic-release/changelog@5
-            @semantic-release/exec@5
-            @semantic-release/git@9
+            @semantic-release/changelog
+            @semantic-release/exec
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

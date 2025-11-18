@@ -14,8 +14,8 @@ Use `docker buildx` to create a multi-platform image (for both `amd64` and `arm6
 docker buildx build \
   --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
   --platform linux/amd64,linux/arm64 \
-  -t aghrapidpro/invoice-description-generator:1.0 \
-  -t aghrapidpro/invoice-description-generator:latest \
+  -t ghcr.io/aghrapidpro/invoice-description-generator:1.0 \
+  -t ghcr.io/aghrapidpro/invoice-description-generator:latest \
   --push .
 ```
 
@@ -33,7 +33,7 @@ docker run --name invoice-description-generator --rm \
   -v ./latest.json:/usr/local/apache2/htdocs/assets/cpv/latest.json:ro \
   -p 80:80 -p 3000:3000 --pull=always \
   -e API_URL=http://localhost:3000 \
-  aghrapidpro/invoice-description-generator:latest
+  ghcr.io/aghrapidpro/invoice-description-generator:latest
 ```
 or...
 
@@ -121,7 +121,7 @@ faktury-api.example.domain {
 ---
 services:
   invoice-description-generator:
-    image: aghrapidpro/invoice-description-generator:latest
+    image: ghcr.io/aghrapidpro/invoice-description-generator:latest
     container_name: invoice-description-generator
     environment:
       - API_URL=https://faktury-api.example.domain
@@ -133,7 +133,7 @@ services:
     restart: unless-stopped
 
   agh-cpv-scraper:
-    image: aghrapidpro/agh-cpv-scraper:latest
+    image: ghcr.io/aghrapidpro/agh-cpv-scraper:latest
     container_name: agh-cpv-scraper
     volumes:
       - ./agh-cpv-scraper-data/:/app/cpv/
@@ -141,7 +141,7 @@ services:
 
   caddy:
     # https://github.com/AGHRapidPro/caddy-cloudflare
-    image: aghrapidpro/caddy-cloudflare:latest
+    image: ghcr.io/aghrapidpro/caddy-cloudflare:latest
     container_name: caddy
     restart: always
     environment:

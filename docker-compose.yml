@@ -1,7 +1,7 @@
 ---
 services:
   invoice-description-generator:
-    image: aghrapidpro/invoice-description-generator:latest
+    image: ghcr.io/aghrapidpro/invoice-description-generator:latest
     container_name: invoice-description-generator
 #    network_mode: host # Use only if the default bridge network driver doesn't work. The service will be available at http://localhost:80 then.
     environment:
@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
 
   agh-cpv-scraper:
-    image: aghrapidpro/agh-cpv-scraper:latest
+    image: ghcr.io/aghrapidpro/agh-cpv-scraper:latest
     container_name: agh-cpv-scraper
     volumes:
       - ./agh-cpv-scraper-data/:/app/cpv/
